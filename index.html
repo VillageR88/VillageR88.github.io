@@ -14,34 +14,37 @@
     <li><a href="https://github.com/VillageR88">My Github repository</a></li>
     <li><a href="https://replit.com/@KarolP9">My Replit repository</a></li>
     <p>Contents:</p>
-    <ul> 
-      <li>1. My Codewars solutions</li>
-      </div> 
-      <ul><a href="https://github.com/VillageR88/Codewars/tree/main/TypeScript">1.1. TypeScript</a></ul>
-      <ul><a href="https://github.com/VillageR88/Codewars/tree/main/TypeScript">1.1. TypeScript</a></ul>
-      <ul><a href="https://github.com/VillageR88/Codewars/tree/main/JavaScript">1.2. JavaScript</a></ul>
-      <ul><a href="https://github.com/VillageR88/Codewars/tree/main/Python">1.3. Python</a></ul>
-      <p id="fileContent"></p>
-            
+    <ul>1. My Codewars solutions</ul>
+    <ul><a href="https://github.com/VillageR88/Codewars/tree/main/TypeScript">1.1. TypeScript</a></ul>
+    <ul><p id="fileContent"></p></ul>
+    <ul><a href="https://github.com/VillageR88/Codewars/tree/main/JavaScript">1.2. JavaScript</a></ul>
+    <ul><a href="https://github.com/VillageR88/Codewars/tree/main/Python">1.3. Python</a>
 
-      
       <script>
-        async function displayFileContent() {
-            const response = await fetch('/myTrueScript.txt'); // Wprowadź rzeczywisty URL do pliku
-            const text = await response.text();
-            const lines = text.split('\n');
-            
-            const fileContentElement = document.getElementById('fileContent');
-            
-            lines.forEach(line => {
-                const p = document.createElement('p');
-                p.textContent = line;
-                fileContentElement.appendChild(p);
-            });
-        }
+      async function displayFileContent() {
+    const response = await fetch('/myTrueScript.txt');
+    const text = await response.text();
+    const lines = text.split('\n');
+    
+    const fileContentElement = document.getElementById('fileContent');
+    
+    lines.forEach((line) => {
+        const p = document.createElement('p');
+        const a = document.createElement('a');
+
+        // Utwórz link do pliku/katalogu
+        const link = `https://github.com/VillageR88/Codewars/tree/main/TypeScript/${line}`; // Zastąp ścieżką do katalogu
+
+        a.href = link;
+        a.textContent = `1.1.${line}`; // Tekst linku
+        
+        // Dodaj link do paragrafu i paragraf do elementu fileContent
+        p.appendChild(a);
+        fileContentElement.appendChild(p);
+      });
+    }
         displayFileContent();
     </script>
-
 
       <!--<a class="forward-page-link" href="page2.html">Następna Strona &raquo;</a>-->
   </body>
