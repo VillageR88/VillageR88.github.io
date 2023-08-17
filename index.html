@@ -36,7 +36,8 @@
         const link = `https://github.com/VillageR88/Codewars/tree/main/TypeScript/${line}`; // Zastąp ścieżką do katalogu
 
         a.href = link;
-        a.textContent = `1.1.${line}`; // Tekst linku
+        a.textContent = `1.1.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6) // Tekst linku
+        //(n.toString().split(/0+$/g).join(""))
         
         // Dodaj link do paragrafu i paragraf do elementu fileContent
         p.appendChild(a);
