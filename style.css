@@ -37,3 +37,6 @@ img {
   font-size: 16px;
   color: #d2c66f;
 }
+ul {
+  display: block;
+} 
