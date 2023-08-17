@@ -14,14 +14,39 @@
     <li><a href="https://github.com/VillageR88">My Github repository</a></li>
     <li><a href="https://replit.com/@KarolP9">My Replit repository</a></li>
     <p>Contents:</p>
-    <ul>
-      
-      <li>1. My Codewars solutions
-        <ul>
-          <li><a href="https://github.com/VillageR88/Codewars/tree/main/TypeScript">1.1. TypeScript</a></li>
-          <li><a href="https://github.com/VillageR88/Codewars/tree/main/JavaScript">1.2. JavaScript</a></li>
-          <li><a href="https://github.com/VillageR88/Codewars/tree/main/Python">1.3. Python</a></li>
-        </ul>
-    <!--<a class="forward-page-link" href="page2.html">Następna Strona &raquo;</a>-->
+    <ul> 
+      <li>1. My Codewars solutions</li>
+      <ul><a href="https://github.com/VillageR88/Codewars/tree/main/TypeScript">1.1. TypeScript</a></ul>
+      <ul><a href="https://github.com/VillageR88/Codewars/tree/main/JavaScript">1.2. JavaScript</a></ul>
+      <ul><a href="https://github.com/VillageR88/Codewars/tree/main/Python">1.3. Python</a></ul>
+      <ul id="fileList"></ul>
+
+      <script>
+        // Funkcja do wczytywania zawartości folderu
+        function loadFiles() {
+          const fileList = document.getElementById('fileList');
+          const folderPath = '/TypeScript'; // Ścieżka do folderu
+    
+          // Wczytanie zawartości folderu za pomocą AJAX
+          const xhr = new XMLHttpRequest();
+          xhr.open('GET', folderPath, true);
+          xhr.onload = function () {
+            if (xhr.status === 200) {
+              const files = xhr.responseText.split('\n');
+              files.forEach(file => {
+                const li = document.createElement('li');
+                li.textContent = file.trim(); // Usunięcie ewentualnych białych znaków
+                fileList.appendChild(li);
+              });
+            }
+          };
+          xhr.send();
+        }
+    
+        // Wywołanie funkcji wczytującej przy załadowaniu strony
+        window.onload = loadFiles;
+      </script>
+    
+        <!--<a class="forward-page-link" href="page2.html">Następna Strona &raquo;</a>-->
   </body>
 </html>
