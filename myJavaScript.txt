@@ -1,0 +1,28 @@
+000001. DNA to RNA Conversion.js
+000002. Returning Strings.js
+000003. Rock Paper Scissors!.js
+000004. Calculate average.js
+000005. Will you make it(question mark).js
+000006. Sentence Smash.js
+000007. String repeat.js
+000008. Fake Binary.js
+000009. Sum Mixed Array.js
+000010. Find the smallest integer in the array.js
+000011. Calculate BMI.js
+000012. Convert a string to an array.js
+000013. Total amount of points.js
+000014. List Filtering.js
+000015. Grasshopper - Grade book.js
+000016. Opposite number.js
+000017. MakeUpperCase.js
+000018. Square(n) Sum.js
+000019. Convert a Boolean to a String.js
+000020. Beginner Series #3 Sum of Numbers.js
+000021. Quarter of the year.js
+000022. Function 1 - hello world.js
+000023. Bit Counting.js
+000024. Rot13.js
+000025. Sum of Digits (backslash) Digital Root.js
+000026. Maximum subarray sum.js
+000027. Persistent Bugger..js
+000028. Moving Zeros To The End.js

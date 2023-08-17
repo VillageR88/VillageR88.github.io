@@ -10,6 +10,7 @@ html, body {
 }
 
 h1, h2{
+  margin-left: 10px;
   color: #d2c66f;
   text-shadow: 1px 1px 3px #2e2e2e,
                -1px -1px 3px #2e2e2e,
@@ -29,6 +30,7 @@ ul {
 
 img {
   border: 1px solid white;
+  margin-left: 10px;
 }
 
 .forward-page-link {

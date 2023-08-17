@@ -1,0 +1,28 @@
+000001. banjo.py
+000002. Training JS #18.py
+000003. Beginner Series #1 School Paperwork.py
+000004. A Needle in the Haystack.py
+000005. Count of positives (slash) sum of negatives.py
+000006. Beginner - Lost Without a Map.py
+000007. Convert a String to a Number!.py
+000008. Opposites Attract.py
+000009. Remove String Spaces.py
+000010. Invert values.py
+000011. Sum Arrays.py
+000012. Transportation on vacation.py
+000013. Remove First and Last Character.py
+000014. Century From Year.py
+000015. Binary Addition.py
+000016. Grasshopper - Summation.py
+000017. Basic Mathematical Operations.py
+000018. Shortest Word.py
+000019. Even or Odd.py
+000020. Highest and Lowest.py
+000021. Regex validate PIN code.py
+000022. Categorize New Member.py
+000023. Sum of odd numbers.py
+000024. Growth of a Population.py
+000025. Sum of positive.py
+000026. Simple multiplication.py
+000027. Counting sheep....py
+000028. Find the next perfect square!.py
