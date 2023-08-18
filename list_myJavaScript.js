@@ -17,7 +17,10 @@ lines.forEach((line) => {
         const clickedElement = event.target; // Get the clicked element
         const originalName = clickedElement.getAttribute('data-original-name'); // Get the original name from the attribute
 
-        // Utwórz URL na podstawie oryginalnej nazwy
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Dla płynnego przewijania
+        });
         const url = `https://raw.githubusercontent.com/VillageR88/Codewars/main/JavaScript/${originalName}`;
 
         fetch(url)
