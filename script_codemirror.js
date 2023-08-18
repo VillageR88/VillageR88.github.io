@@ -25,13 +25,6 @@ runButton.addEventListener("click", function () {
     }
 
 });
-themeButton.addEventListener("click", function () {
-    try {
-        console.log("a");
-    }
-    catch (error) {
-        outputContainer.textContent = "Error: " + error.message;
-    }});
 
 // Pobierz zawartość z linku i wstaw ją do edytora
 fetch('https://raw.githubusercontent.com/VillageR88/Codewars/main/JavaScript/000011.%20Calculate%20BMI.js')

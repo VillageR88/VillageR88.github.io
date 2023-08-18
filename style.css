@@ -1,19 +1,40 @@
+#wrapper1{
+  width: 100%;
+  display: flex;
+}
 
-#wrapper{
+#wrapper2{
   width: 100%;
   display: flex;
   min-height: 100%;
+}
+
+#up_left{
+  flex: 1;    
+  height: 30 px;
+  background-color:#436060;
+  border-style: solid;
+  border-color: #111b1b36;
+}
+#up_center{
+  display: flex;
+  flex: 4; 
+  height: 30 px;
+  background-color:#436060;
+  border-style: solid;
+  border-color: #111b1b36;
+  justify-content:start;
+  align-items:end;
+
 
 }
 
-#up{
-  flex: 3;    
+#up_right{
+  flex: 1;    
   height: 30 px;
   background-color:#436060;
-
   border-style: solid;
   border-color: #111b1b36;
-
 }
 
 #left{
