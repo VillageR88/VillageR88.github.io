@@ -6,17 +6,14 @@
   </head>
   <body> <!-- informacje widoczne na stronie -->
     <div id="up" >
-
-    <h1> My html repository</h1>
-
-  </div>
+      <h1> My html repository</h1>
+    </div>
     <div id="wrapper">
       <div id="left" >
         <p></p>
         <ul><b>Contents:</b></ul>
         <ul>1. My Codewars solutions</ul>
         <img src = "me.jpg" width = 150>
-
         <ul>
           <a href="javascript:void(0);" id="toggleList1">1.1. TypeScript</a>
           <ul id="nestedList1" style="display: none;">
@@ -36,10 +33,48 @@
           </ul>
         </ul>
       </div>
-      <div id="center" ></div>
-      <div id="right" ></div>
-    </div>
 
+      <div id="center">
+        <title>Read-Only Code Viewer</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/material.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/dracula.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/midnight.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/monokai.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/night.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/solarized.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/twilight.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+    
+        <!-- Element, w którym będzie wyświetlany edytor kodu -->
+        <textarea id="codeEditor"></textarea>
+    
+        <!-- Skrypt JavaScript, który inicjalizuje CodeMirror i ładuje kod z zewnętrznego linku -->
+        <script>
+
+            var editor = CodeMirror.fromTextArea(document.getElementById("codeEditor"), {
+                lineNumbers: true, // Wyświetlanie numerów linii
+                mode: "javascript", // Ustawienie trybu edycji na JavaScript
+                lineWrapping: true, // Zawijanie linii
+                readOnly: true, // Tylko do odczytu
+                theme: "twilight", // Ustawienie tematu edytora
+            });
+    
+            // Pobierz zawartość z linku i wstaw ją do edytora
+            fetch('script_main_buttons.js')
+                .then(response => response.text())
+                .then(code => {
+                    editor.setValue(code);
+                })
+                .catch(error => console.error('Błąd:', error));
+        </script>
+    
+    </div>
+    
+      <div id="right" ></div>
+  </div>
     <script src="script_main_buttons.js"></script>
     <script src="list_myTypeScript.js"></script>
     <script src="list_myJavaScript.js"></script>

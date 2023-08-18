@@ -1,12 +1,11 @@
 
-
 #wrapper{
   width: 100%;
   display: flex;
   min-height: 100%;
 
-  
 }
+
 #up{
   flex: 3;    
   height: 30 px;
@@ -24,9 +23,10 @@
 }
 
 #center {
-   flex: 4;
+  flex: 4;
+  min-height: 100%;
+
    background-color:#436060;
-   min-height: 100%;
 }
 
 #right{
@@ -86,4 +86,9 @@ img {
   left: 30px;
   font-size: 16px;
   color: #d2c66f;
+}
+
+.CodeMirror {
+  border: 1px solid #eee;
+  min-height: 99%;
 }
