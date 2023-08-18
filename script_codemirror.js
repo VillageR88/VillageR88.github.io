@@ -48,5 +48,4 @@ themeButton.addEventListener("click", function () {
     } catch (error) {
         outputContainer.textContent = "Error: " + error.message;
     }
-
 });
