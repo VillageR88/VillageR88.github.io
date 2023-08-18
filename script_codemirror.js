@@ -5,10 +5,20 @@ var editor = CodeMirror.fromTextArea(document.getElementById("codeEditor"), {
     readOnly: true,
     theme: "twilight",
 });
-var runButton = document.getElementById("runButton");
-var themeButton = document.getElementById("thmeButton");
-var outputContainer = document.getElementById("outputContainer");
 
+
+// Pobierz zawartość z linku i wstaw ją do edytora
+fetch('hello_world.js')
+    .then(response => response.text())
+    .then(code => {
+        editor.setValue(code);
+    })
+    .catch(error => console.error('Błąd:', error));
+    
+
+// Run Button
+var runButton = document.getElementById("runButton");
+var outputContainer = document.getElementById("outputContainer");
 runButton.addEventListener("click", function () {
     try {
         var code = editor.getValue();
@@ -23,13 +33,20 @@ runButton.addEventListener("click", function () {
     } catch (error) {
         outputContainer.textContent = "Error: " + error.message;
     }
-
 });
 
-// Pobierz zawartość z linku i wstaw ją do edytora
-fetch('https://raw.githubusercontent.com/VillageR88/Codewars/main/JavaScript/000011.%20Calculate%20BMI.js')
+var themeButton = document.getElementById("themeButton");
+// Under construction Button
+themeButton.addEventListener("click", function () {
+    try {
+        fetch('https://raw.githubusercontent.com/VillageR88/Codewars/main/JavaScript/000011.%20Calculate%20BMI.js')
     .then(response => response.text())
     .then(code => {
         editor.setValue(code);
     })
     .catch(error => console.error('Błąd:', error));
+    } catch (error) {
+        outputContainer.textContent = "Error: " + error.message;
+    }
+
+});
