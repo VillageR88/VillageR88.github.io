@@ -2,7 +2,7 @@ var editor = CodeMirror.fromTextArea(document.getElementById("codeEditor"), {
     lineNumbers: true,
     mode: "javascript",
     lineWrapping: true,
-    readOnly: true,
+    readOnly: false,
     theme: "twilight",
 });
 
