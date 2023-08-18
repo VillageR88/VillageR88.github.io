@@ -2,8 +2,8 @@ async function displayFileContent() {
 const response = await fetch("/myJavaScript.txt");
 const text = await response.text();
 const lines = text.split('\n');
-
 const fileContentElement = document.getElementById('fileContent2');
+const codeTitle = document.getElementById('codeTitle');
 
 lines.forEach((line) => {
     const p = document.createElement('p');
@@ -14,9 +14,9 @@ lines.forEach((line) => {
     a.setAttribute('data-original-name', line);
 
     a.addEventListener('click', (event) => {
+        codeTitle.textContent = "My code: " + line.slice(7);
         const clickedElement = event.target; // Get the clicked element
         const originalName = clickedElement.getAttribute('data-original-name'); // Get the original name from the attribute
-
         window.scrollTo({
             top: 0,
             behavior: 'smooth' // Dla płynnego przewijania

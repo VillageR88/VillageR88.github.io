@@ -2,8 +2,8 @@ async function displayFileContent() {
 const response = await fetch("/myPython.txt");
 const text = await response.text();
 const lines = text.split('\n');
-
 const fileContentElement = document.getElementById('fileContent3');
+const codeTitle = document.getElementById('codeTitle');
 
 lines.forEach((line) => {
     const p = document.createElement('p');
@@ -13,9 +13,8 @@ lines.forEach((line) => {
     a.textContent = `1.3.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6); // Tekst linku
     a.setAttribute('data-original-name', line);
 
-
-
      a.addEventListener('click', (event) => {
+        codeTitle.textContent = "My code: " + line.slice(7);
         const clickedElement = event.target; // Get the clicked element
         const originalName = clickedElement.getAttribute('data-original-name'); // Get the original name from the attribute
 
