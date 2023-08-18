@@ -9,15 +9,30 @@ lines.forEach((line) => {
     const p = document.createElement('p');
     const a = document.createElement('a');
 
-    // Utwórz link do pliku/katalogu
-    const link = `https://github.com/VillageR88/Codewars/tree/main/Python/${line}`; // Zastąp ścieżką do katalogu
-
-    a.href = link;
+    a.href = "javascript:void(0);";
     a.textContent = `1.3.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6); // Tekst linku
-    
+    a.setAttribute('data-original-name', line);
+
+
+
+     a.addEventListener('click', (event) => {
+        const clickedElement = event.target; // Get the clicked element
+        const originalName = clickedElement.getAttribute('data-original-name'); // Get the original name from the attribute
+
+        // Utwórz URL na podstawie oryginalnej nazwy
+        const url = `https://raw.githubusercontent.com/VillageR88/Codewars/main/Python/${originalName}`;
+
+        fetch(url)
+        .then(response => response.text())
+        .then(code => {
+            editor.setValue(code);
+        })
+        .catch(error => console.error('Błąd:', error));
+    });
+
     // Dodaj link do paragrafu i paragraf do elementu fileContent
     p.appendChild(a);
     fileContentElement.appendChild(p);
-    });
+});
 }
     displayFileContent();
