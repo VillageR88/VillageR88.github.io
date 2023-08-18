@@ -36,7 +36,6 @@
 
       <div id="center">
         <title>Read-Only Code Viewer</title>
-        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/material.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/dracula.min.css">
@@ -45,36 +44,29 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/night.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/solarized.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/twilight.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
-    
-        <!-- Element, w którym będzie wyświetlany edytor kodu -->
-        <textarea id="codeEditor"></textarea>
-    
-        <!-- Skrypt JavaScript, który inicjalizuje CodeMirror i ładuje kod z zewnętrznego linku -->
-        <script>
+        <style>
+          /* Dostosuj tło motywu twilight */
+          .CodeMirror {
+              background: #104c6e;
+              color: #c0c0c0;
+          }
+        </style>
+        
 
-            var editor = CodeMirror.fromTextArea(document.getElementById("codeEditor"), {
-                lineNumbers: true, // Wyświetlanie numerów linii
-                mode: "javascript", // Ustawienie trybu edycji na JavaScript
-                lineWrapping: true, // Zawijanie linii
-                readOnly: true, // Tylko do odczytu
-                theme: "twilight", // Ustawienie tematu edytora
-            });
+        <!-- Element, w którym będzie wyświetlany edytor kodu -->
+        <textarea id="codeEditor" ></textarea>
     
-            // Pobierz zawartość z linku i wstaw ją do edytora
-            fetch('script_main_buttons.js')
-                .then(response => response.text())
-                .then(code => {
-                    editor.setValue(code);
-                })
-                .catch(error => console.error('Błąd:', error));
-        </script>
+        <!-- Przycisk do uruchamiania kodu -->
+        <button id="runButton">Run Code</button>
     
+        <!-- Wynik działania kodu -->
+        <div id="outputContainer"></div>
     </div>
-    
       <div id="right" ></div>
   </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+    <script src="script_codemirror.js"></script>
     <script src="script_main_buttons.js"></script>
     <script src="list_myTypeScript.js"></script>
     <script src="list_myJavaScript.js"></script>
