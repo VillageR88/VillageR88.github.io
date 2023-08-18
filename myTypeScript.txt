@@ -10,9 +10,9 @@
 000010. The Feast of Many Beasts.ts
 000011. Function 2 - squaring an argument.ts
 000012. Grasshopper - Check for factor.ts
-000013. Beginner Series #4 Cockroach.ts
+000013. Beginner Series No4 Cockroach.ts
 000014. Sort and Star.ts
-000015. You Can't Code Under Pressure #1.ts
+000015. You Can't Code Under Pressure No1.ts
 000016. Ones and Zeros.ts
 000017. Abbreviate a Two Word Name.ts
 000018. Cat years, Dog years.ts
@@ -30,7 +30,7 @@
 000030. Third Angle of a Triangle.ts
 000031. Sort Numbers.ts
 000032. Convert a Number to a String!.ts
-000033. All Star Code Challenge #18.ts
+000033. All Star Code Challenge No18.ts
 000034. Will there be enough space(question).ts
 000035. Convert boolean values to strings 'Yes' or 'No'..ts
 000036. Two to One.ts
@@ -81,7 +81,7 @@
 000081. Form The Minimum.ts
 000082. Vowel Count.ts
 000083. Build a pile of Cubes.ts
-000084. Training JS #7 if..else and ternary operator.ts
+000084. Training JS No7 if..else and ternary operator.ts
 000085. Holiday VIII - Duty Free.ts
 000086. Testing 1-2-3.ts
 000087. Is it even(question).ts

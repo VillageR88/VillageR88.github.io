@@ -1,6 +1,6 @@
 000001. banjo.py
-000002. Training JS #18.py
-000003. Beginner Series #1 School Paperwork.py
+000002. Training JS No18.py
+000003. Beginner Series No1 School Paperwork.py
 000004. A Needle in the Haystack.py
 000005. Count of positives (slash) sum of negatives.py
 000006. Beginner - Lost Without a Map.py

@@ -17,7 +17,7 @@
 000017. MakeUpperCase.js
 000018. Square(n) Sum.js
 000019. Convert a Boolean to a String.js
-000020. Beginner Series #3 Sum of Numbers.js
+000020. Beginner Series No3 Sum of Numbers.js
 000021. Quarter of the year.js
 000022. Function 1 - hello world.js
 000023. Bit Counting.js
