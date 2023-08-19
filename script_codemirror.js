@@ -35,7 +35,11 @@ runButton.addEventListener("click", function () {
         console.log = function (message) {
             output += message + "\n";
         };
-        console.log(eval("var dna = 'TTUU'\n" + code));
+        var functionRegex = code.match(/function\s+(\w+)\s*\((.*?)\)/);
+        //var param = String(functionRegex).split(",")[1] + "(" + "'TUUU'" + ");";
+        var x1 = document.getElementById("param1").value;
+        var param = String(functionRegex).split(",")[1] + "(" + "'" + x1 + "'" + ");";
+        console.log(eval(param + code));
         console.log = oldConsoleLog;
         outputContainer.textContent = output;
     } catch (error) {
