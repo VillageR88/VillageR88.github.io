@@ -33,8 +33,8 @@ lines.forEach((line) => {
             lines.pop();   // Remove the last line
             const modifiedCode = lines.join('\n');
             editor2.setValue(modifiedCode);
-            var test = code.match(/function\s+(\w+)\s*\((.*?)\)/)[0];    
-            document.getElementById("param1Label").textContent = test;
+            document.getElementById("param1Label").textContent = code.match(/function\s+(\w+)\s*\((.*?)\)/)[1];
+            document.getElementById("param1").value = `(${code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]})`;
 
             const functionRegex2 = /function\s+(\w+)\s*\((.*?)\)/;
             const matches = code.match(functionRegex2);
