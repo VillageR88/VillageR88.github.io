@@ -33,6 +33,13 @@ lines.forEach((line) => {
             lines.pop();   // Remove the last line
             const modifiedCode = lines.join('\n');
             editor2.setValue(modifiedCode);
+
+
+            const functionRegex2 = /function\s+(\w+)\s*\((.*?)\)/;
+            const matches = code.match(functionRegex2);
+
+
+
         })
         .catch(error => console.error('Błąd:', error));
     });

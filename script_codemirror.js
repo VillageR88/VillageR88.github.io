@@ -19,6 +19,7 @@ fetch('hello_world.js')
     .then(response => response.text())
     .then(code => {
         editor1.setValue(code);
+        editor2.setValue(code);
     })
     .catch(error => console.error('Błąd:', error));
     
@@ -28,13 +29,13 @@ var runButton = document.getElementById("runButton");
 var outputContainer = document.getElementById("outputContainer");
 runButton.addEventListener("click", function () {
     try {
-        var code = editor1.getValue();
+        var code = editor2.getValue();
         var oldConsoleLog = console.log;
         var output = "";
         console.log = function (message) {
             output += message + "\n";
         };
-        eval(code);
+        console.log(eval("var dna = 'TTUU'\n" + code));
         console.log = oldConsoleLog;
         outputContainer.textContent = output;
     } catch (error) {
