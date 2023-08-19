@@ -1,6 +1,9 @@
 <html> <!-- to jest początek kodu html -->
   <head> <!-- informacje niewidoczne na strone -->
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/material.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/twilight.min.css">
   <title>Karol</title>
   <p style="margin-left: 0px;"><b>Welcome to my site</b></p>
   </head>
@@ -41,28 +44,19 @@
           </ul>
         </ul>
       </div>
-
       <div id="center">
-        <title>Read-Only Code Viewer</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/material.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/dracula.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/midnight.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/monokai.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/night.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/solarized.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/twilight.min.css">
-
-        <!-- Element, w którym będzie wyświetlany edytor kodu -->
-        <textarea id="codeEditor" ></textarea>
-    
-        <!-- Przycisk do uruchamiania kodu -->
-        <button id="runButton">Run Code</button>
-        <!-- Wynik działania kodu -->
-        <div id="outputContainer"></div>
         
+        <div id="center_up_left">
+          <textarea id="codeEditor" ></textarea>
+        </div>
+        <div id="center_up_right">
+          <!-- <textarea id="codeEditor2" ></textarea>-->
+           
+        </div>
+        <button id="runButton">Run Code</button>
+        <div id="outputContainer"></div>
     </div>
-      <div id="right" ></div>
+    <div id="right" ></div>
   </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
