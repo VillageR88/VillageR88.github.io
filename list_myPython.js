@@ -28,6 +28,12 @@ lines.forEach((line) => {
         .then(response => response.text())
         .then(code => {
             editor1.setValue(code);
+            var regex = code.match(/\/\/My(.*?)\/\/Codewars recommended/gs);            
+            var lines = regex.toString().split('\n');
+            lines.shift(); // Remove the first line
+            lines.pop();   // Remove the last line
+            const modifiedCode = lines.join('\n');
+            editor2.setValue(modifiedCode);
         })
         .catch(error => console.error('Błąd:', error));
     });
