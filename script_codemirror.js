@@ -45,18 +45,3 @@ runButton.addEventListener("click", function () {
         outputContainer.textContent = "Error: " + error.message;
     }
 });
-
-var themeButton = document.getElementById("themeButton");
-// Under construction Button
-themeButton.addEventListener("click", function () {
-    try {
-        fetch('https://raw.githubusercontent.com/VillageR88/Codewars/main/JavaScript/000011.%20Calculate%20BMI.js')
-    .then(response => response.text())
-    .then(code => {
-        editor1.setValue(code);
-    })
-    .catch(error => console.error('Błąd:', error));
-    } catch (error) {
-        outputContainer.textContent = "Error: " + error.message;
-    }
-});
