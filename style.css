@@ -46,13 +46,11 @@
 #center {
   flex: 4;
   min-height: 100%;
-
-   background-color:#436060;
+    background-color:#436060;
 }
 
 #center_up {
   min-height: 100%;
-  padding-inline: ;
   background-color:#436060;
 }
 

@@ -38,7 +38,7 @@ runButton.addEventListener("click", function () {
         var functionRegex = code.match(/function\s+(\w+)\s*\((.*?)\)/);
         //var param = String(functionRegex).split(",")[1] + "(" + "'TUUU'" + ");";
         var x1 = document.getElementById("param1").value;
-        var param = String(functionRegex).split(",")[1] + "(" + "'" + x1 + "'" + ");";
+        var param = String(functionRegex).split(",")[1] + "(" + x1 + ");";
         console.log(eval(param + code));
         console.log = oldConsoleLog;
         outputContainer.textContent = output;
