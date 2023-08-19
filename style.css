@@ -51,10 +51,9 @@
 }
 
 #center_up {
-  flex: 4;
   min-height: 100%;
-
-   background-color:#436060;
+  padding-inline: ;
+  background-color:#436060;
 }
 
 #right{
@@ -119,4 +118,17 @@ img {
 .CodeMirror {
   border: 1px solid #eee;
   min-height: 400px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

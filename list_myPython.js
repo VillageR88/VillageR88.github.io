@@ -27,7 +27,7 @@ lines.forEach((line) => {
         fetch(url)
         .then(response => response.text())
         .then(code => {
-            editor.setValue(code);
+            editor1.setValue(code);
         })
         .catch(error => console.error('Błąd:', error));
     });

@@ -1,4 +1,4 @@
-var editor = CodeMirror.fromTextArea(document.getElementById("codeEditor"), {
+var editor1 = CodeMirror.fromTextArea(document.getElementById("codeEditor1"), {
     lineNumbers: true,
     mode: "javascript",
     lineWrapping: true,
@@ -6,12 +6,19 @@ var editor = CodeMirror.fromTextArea(document.getElementById("codeEditor"), {
     theme: "twilight",
 });
 
+var editor2 = CodeMirror.fromTextArea(document.getElementById("codeEditor2"), {
+    lineNumbers: true,
+    mode: "javascript",
+    lineWrapping: true,
+    readOnly: true,
+    theme: "twilight",
+});
 
 // Pobierz zawartość z linku i wstaw ją do edytora
 fetch('hello_world.js')
     .then(response => response.text())
     .then(code => {
-        editor.setValue(code);
+        editor1.setValue(code);
     })
     .catch(error => console.error('Błąd:', error));
     
@@ -21,7 +28,7 @@ var runButton = document.getElementById("runButton");
 var outputContainer = document.getElementById("outputContainer");
 runButton.addEventListener("click", function () {
     try {
-        var code = editor.getValue();
+        var code = editor1.getValue();
         var oldConsoleLog = console.log;
         var output = "";
         console.log = function (message) {
@@ -42,7 +49,7 @@ themeButton.addEventListener("click", function () {
         fetch('https://raw.githubusercontent.com/VillageR88/Codewars/main/JavaScript/000011.%20Calculate%20BMI.js')
     .then(response => response.text())
     .then(code => {
-        editor.setValue(code);
+        editor1.setValue(code);
     })
     .catch(error => console.error('Błąd:', error));
     } catch (error) {
