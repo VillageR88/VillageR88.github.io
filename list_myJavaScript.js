@@ -18,7 +18,6 @@ lines.forEach((line) => {
         document.getElementById("outputContainer").textContent = "Output:";
         document.getElementById("tipsfield").textContent = "Tips:";
         document.getElementById("debugfield").textContent = "Debug:";
-        document.getElementById("param1").value = "";
 
 
         codeTitle.textContent = "My code: " + line.slice(7);
@@ -58,7 +57,8 @@ lines.forEach((line) => {
             document.getElementById("debugfield").textContent = "Debug: " + "" + (code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]);
             document.getElementById("param1").hidden = false;
             document.getElementById("runButton").disabled = false;
-            
+            document.getElementById("param1").value = (code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]);
+
         })
         .catch(error => console.error('Błąd:', error));
     });
