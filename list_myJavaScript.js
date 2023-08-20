@@ -34,9 +34,10 @@ lines.forEach((line) => {
             lines.pop();   // Remove the last line
             const modifiedCode = lines.join('\n');
             editor2.setValue(modifiedCode);
-            document.getElementById("param1Label").textContent = code.match(/function\s+(\w+)\s*\((.*?)\)/)[1]??code.match(/const\s+(\w+)\s*\((.*?)\)/)[1];
+            document.getElementById("param1Label").textContent = code.match(/function\s+(\w+)\s*\((.*?)\)/)[1];
             document.getElementById("param1Label").hidden = false;
-            document.getElementById("param1").value = `(${code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]})`??`(${code.match(/const\s+(\w+)\s*\((.*?)\)/)[2]})`;
+            document.getElementById("param1").value = `(${code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]})`;
+            document.getElementById("debugfield").textContent = "Debug field: " + "";
             document.getElementById("param1").hidden = false;
             document.getElementById("runButton").disabled = false;
 
