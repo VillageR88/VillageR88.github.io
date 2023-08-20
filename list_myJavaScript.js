@@ -38,7 +38,7 @@ lines.forEach((line) => {
             lines.pop();   // Remove the last line
             const modifiedCode = lines.join('\n');
             editor2.setValue(modifiedCode);
-            document.getElementById("param1Label").hidden = false;
+            document.getElementById("param1aLabel").hidden = false;
             var lookfor;
             var position;
             var parameters;
@@ -57,11 +57,34 @@ lines.forEach((line) => {
             try {
                 parameters = modifiedCode.match(lookfor)[position].split(",");
                 document.getElementById("debugfield").textContent = "Debug: " + "" + modifiedCode.match(lookfor) + " Debug2:" + parameters;
-                document.getElementById("param1").value = modifiedCode.match(lookfor)[position];
+                document.getElementById("param1a").value = modifiedCode.match(lookfor)[position];
+
+
+                function createInputFields(array) {
+                    const inputFieldsDiv = document.getElementById("inputFields");
+                    inputFieldsDiv.innerHTML = ""; // Wyczyść zawartość diva przed dodaniem nowych pól
+          
+                    for (let i = 0; i < array.length; i++) {
+                        const label = document.createElement("label");
+                        label.textContent = `${parameters[i]}:`;
+                        label.setAttribute("for", `param${i}`);
+                        
+                        const textarea = document.createElement("textarea");
+                        textarea.setAttribute("id", `param${i}`);
+                        textarea.setAttribute("name", `param${i}`);
+                        textarea.setAttribute("rows", "1");
+                        textarea.setAttribute("cols", "180");
+            
+                        inputFieldsDiv.appendChild(label);
+                        inputFieldsDiv.appendChild(textarea);
+                    }
+                }
+
+                createInputFields(parameters);
             }
             catch (error) {
                 document.getElementById("debugfield").textContent = "Debug: " + "Function implementation in progress. Please come back later."}
-                document.getElementById("param1").hidden = false;
+                document.getElementById("param1a").hidden = false;
                 document.getElementById("runButton").disabled = false;
             })
             .catch(error => console.error('Error:', error));
