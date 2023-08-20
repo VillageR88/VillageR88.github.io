@@ -43,7 +43,7 @@ runButton.addEventListener("click", function () {
     } catch (error) {
         document.getElementById("outputContainer").textContent = "Output: " + "Error: " + error.message;
         if (String(error.message).includes("is not defined")) {        
-            document.getElementById("tipsfield").textContent = "Tips: " + "Sometimes you have to put text between quotation marks => 'Any text'";
+            document.getElementById("tipsfield").textContent = "Tips: " + 'Sometimes you have to put text between quotation marks => "Any text"';
         }
     }
 });
