@@ -26,7 +26,6 @@ fetch('hello_world.js')
 
 // Run Button
 var runButton = document.getElementById("runButton");
-var outputContainer = document.getElementById("outputContainer");
 runButton.addEventListener("click", function () {
     try {
         var code = editor2.getValue();
@@ -40,8 +39,8 @@ runButton.addEventListener("click", function () {
         var param = String(functionRegex).split(",")[1] + "(" + x1 + ");";
         console.log("Output: " + eval(param + code));
         console.log = oldConsoleLog;
-        outputContainer.textContent = output;
+        document.getElementById("outputContainer").textContent = output;
     } catch (error) {
-        outputContainer.textContent = "Output: " + "Error: " + error.message;
+        document.getElementById("outputContainer").textContent = "Output: " + "Error: " + error.message;
     }
 });
