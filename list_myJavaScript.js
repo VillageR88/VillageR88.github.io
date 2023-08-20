@@ -40,7 +40,12 @@ lines.forEach((line) => {
             const modifiedCode = lines.join('\n');
             editor2.setValue(modifiedCode);
             document.getElementById("param1Label").hidden = false;
+            try {
             document.getElementById("param1").value = `${code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]}`;
+            }
+            catch (error) {
+                document.getElementById("debugfield").textContent = "Debug: " + "Function implementation in progress. Please come back later.";
+            }
             document.getElementById("debugfield").textContent = "Debug: " + "" + (code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]);
             document.getElementById("param1").hidden = false;
             document.getElementById("runButton").disabled = false;
