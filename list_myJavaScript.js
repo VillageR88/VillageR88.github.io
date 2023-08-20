@@ -38,7 +38,6 @@ lines.forEach((line) => {
             lines.pop();   // Remove the last line
             const modifiedCode = lines.join('\n');
             editor2.setValue(modifiedCode);
-            document.getElementById("param1aLabel").hidden = false;
             var lookfor;
             var position;
             var parameters;
@@ -57,7 +56,6 @@ lines.forEach((line) => {
             try {
                 parameters = modifiedCode.match(lookfor)[position].split(",");
                 document.getElementById("debugfield").textContent = "Debug: " + "" + modifiedCode.match(lookfor) + " Debug2:" + parameters;
-                document.getElementById("param1a").value = modifiedCode.match(lookfor)[position];
 
 
                 function createInputFields(array) {
@@ -84,7 +82,6 @@ lines.forEach((line) => {
             }
             catch (error) {
                 document.getElementById("debugfield").textContent = "Debug: " + "Function implementation in progress. Please come back later."}
-                document.getElementById("param1a").hidden = false;
                 document.getElementById("runButton").disabled = false;
             })
             .catch(error => console.error('Error:', error));
@@ -96,3 +93,38 @@ lines.forEach((line) => {
 });
 }
     displayFileContent();
+
+// Run Button
+document.getElementById("runButton").addEventListener("click", function () {
+    try {
+        var code = editor2.getValue();
+        var oldConsoleLog = console.log;
+        var output = "";
+        console.log = function (message) {
+            output += message + "\n";
+        };
+
+        var functionRegex = code.match(/function\s+(\w+)\s*\((.*?)\)/);
+        var x1 = document.getElementById("param0").value;
+        var param = String(functionRegex).split(",")[1] + "(" + x1 + ");";
+        console.log("Output: " + eval(param + code));
+        console.log = oldConsoleLog;
+        document.getElementById("outputContainer").textContent = output;
+        document.getElementById("tipsfield").textContent = "Tips: ";
+
+        document.getElementById("debugfield").textContent = "Debug3: ";
+       
+    } catch (error) {
+        document.getElementById("outputContainer").textContent = "Output: " + "Error: " + String(error.message);
+        if (String(error.message).includes("is not defined")) {
+            document.getElementById("tipsfield").textContent = "Tips: " + 'Sometimes you have to put text between quotation marks => "Any text"';
+        }
+        else if (String(error.message).includes("is not iterable")) {
+            document.getElementById("tipsfield").textContent = "Tips: " + 'Arrays should look like this => [first_element, second_element, ...]';
+        }
+        else if (String(error.message).includes("undefined")) {
+            document.getElementById("tipsfield").textContent = "Tips: " + 'Maybe you should put some value?';
+        }
+    }
+});
+
