@@ -36,7 +36,7 @@ lines.forEach((line) => {
             editor2.setValue(modifiedCode);
             document.getElementById("param1Label").textContent = code.match(/function\s+(\w+)\s*\((.*?)\)/)[1];
             document.getElementById("param1Label").hidden = false;
-            document.getElementById("param1").value = `(${code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]})`;
+            document.getElementById("param1").value = `${code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]}`;
             document.getElementById("debugfield").textContent = "Debug field: " + "";
             document.getElementById("param1").hidden = false;
             document.getElementById("runButton").disabled = false;
