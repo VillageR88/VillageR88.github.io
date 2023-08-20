@@ -75,6 +75,29 @@
     <script src="list_myJavaScript.js"></script>
     <script src="list_myPython.js"></script>
     <script>document.getElementById("runButton").disabled = true;</script>
+    <script>
+      function createInputFields(array) {
+          const inputFieldsDiv = document.getElementById("inputFields");
+          inputFieldsDiv.innerHTML = ""; // Wyczyść zawartość diva przed dodaniem nowych pól
+  
+          for (let i = 0; i < array.length; i++) {
+              const label = document.createElement("label");
+              label.textContent = `Element ${i + 1}:`;
+              label.setAttribute("for", `param${i}`);
+              
+              const textarea = document.createElement("textarea");
+              textarea.setAttribute("id", `param${i}`);
+              textarea.setAttribute("name", `param${i}`);
+              textarea.setAttribute("rows", "1");
+              textarea.setAttribute("cols", "180");
+  
+              inputFieldsDiv.appendChild(label);
+              inputFieldsDiv.appendChild(textarea);
+          }
+      }
+      const myArray = [1, 2, 3]; // Tutaj podaj swoją tablicę
+      createInputFields(myArray);
+      </script>
 
   <!--<iframe src="people1.html" width="100%" height="100%" frameborder="0"></iframe>-->
     <!--<a class="page-link" href="poprzednia_strona.html">&laquo; Poprzednia Strona</a>-->

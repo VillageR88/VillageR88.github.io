@@ -19,7 +19,6 @@ lines.forEach((line) => {
         document.getElementById("tipsfield").textContent = "Tips:";
         document.getElementById("debugfield").textContent = "Debug:";
 
-
         codeTitle.textContent = "My code: " + line.slice(7);
         const clickedElement = event.target; // Get the clicked element
         const originalName = clickedElement.getAttribute('data-original-name'); // Get the original name from the attribute
@@ -34,33 +33,38 @@ lines.forEach((line) => {
         .then(response => response.text())
         .then(code => {
             editor1.setValue(code);
-            var regex = code.match(/\/\/My(.*?)\/\/Codewars recommended/gs);            
-            var lines = regex.toString().split('\n');
+            var lines = code.match(/\/\/My(.*?)\/\/Codewars recommended/gs).toString().split('\n');
             lines.shift(); // Remove the first line
             lines.pop();   // Remove the last line
             const modifiedCode = lines.join('\n');
             editor2.setValue(modifiedCode);
             document.getElementById("param1Label").hidden = false;
-            var word1;
-            if (code.includes("function")) {
-                word1 = "function";
+            var lookfor;
+            var position;
+            var parameters;
+            if (modifiedCode.includes("function")) {
+                lookfor = /function\s+(\w+)\s*\((.*?)\)/;
+                position = 2;
             }
-            else {
-                word1 = "const";
+            else if (modifiedCode.includes("const")){
+                lookfor = /const\s+(\w+)\s*=\s*\((.*?)\)\s*=>\s*\{/;
+                position = 2;
+            }
+            else if (modifiedCode.includes("findSmallestInt")){
+                lookfor = /findSmallestInt\s*\((.*?)\)/;
+                position = 1;
             }
             try {
-                document.getElementById("param1").value = `${code.match(/${function}\s+(\w+)\s*\((.*?)\)/)[2]}`;
+                parameters = modifiedCode.match(lookfor)[position].split(",");
+                document.getElementById("debugfield").textContent = "Debug: " + "" + modifiedCode.match(lookfor) + " Debug2:" + parameters;
+                document.getElementById("param1").value = modifiedCode.match(lookfor)[position];
             }
             catch (error) {
-                document.getElementById("debugfield").textContent = "Debug: " + "Function implementation in progress. Please come back later.";
-            }
-            document.getElementById("debugfield").textContent = "Debug: " + "" + (code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]);
-            document.getElementById("param1").hidden = false;
-            document.getElementById("runButton").disabled = false;
-            document.getElementById("param1").value = (code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]);
-
-        })
-        .catch(error => console.error('Błąd:', error));
+                document.getElementById("debugfield").textContent = "Debug: " + "Function implementation in progress. Please come back later."}
+                document.getElementById("param1").hidden = false;
+                document.getElementById("runButton").disabled = false;
+            })
+            .catch(error => console.error('Error:', error));
     });
 
     // Dodaj link do paragrafu i paragraf do elementu fileContent
