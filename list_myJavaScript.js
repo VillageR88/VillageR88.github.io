@@ -55,7 +55,6 @@ lines.forEach((line) => {
             }
             try {
                 parameters = modifiedCode.match(lookfor)[position].split(",");
-                document.getElementById("debugfield").textContent = "Debug: " + "" + modifiedCode.match(lookfor) + " Debug2:" + parameters;
 
 
                 function createInputFields(array) {
@@ -79,6 +78,8 @@ lines.forEach((line) => {
                 }
 
                 createInputFields(parameters);
+                document.getElementById("debugfield").textContent = "Debug: " + "" + modifiedCode.match(lookfor) + " Debug2:" + document.getElementById("inputFields").children.length/2;
+
             }
             catch (error) {
                 document.getElementById("debugfield").textContent = "Debug: " + "Function implementation in progress. Please come back later."}
@@ -104,14 +105,21 @@ document.getElementById("runButton").addEventListener("click", function () {
             output += message + "\n";
         };
 
+        var params_arr = new Array;
+        var params_number = document.getElementById("inputFields").children / 2;
+        for (var i = 0; i < params_number; i++) {
+            params_arr.push(document.getElementById(`param${0}`).value);
+        }
+        
         var functionRegex = code.match(/function\s+(\w+)\s*\((.*?)\)/);
-        var x1 = document.getElementById("param0").value;
-        var param = String(functionRegex).split(",")[1] + "(" + x1 + ");";
-        console.log("Output: " + eval(param + code));
+
+        var param = String(functionRegex).split(",")[1] + "(" + document.getElementById("param0").value + ");";
+        console.log("Output: " + eval(param + code) +"DBG: " + "");
         console.log = oldConsoleLog;
         document.getElementById("outputContainer").textContent = output;
         document.getElementById("tipsfield").textContent = "Tips: ";
 
+    
         document.getElementById("debugfield").textContent = "Debug3: ";
        
     } catch (error) {
