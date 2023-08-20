@@ -42,6 +42,6 @@ runButton.addEventListener("click", function () {
         console.log = oldConsoleLog;
         outputContainer.textContent = output;
     } catch (error) {
-        outputContainer.textContent = "Error: " + error.message;
+        outputContainer.textContent = "Output: " + "Error: " + error.message;
     }
 });
