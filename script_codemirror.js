@@ -13,7 +13,6 @@ var editor2 = CodeMirror.fromTextArea(document.getElementById("codeEditor2"), {
     readOnly: true,
     theme: "twilight",
 });
-
 // Pobierz zawartość z linku i wstaw ją do edytora
 fetch('hello_world.js')
     .then(response => response.text())
@@ -34,6 +33,14 @@ runButton.addEventListener("click", function () {
         console.log = function (message) {
             output += message + "\n";
         };
+
+        var word1;
+        if (code.includes("function")) {
+            word1 = "function";}
+        else {
+            word1 = "const";
+        }
+        
         var functionRegex = code.match(/function\s+(\w+)\s*\((.*?)\)/);
         var x1 = document.getElementById("param1").value;
         var param = String(functionRegex).split(",")[1] + "(" + x1 + ");";

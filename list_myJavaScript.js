@@ -18,6 +18,8 @@ lines.forEach((line) => {
         document.getElementById("outputContainer").textContent = "Output:";
         document.getElementById("tipsfield").textContent = "Tips:";
         document.getElementById("debugfield").textContent = "Debug:";
+        document.getElementById("param1").value = "";
+
 
         codeTitle.textContent = "My code: " + line.slice(7);
         const clickedElement = event.target; // Get the clicked element
@@ -40,8 +42,15 @@ lines.forEach((line) => {
             const modifiedCode = lines.join('\n');
             editor2.setValue(modifiedCode);
             document.getElementById("param1Label").hidden = false;
+            var word1;
+            if (code.includes("function")) {
+                word1 = "function";
+            }
+            else {
+                word1 = "const";
+            }
             try {
-            document.getElementById("param1").value = `${code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]}`;
+                document.getElementById("param1").value = `${code.match(/${function}\s+(\w+)\s*\((.*?)\)/)[2]}`;
             }
             catch (error) {
                 document.getElementById("debugfield").textContent = "Debug: " + "Function implementation in progress. Please come back later.";
@@ -49,6 +58,7 @@ lines.forEach((line) => {
             document.getElementById("debugfield").textContent = "Debug: " + "" + (code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]);
             document.getElementById("param1").hidden = false;
             document.getElementById("runButton").disabled = false;
+            
         })
         .catch(error => console.error('Błąd:', error));
     });
