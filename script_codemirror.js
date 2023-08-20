@@ -42,8 +42,11 @@ runButton.addEventListener("click", function () {
         document.getElementById("outputContainer").textContent = output;
     } catch (error) {
         document.getElementById("outputContainer").textContent = "Output: " + "Error: " + error.message;
-        if (String(error.message).includes("is not defined")) {        
+        if (String(error.message).includes("is not defined")) {
             document.getElementById("tipsfield").textContent = "Tips: " + 'Sometimes you have to put text between quotation marks => "Any text"';
+        }
+        else if (String(error.message).includes("is not iterable")) {
+            document.getElementById("tipsfield").textContent = "Tips: " + 'Arrays should look like this => [first_element, second_element, ...]';
         }
     }
 });

@@ -41,14 +41,9 @@ lines.forEach((line) => {
             editor2.setValue(modifiedCode);
             document.getElementById("param1Label").hidden = false;
             document.getElementById("param1").value = `${code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]}`;
-            document.getElementById("debugfield").textContent = "Debug: " + "" + code.match(/function\s+(\w+)\s*\((.*?)\)/)[1];
+            document.getElementById("debugfield").textContent = "Debug: " + "" + (code.match(/function\s+(\w+)\s*\((.*?)\)/)[2]);
             document.getElementById("param1").hidden = false;
             document.getElementById("runButton").disabled = false;
-            const functionRegex2 = /function\s+(\w+)\s*\((.*?)\)/;
-            const matches = code.match(functionRegex2);
-
-
-
         })
         .catch(error => console.error('Błąd:', error));
     });
