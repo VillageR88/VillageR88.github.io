@@ -5,6 +5,7 @@ const lines = text.split('\n');
 const fileContentElement = document.getElementById('fileContent2');
 const codeTitle = document.getElementById('codeTitle');
 
+var lookfor;
 
 lines.forEach((line) => {
     const p = document.createElement('p');
@@ -13,6 +14,8 @@ lines.forEach((line) => {
     a.href = "javascript:void(0);";
     a.textContent = `1.2.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6); // Tekst linku
     a.setAttribute('data-original-name', line);
+
+
 
     a.addEventListener('click', (event) => {
         document.getElementById("outputContainer").textContent = "Output:";
@@ -38,24 +41,18 @@ lines.forEach((line) => {
             lines.pop();   // Remove the last line
             const modifiedCode = lines.join('\n');
             editor2.setValue(modifiedCode);
-            var lookfor;
-            var position;
             var parameters;
             if (modifiedCode.includes("function")) {
                 lookfor = /function\s+(\w+)\s*\((.*?)\)/;
-                position = 2;
             }
             else if (modifiedCode.includes("const")){
                 lookfor = /const\s+(\w+)\s*=\s*\((.*?)\)\s*=>\s*\{/;
-                position = 2;
             }
             else if (modifiedCode.includes("findSmallestInt")){
-                lookfor = /findSmallestInt\s*\((.*?)\)/;
-                position = 1;
+                lookfor = /(\w+)\s*\((.*?)\)/;
             }
             try {
-                parameters = modifiedCode.match(lookfor)[position].split(",");
-
+                parameters = modifiedCode.match(lookfor)[2].split(",");
 
                 function createInputFields(array) {
                     const inputFieldsDiv = document.getElementById("inputFields");
@@ -76,10 +73,12 @@ lines.forEach((line) => {
                         inputFieldsDiv.appendChild(textarea);
                     }
                 }
-
+                
                 createInputFields(parameters);
-                document.getElementById("debugfield").textContent = "Debug: (function line): " + "" + modifiedCode.match(lookfor) + " || Debug: (number of parameters):" + document.getElementById("inputFields").children.length/2;
-
+                document.getElementById("debugfield").textContent = "Debug: (function line data mashup) => " + modifiedCode.match(lookfor) 
+                + " || (function) => " +  (modifiedCode.match(lookfor)[1]).split(",")
+                + " || (number of parameters) => " + document.getElementById("inputFields").children.length/2
+                + " || (parameters) => "  + modifiedCode.match(lookfor)[2];
             }
             catch (error) {
                 document.getElementById("debugfield").textContent = "Debug: " + "Function implementation in progress. Please come back later."}
@@ -91,9 +90,7 @@ lines.forEach((line) => {
     // Dodaj link do paragrafu i paragraf do elementu fileContent
     p.appendChild(a);
     fileContentElement.appendChild(p);
-});
-}
-    displayFileContent();
+
 
 // Run Button
 document.getElementById("runButton").addEventListener("click", function () {
@@ -106,21 +103,21 @@ document.getElementById("runButton").addEventListener("click", function () {
         };
 
         var params_arr = new Array;
-        var params_number = document.getElementById("inputFields").children / 2;
-        for (var i = 0; i < Number(params_number); i++) {
+        var params_number = document.getElementById("inputFields").children.length / 2
+        for (var i = 0; i < params_number; i++) {
             params_arr.push(document.getElementById(`param${i}`).value);
         }
         
-        var functionRegex = code.match(/function\s+(\w+)\s*\((.*?)\)/);
+        var functionRegex = code.match(lookfor);
 
-        var param = String(functionRegex).split(",")[1] + "(" + document.getElementById("param0").value + ");";
-        console.log("Output: " + eval(param + code) +" + Debug: " + "" +params_arr);
+        var param = String(functionRegex).split(",")[1] + "(" + params_arr + ");";
+        console.log("Output: " + eval(code + "\n" + param) +" + Debug: " + params_arr);
         console.log = oldConsoleLog;
         document.getElementById("outputContainer").textContent = output;
         document.getElementById("tipsfield").textContent = "Tips: ";
 
     
-        document.getElementById("debugfield").textContent = "Debug3: " + params_arr[0];
+        document.getElementById("debugfield").textContent = "Debug: (params): " + params_arr;
        
     } catch (error) {
         document.getElementById("outputContainer").textContent = "Output: " + "Error: " + String(error.message);
@@ -135,4 +132,12 @@ document.getElementById("runButton").addEventListener("click", function () {
         }
     }
 });
+
+
+
+
+
+});
+}
+    displayFileContent();
 
