@@ -33,3 +33,4 @@
 000033. Powers of 2.js
 000034. Vowel remover.js
 000035. Two fighters, one winner..js
+000036. Mexican Wave.js
