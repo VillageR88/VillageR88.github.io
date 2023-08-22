@@ -30,3 +30,6 @@
 000030. The highest profit wins!.js
 000031. What's the real floor.js
 000032. Build Tower.js
+000033. Powers of 2.js
+000034. Vowel remover.js
+000035. Two fighters, one winner..js
