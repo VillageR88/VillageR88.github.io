@@ -2,7 +2,7 @@
 000002. Returning Strings.js
 000003. Rock Paper Scissors!.js
 000004. Calculate average.js
-000005. Will you make it(question mark).js
+000005. Will you make it.js
 000006. Sentence Smash.js
 000007. String repeat.js
 000008. Fake Binary.js
@@ -22,8 +22,10 @@
 000022. Function 1 - hello world.js
 000023. Bit Counting.js
 000024. Rot13.js
-000025. Sum of Digits (backslash) Digital Root.js
+000025. Sum of Digits - Digital Root.js
 000026. Maximum subarray sum.js
 000027. Persistent Bugger..js
 000028. Moving Zeros To The End.js
 000029. Unique In Order.js
+000030. The highest profit wins!.js
+000031. What's the real floor.js
