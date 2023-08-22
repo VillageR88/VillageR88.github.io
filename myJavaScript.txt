@@ -34,3 +34,4 @@
 000034. Vowel remover.js
 000035. Two fighters, one winner..js
 000036. Mexican Wave.js
+000037. Sum The Strings.js
