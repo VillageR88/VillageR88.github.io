@@ -38,3 +38,7 @@
 000038. Remove anchor from URL.js
 000039. Break camelCase.js
 000040. Give me a Diamond.js
+000041. get character from ASCII Value.js
+000042. Plural.js
+000043. Parse nice int from char problem.js
+000044. Is the string uppercase.js
