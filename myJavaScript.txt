@@ -35,3 +35,6 @@
 000035. Two fighters, one winner..js
 000036. Mexican Wave.js
 000037. Sum The Strings.js
+000038. Remove anchor from URL.js
+000039. Break camelCase.js
+000040. Give me a Diamond.js
