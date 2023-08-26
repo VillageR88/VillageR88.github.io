@@ -42,3 +42,13 @@
 000042. Plural.js
 000043. Parse nice int from char problem.js
 000044. Is the string uppercase.js
+000045. Training JS No1 create your first JS function and print Hello World!.js
+000046. Name Shuffler.js
+000047. The Supermarket Queue.js
+000048. Find the stray number.js
+000049. Grasshopper - Terminal game combat function.js
+000050. Square Every Digit.js
+000051. Factorial.js
+000052. Drink about.js
+000053. Removing Elements.js
+000054. Find Maximum and Minimum Values of a List.js
