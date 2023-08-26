@@ -52,3 +52,7 @@
 000052. Drink about.js
 000053. Removing Elements.js
 000054. Find Maximum and Minimum Values of a List.js
+000055. Multiplication table for number.js
+000056. Check the exam.js
+000057. Twice as old.js
+000058. Bouncing Balls.js
