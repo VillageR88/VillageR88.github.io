@@ -56,3 +56,10 @@
 000056. Check the exam.js
 000057. Twice as old.js
 000058. Bouncing Balls.js
+000059. Round up to the next multiple of 5.js
+000060. Training JS No2 Basic data types--Number.js
+000061.Small enough (question) - Beginner.js
+000062. Super Duper Easy.js
+000063. Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....Eureka!!.js
+000064. Sort array by string length.js
+000065. Difference of Volumes of Cuboids.js
