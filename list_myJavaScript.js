@@ -59,7 +59,8 @@ lines.forEach((line) => {
                         textarea.setAttribute("id", `param${i}`);
                         textarea.setAttribute("name", `param${i}`);
                         textarea.setAttribute("rows", "1");
-                        textarea.setAttribute("cols", "180");
+                        textarea.setAttribute("cols", "182");
+                        textarea.style.resize = "none";
                         inputFieldsDiv.appendChild(label);
                         inputFieldsDiv.appendChild(textarea);
                     }
