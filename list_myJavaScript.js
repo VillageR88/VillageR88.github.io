@@ -31,8 +31,8 @@ lines.forEach((line) => {
         .then(code => {
             editor1.setValue(code);
             var lines = code.match(/\/\/My(.*?)\/\/Codewars recommended/gs).toString().split('\n');
-            lines.shift(); // Remove the first line
-            lines.pop();   // Remove the last line
+            lines.shift();
+            lines.pop();
             const modifiedCode = lines.join('\n');
             editor2.setValue(modifiedCode);
             var parameters;
@@ -53,6 +53,7 @@ lines.forEach((line) => {
                     for (let i = 0; i < array.length; i++) {
                         const label = document.createElement("label");
                         label.textContent = `${parameters[i]}:`;
+                        label.style.color = "white";
                         label.setAttribute("for", `param${i}`);
                         const textarea = document.createElement("textarea");
                         textarea.setAttribute("id", `param${i}`);
