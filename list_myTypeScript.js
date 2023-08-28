@@ -14,6 +14,8 @@ lines.forEach((line) => {
     a.setAttribute('data-original-name', line);
 
     a.addEventListener('click', (event) => {
+        const inputFieldsDiv = document.getElementById("inputFields");
+        inputFieldsDiv.innerHTML = ""; // Wyczyść zawartość diva przed dodaniem nowych pól
         document.getElementById("outputContainer").textContent = "Output:";
         document.getElementById("tipsfield").textContent = "Tips:";
         document.getElementById("debugfield").textContent = "Debug:";
