@@ -14,6 +14,11 @@ lines.forEach((line) => {
     a.setAttribute('data-original-name', line);
 
     a.addEventListener('click', (event) => {
+        document.getElementById("outputContainer").textContent = "Output:";
+        document.getElementById("tipsfield").textContent = "Tips:";
+        document.getElementById("debugfield").textContent = "Debug:";
+        document.getElementById("runButton").disabled = true;
+        document.getElementById("center_up_right").hidden = true;
         codeTitle.textContent = "My code: " + line.slice(7);
         const clickedElement = event.target; // Get the clicked element
         const originalName = clickedElement.getAttribute('data-original-name'); // Get the original name from the attribute
