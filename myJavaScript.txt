@@ -63,3 +63,9 @@
 000063. Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....Eureka!!.js
 000064. Sort array by string length.js
 000065. Difference of Volumes of Cuboids.js
+000066. Find the middle element.js
+000067. Money, Money, Money.js
+000068. Determine offspring sex based on genes XX and XY chromosomes.js
+000069. Simple Fun No 176 Reverse Letter.js
+000070. Directions Reduction.js
+000071. Grasshopper - Messi Goals.js
