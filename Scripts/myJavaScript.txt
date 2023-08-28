@@ -69,3 +69,9 @@
 000069. Simple Fun No 176 Reverse Letter.js
 000070. Directions Reduction.js
 000071. Grasshopper - Messi Goals.js
+000072. Maximum Length Difference.js
+000073. Training JS No 4 Basic data types--Array.js
+000074. Flatten and sort an array.js
+000075. Make a function that does arithmetic!.js
+000076. Convert to Binary.js
+000077. Product of consecutive Fib numbers.js
