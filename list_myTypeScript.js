@@ -1,5 +1,5 @@
 async function displayFileContent() {
-const response = await fetch("/myTypeScript.txt");
+const response = await fetch("Scripts/myTypeScript.txt");
 const text = await response.text();
 const lines = text.split('\n');
 const fileContentElement = document.getElementById('fileContent1');

@@ -7,7 +7,7 @@ fs.readdir('C:/Users/Karol/Documents/GitHub/Codewars/TypeScript', (err, files) =
   }
 
   // Zapisz listę plików do pliku filesList.txt
-  fs.writeFile('myTypeScript.txt', files.join('\n'), (writeErr) => {
+  fs.writeFile('Scripts/myTypeScript.txt', files.join('\n'), (writeErr) => {
     if (writeErr) {
       console.error('Error writing to file:', writeErr);
       return;

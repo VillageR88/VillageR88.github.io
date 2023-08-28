@@ -9,6 +9,7 @@ html, body {
 #wrapper1{
   width: 100%;
   display: flex;
+  
 }
 
 #wrapper2{
@@ -19,12 +20,10 @@ html, body {
 
 #up_left{
   flex: 1;    
-  height: 30 px;
 }
 #up_center{
   display: flex;
   flex: 4; 
-  height: 30 px;
   justify-content:start;
   align-items:end;
 
@@ -33,7 +32,6 @@ html, body {
 
 #up_right{
   flex: 1;    
-  height: 30 px;
 }
 
 #left{
@@ -43,8 +41,7 @@ html, body {
 
 #center {
   flex: 4;
-  min-height: 100%;
-    background-color:#333d3f;
+  background-color:#333d3f;
 }
 
 #center_up {
