@@ -75,3 +75,8 @@
 000075. Make a function that does arithmetic!.js
 000076. Convert to Binary.js
 000077. Product of consecutive Fib numbers.js
+000078. Tortoise racing.js
+000079. Bin to Decimal.js
+000080. Multiple of index.js
+000081. Disemvowel Trolls.js
+000082. Count by X.js
