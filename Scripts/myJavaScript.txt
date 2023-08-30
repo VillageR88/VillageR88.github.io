@@ -80,3 +80,11 @@
 000080. Multiple of index.js
 000081. Disemvowel Trolls.js
 000082. Count by X.js
+000083. Tribonacci Sequence.js
+000084. 5 without numbers.js
+000085. Descending Order.js
+000086. Help the bookseller.js
+000087. Count the smiley faces!.js
+000088. Sum of angles.js
+000089. Find the Remainder.js
+000090. Replace With Alphabet Position.js
