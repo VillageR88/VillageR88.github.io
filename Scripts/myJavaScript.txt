@@ -92,3 +92,4 @@
 000092. Fix string case.js
 000093. Anagram Detection.js
 000094. Simple Encryption No1 - Alternating Split.js
+000095. Merge two sorted arrays into one.js
