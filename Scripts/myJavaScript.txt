@@ -88,3 +88,7 @@
 000088. Sum of angles.js
 000089. Find the Remainder.js
 000090. Replace With Alphabet Position.js
+000091. How old will I be in 2099.js
+000092. Fix string case.js
+000093. Anagram Detection.js
+000094. Simple Encryption No1 - Alternating Split.js
