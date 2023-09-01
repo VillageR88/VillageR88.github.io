@@ -1,5 +1,4 @@
 html, body {
-  height: 100%;
   background-color:#3a3e41;
   color:white;
   text-shadow: 1px 1px 4px black;
@@ -8,12 +7,15 @@ html, body {
 }
 
 #wrapper0{
+  position: sticky;
   display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color:#151516;
   min-height: 54;
-  position: sticky;
-  top: 0;
   z-index: 1000;
+  
 }
 
 #wrapper1{
@@ -22,7 +24,6 @@ html, body {
 
 #wrapper2{
   display: flex;
-  min-height: 100%;
 }
 
 #up_left{
@@ -41,8 +42,10 @@ html, body {
 }
 
 #left{
-   flex: 1;    
-   min-height: 100%;
+  width: 200px; /* Ustaw szerokość lewego panelu */
+  height: calc(90vh - 17px); /* 100vh minus 17px, aby uniknąć minimalnych przesunięć */  
+  flex: 1;
+  overflow-y: scroll; /* Dodaj pasek przewijania do lewego panelu */
 }
 
 #center {
@@ -51,12 +54,10 @@ html, body {
 }
 
 #center_up {
-  min-height: 100%;
 }
 
 #right{
   flex: 1;
-  min-height: 100%;
 }
 
 h1, h2{
