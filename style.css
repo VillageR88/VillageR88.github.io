@@ -1,19 +1,20 @@
 html, body {
   height: 100%;
-  width: 100%;
   background-color:#3a3e41;
   color:white;
   text-shadow: 1px 1px 4px black;
 }
 
-#wrapper1{
-  width: 100%;
+#wrapper0{
   display: flex;
-  
+  background-color:black;
+}
+
+#wrapper1{
+  display: flex;
 }
 
 #wrapper2{
-  width: 100%;
   display: flex;
   min-height: 100%;
 }
@@ -21,13 +22,12 @@ html, body {
 #up_left{
   flex: 1;    
 }
+
 #up_center{
   display: flex;
   flex: 4; 
   justify-content:start;
   align-items:end;
-
-
 }
 
 #up_right{
@@ -51,12 +51,10 @@ html, body {
 #right{
   flex: 1;
   min-height: 100%;
-
 }
 
 h1, h2{
   font-size:x-large;
-
   text-shadow: 
   1px 1px 4px black;
 }
@@ -68,7 +66,6 @@ a {
 ul {
   display: block;
   margin-left: -30px;
-  
 } 
 
 img {
