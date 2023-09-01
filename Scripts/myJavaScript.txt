@@ -100,3 +100,5 @@
 000100. No Loops 2 - You only need one.js
 000101. JavaScript Array Filter.js
 000102. String incrementer.js
+000103. String cleaning.js
+000104. Sum of a sequence.js
