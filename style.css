@@ -95,6 +95,8 @@ img {
 .CodeMirror {
   border: 1px solid #eee;
   min-height: 400px;
+  .cm-editor.cm-focused { outline: 2px solid cyan }
+  .cm-editor.cm-content { font-family: "Consolas" }
 }
 
 .column {
