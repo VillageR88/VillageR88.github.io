@@ -102,3 +102,11 @@
 000102. String incrementer.js
 000103. String cleaning.js
 000104. Sum of a sequence.js
+000105. Welcome to the City.js
+000106. Jaden Casing Strings.js
+000107. Enumerable Magic No 25 - Take the First N Elements.js
+000108. Remove exclamation marks.js
+000109. The Coupon Code.js
+000110. Training JS No 3 Basic data types--String.js
+000111. Area or Perimeter.js
+000112. Sum of Minimums!.js
