@@ -13,11 +13,5 @@ var editor2 = CodeMirror.fromTextArea(document.getElementById("codeEditor2"), {
     readOnly: true,
     theme: "twilight",
 });
-// Pobierz zawartość z linku i wstaw ją do edytora
-fetch('hello_world.js')
-    .then(response => response.text())
-    .then(code => {
-        editor1.setValue(code);
-        editor2.setValue(code);
-    })
-    .catch(error => console.error('Błąd:', error));
+editor1.setValue('console.log("Hello World!")');
+editor2.setValue('console.log("Hello World!")');
