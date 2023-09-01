@@ -13,5 +13,5 @@ var editor2 = CodeMirror.fromTextArea(document.getElementById("codeEditor2"), {
     readOnly: true,
     theme: "twilight",
 });
-editor1.setValue('console.log("Hello World!")');
-editor2.setValue('console.log("Hello World!")');
+editor1.setValue('console.log("Hello World!");');
+editor2.setValue('console.log("Hello World!");');
