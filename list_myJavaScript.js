@@ -1,9 +1,7 @@
 async function displayFileContent() {
-const lines = (await (await fetch("Scripts/myJavaScript.txt")).text()).split('\n');
-const fileContentElement = document.getElementById('fileContent2');
 var lookfor;
 
-lines.forEach((line) => {
+(await (await fetch("Scripts/myJavaScript.txt")).text()).split('\n').forEach((line) => {
     const p = document.createElement('p');
     const a = document.createElement('a');
     a.href = "javascript:void(0);";
@@ -76,7 +74,7 @@ lines.forEach((line) => {
     });
     // Dodaj link do paragrafu i paragraf do elementu fileContent
     p.appendChild(a);
-    fileContentElement.appendChild(p);
+    document.getElementById('fileContent2').appendChild(p);
     // Run Button
     document.getElementById("runButton").addEventListener("click", function () {
         try {
