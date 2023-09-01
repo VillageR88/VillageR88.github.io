@@ -5,7 +5,7 @@ var lookfor;
     const p = document.createElement('p');
     const a = document.createElement('a');
     a.href = "javascript:void(0);";
-    a.textContent = `1.2.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6); // Tekst linku
+    a.textContent = `1.2.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6);
     a.setAttribute('data-original-name', line);
     a.addEventListener('click', (event) => {
         document.getElementById("outputContainer").textContent = "Output:";
@@ -13,11 +13,11 @@ var lookfor;
         document.getElementById("debugfield").textContent = "Debug:";
 
         document.getElementById('codeTitle').textContent = "My code: " + line.slice(7);
-        const clickedElement = event.target; // Get the clicked element
-        const originalName = clickedElement.getAttribute('data-original-name'); // Get the original name from the attribute
+        const clickedElement = event.target;
+        const originalName = clickedElement.getAttribute('data-original-name');
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // Dla płynnego przewijania
+            behavior: 'smooth'
         });
         const url = `https://raw.githubusercontent.com/VillageR88/Codewars/main/JavaScript/${originalName}`;
         document.getElementById("center_up_right").hidden = false;
@@ -44,7 +44,7 @@ var lookfor;
                 parameters = modifiedCode.match(lookfor)[2].split(",");
                 function createInputFields(array) {
                     const inputFieldsDiv = document.getElementById("inputFields");
-                    inputFieldsDiv.innerHTML = ""; // Wyczyść zawartość diva przed dodaniem nowych pól
+                    inputFieldsDiv.innerHTML = "";
                     for (let i = 0; i < array.length; i++) {
                         const label = document.createElement("label");
                         label.textContent = `${parameters[i]}:`;
