@@ -11,7 +11,6 @@ var lookfor;
         document.getElementById("outputContainer").textContent = "Output:";
         document.getElementById("tipsfield").textContent = "Tips:";
         document.getElementById("debugfield").textContent = "Debug:";
-
         document.getElementById('codeTitle').textContent = "My code: " + line.slice(7);
         const clickedElement = event.target;
         const originalName = clickedElement.getAttribute('data-original-name');

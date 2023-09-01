@@ -1,8 +1,8 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color:#212b2d;
-  color:#d2c66f;
+  background-color:#3a3e41;
+  color:white;
   text-shadow: 1px 1px 4px black;
 }
 
@@ -41,7 +41,7 @@ html, body {
 
 #center {
   flex: 4;
-  background-color:#333d3f;
+  background-color:#212325;
 }
 
 #center_up {
@@ -59,12 +59,10 @@ h1, h2{
 
   text-shadow: 
   1px 1px 4px black;
-  margin-left: 30px;
-
 }
 
 a {
-  color:#d2c66f;
+  color:#d6e4a3;
 }
 
 ul {
@@ -98,7 +96,6 @@ img {
   border: 1px solid #eee;
   min-height: 400px;
 }
-
 
 .column {
   float: left;
