@@ -45,7 +45,7 @@ var lookfor;
                     const inputFieldsDiv = document.getElementById("inputFields");
                     inputFieldsDiv.innerHTML = "";
                     for (let i = 0; i < array.length; i++) {
-                        document.getElementById("crane_img").style.top = `${(i + 1) * 60}px`; //drops crane_img
+                        document.getElementById("crane_img").style.top = `${(i + 1) * 56}px`; //drops crane_img
                         const label = document.createElement("label");
                         label.textContent = `${parameters[i]}:`;
                         label.style.color = "white";
