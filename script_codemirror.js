@@ -7,7 +7,7 @@ var editor1 = CodeMirror.fromTextArea(document.getElementById("codeEditor1"), {
 });
 
 var editor2 = CodeMirror.fromTextArea(document.getElementById("codeEditor2"), {
-    lineNumbers: true,
+    lineNumbers: false,
     mode: "javascript",
     lineWrapping: true,
     readOnly: true,
