@@ -21,7 +21,7 @@ lines.forEach((line) => {
         document.getElementById("debugfield").textContent = "Debug:";
         document.getElementById("runButton").disabled = true;
         document.getElementById("center_up_right").hidden = true;
-        codeTitle.textContent = "My code: " + line.slice(7);
+        codeTitle.textContent = "My code: " + line.slice(7).slice(0, -3);
         const clickedElement = event.target; // Get the clicked element
         const originalName = clickedElement.getAttribute('data-original-name'); // Get the original name from the attribute
         window.scrollTo({
