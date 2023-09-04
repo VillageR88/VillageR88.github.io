@@ -10,7 +10,7 @@ lines.forEach((line) => {
     const a = document.createElement('a');
 
     a.href = "javascript:void(0);";
-    a.textContent = `1.1.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6); // Tekst linku
+    a.textContent = `1.1.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6).slice(0, -3); // Tekst linku
     a.setAttribute('data-original-name', line);
 
     a.addEventListener('click', (event) => {
