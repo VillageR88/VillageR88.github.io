@@ -27,3 +27,13 @@ toggleButton3.addEventListener('click', () => {
         nestedList3.style.display = 'none';
     }
 });
+
+const toggleButton4 = document.getElementById('toggleList4');
+const nestedList4 = document.getElementById('nestedList4');
+toggleButton4.addEventListener('click', () => {
+    if (nestedList4.style.display === 'none') {
+        nestedList4.style.display = 'block';
+    } else {
+        nestedList4.style.display = 'none';
+    }
+});

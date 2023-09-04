@@ -6,7 +6,7 @@ fs.readdir('C:/Users/Karol/Documents/GitHub/Codewars/C Sharp', (err, files) => {
     return;
   }
   console.log(files);
-  files = files.filter(x => x.match(/\d+.+/g)).map(x => x + ".UnitTest1.cs");
+  files = files.filter(x => x.match(/\d+.+/g)).map(x => x + "/UnitTest1.cs");
   fs.writeFile('Scripts/myCSharp.txt', files.join('\n'), (writeErr) => {
     if (writeErr) {
       console.error('Error writing to file:', writeErr);
