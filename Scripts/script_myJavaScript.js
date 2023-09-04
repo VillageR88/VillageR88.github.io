@@ -5,8 +5,6 @@ fs.readdir('C:/Users/Karol/Documents/GitHub/Codewars/JavaScript', (err, files) =
     console.error('Error reading directory:', err);
     return;
   }
-
-  // Zapisz listę plików do pliku filesList.txt
   fs.writeFile('Scripts/myJavaScript.txt', files.join('\n'), (writeErr) => {
     if (writeErr) {
       console.error('Error writing to file:', writeErr);
