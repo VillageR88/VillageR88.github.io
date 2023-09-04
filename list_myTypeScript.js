@@ -14,6 +14,7 @@ lines.forEach((line) => {
     a.setAttribute('data-original-name', line);
 
     a.addEventListener('click', (event) => {
+        document.getElementById("crane_img").style.top = "15";
         const inputFieldsDiv = document.getElementById("inputFields");
         inputFieldsDiv.innerHTML = ""; // Wyczyść zawartość diva przed dodaniem nowych pól
         document.getElementById("outputContainer").textContent = "Output:";
