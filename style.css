@@ -53,11 +53,15 @@ html, body {
   background-color:#212325;
 }
 table {
-  width: 100%; /* Szerokość tabeli na 100% kontenera */
+  width: 100%;
 }
 
 td {
-  width: 50%; /* Szerokość komórek ustawiona na 50% szerokości tabeli */
+  width: 50%;
+}
+
+td.CodeMirror {
+  display: hidden; /* Ukryj komórkę oznaczoną klasą "hidden" */
 }
 
 #right{
@@ -93,20 +97,26 @@ img {
 }
 
 @media only screen and (max-width: 480px) , only screen and (max-height: 500px) {
-
-  html, body {
-  }
-  h1, h2{
-    font-size: small;
-  }
-  #crane_img {
-    display: none;
-    }
-  #wrapper0 {
-   }
   #right {
     display: none;
    }
-   #left {
-   }
+  
+
+  #wrapper0 {
+    width: 100%
+  }
+  #wrapper1 {
+    width: 100%
+  }
+ 
+  h1, h2{
+    font-size: small;
+  }
+  ul {
+    font-size: small;
+
+  } 
+  #crane_img {
+    display: none;
+    }
   }

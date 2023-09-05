@@ -74,10 +74,8 @@ var lookfor;
             })
             .catch(error => console.error('Error:', error));
     });
-    // Dodaj link do paragrafu i paragraf do elementu fileContent
     p.appendChild(a);
     document.getElementById('fileContent2').appendChild(p);
-    // Run Button
     document.getElementById("runButton").addEventListener("click", function () {
         try {
             var code = editor2.getValue();
