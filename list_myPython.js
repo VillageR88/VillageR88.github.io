@@ -14,6 +14,7 @@ lines.forEach((line) => {
     a.setAttribute('data-original-name', line);
 
      a.addEventListener('click', (event) => {
+        if (window.innerWidth >= 1000) editorElement[1].style.visibility = "visible";
         document.getElementById("crane_img").style.top = "15";
         const inputFieldsDiv = document.getElementById("inputFields");
         inputFieldsDiv.innerHTML = ""; // Wyczyść zawartość diva przed dodaniem nowych pól
@@ -21,7 +22,6 @@ lines.forEach((line) => {
         document.getElementById("tipsfield").textContent = "Tips:";
         document.getElementById("debugfield").textContent = "Debug:";
         document.getElementById("runButton").disabled = true;
-        document.getElementById("center_up_right").hidden = true;
         codeTitle.textContent = "My code: " + line.slice(7).slice(0, -3);
         const clickedElement = event.target; // Get the clicked element
         const originalName = clickedElement.getAttribute('data-original-name'); // Get the original name from the attribute

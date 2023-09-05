@@ -15,3 +15,5 @@ var editor2 = CodeMirror.fromTextArea(document.getElementById("codeEditor2"), {
 });
 editor1.setValue('console.log("Hello World!");');
 editor2.setValue('console.log("Hello World!");');
+var editorElement = document.querySelectorAll(".CodeMirror");
+editorElement[1].style.visibility = "hidden";

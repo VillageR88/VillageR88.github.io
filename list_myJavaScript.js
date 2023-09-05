@@ -8,6 +8,7 @@ var lookfor;
     a.textContent = `1.2.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6).slice(0, -3);
     a.setAttribute('data-original-name', line);
     a.addEventListener('click', (event) => {
+        if (window.innerWidth >= 1000) editorElement[1].style.visibility = "visible";
         document.getElementById("outputContainer").textContent = "Output:";
         document.getElementById("tipsfield").textContent = "Tips:";
         document.getElementById("debugfield").textContent = "Debug:";
@@ -19,7 +20,7 @@ var lookfor;
             behavior: 'smooth'
         });
         const url = `https://raw.githubusercontent.com/VillageR88/Codewars/main/JavaScript/${originalName}`;
-        if (window.innerWidth >= 1000) document.getElementById("center_up_right").hidden = false;
+        //if (window.innerWidth >= 1000) document.getElementById("center_up_right").hidden = false;
         fetch(url)
         .then(response => response.text())
         .then(code => {

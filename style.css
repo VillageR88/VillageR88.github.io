@@ -52,6 +52,13 @@ html, body {
   flex: 4;
   background-color:#212325;
 }
+table {
+  width: 100%; /* Szerokość tabeli na 100% kontenera */
+}
+
+td {
+  width: 50%; /* Szerokość komórek ustawiona na 50% szerokości tabeli */
+}
 
 #right{
   flex: 1;
@@ -78,22 +85,6 @@ img {
   margin-left: 10px;
 }
 
-.forward-page-link {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  font-size: 16px;
-  color: #d2c66f;
-}
-
-.previous-page-link {
-  position: fixed;
-  bottom: 30px;
-  left: 30px;
-  font-size: 16px;
-  color: #d2c66f;
-}
-
 .CodeMirror {
   border: 1px solid #646464;
   min-height: 400px;
@@ -101,42 +92,21 @@ img {
   .cm-editor.cm-content { font-family: "Consolas" }
 }
 
-.column {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 @media only screen and (max-width: 480px) , only screen and (max-height: 500px) {
+
   html, body {
-    width: 100%;
   }
   h1, h2{
     font-size: small;
   }
-  
-  #center_up_left {
-    padding: 0;
-    margin: 0;
-    width: 70%;
-    height: 100%;
-    }
-  #center_up_right {
-    display: none;
-   }
   #crane_img {
     display: none;
     }
   #wrapper0 {
-    min-height: 0;
    }
   #right {
     display: none;
+   }
+   #left {
    }
   }

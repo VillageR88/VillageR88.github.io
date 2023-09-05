@@ -54,24 +54,20 @@
         </ul>
       </div>
       <div id="center">
-        <div class="row">
-          <div class="column" id="center_up_left">
-          <textarea id="codeEditor1" ></textarea>
-        </div>
-        <div hidden class="column" id="center_up_right">
-          <textarea id="codeEditor2" ></textarea>
-        </div>
+        <table>
+          <td> <textarea id="codeEditor1" ></textarea></td>
+          <td> <textarea id="codeEditor2" ></textarea></td>
+        </table>
+        <div id="inputFields"></div>
+        <button id="runButton">Run Code</button>
+        <hr style="margin:0;">
+        <div style="margin:0; padding-top: 4; padding-bottom: 7; color:white;" id="outputContainer">Output:</div>
+        <hr style="margin:0;">
+        <div style="margin:0; padding-top: 4; padding-bottom: 7; color: cornflowerblue;" id="tipsfield">Tips:</div>
+        <hr style="margin:0;">
+        <div style="margin:0; padding-top: 4; padding-bottom: 7; color:#72c459; text-shadow: 1px 1px 11px rgb(0, 0, 0);"  id="debugfield">Debug: </div>
+        <hr style="margin:0;">
       </div>
-      <div id="inputFields"></div>
-      <button id="runButton">Run Code</button>
-      <hr style="margin:0;">
-      <div style="margin:0; padding-top: 4; padding-bottom: 7; color:white;" id="outputContainer">Output:</div>
-      <hr style="margin:0;">
-      <div style="margin:0; padding-top: 4; padding-bottom: 7; color: cornflowerblue;" id="tipsfield">Tips:</div>
-      <hr style="margin:0;">
-      <div style="margin:0; padding-top: 4; padding-bottom: 7; color:#72c459; text-shadow: 1px 1px 11px rgb(0, 0, 0);"  id="debugfield">Debug: </div>
-      <hr style="margin:0;">
-    </div>
     <div id="right" ></div>
   </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
@@ -84,5 +80,6 @@
     <script src="list_myCSharp.js"></script>
     <script>document.getElementById("crane_img").hidden = false;</script>
     <script>document.getElementById("runButton").disabled = true;</script>
+    <script>document.getElementById("codeEditor2").hidden = true;</script>
   </body>
 </html>
