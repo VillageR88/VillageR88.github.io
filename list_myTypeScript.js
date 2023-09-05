@@ -34,6 +34,7 @@ lines.forEach((line) => {
         fetch(url)
         .then(response => response.text())
         .then(code => {
+            editor2.setOption("lineNumbers", "true");
             editor1.setValue(code);
             var regex = code.match(/\/\/My(.*?)\/\/Codewars recommended/gs);            
             var lines = regex.toString().split('\n');

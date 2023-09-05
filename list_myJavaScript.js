@@ -20,7 +20,6 @@ var lookfor;
             behavior: 'smooth'
         });
         const url = `https://raw.githubusercontent.com/VillageR88/Codewars/main/JavaScript/${originalName}`;
-        //if (window.innerWidth >= 1000) document.getElementById("center_up_right").hidden = false;
         fetch(url)
         .then(response => response.text())
         .then(code => {
