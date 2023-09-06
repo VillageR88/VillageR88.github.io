@@ -14,6 +14,8 @@ lines.forEach((line) => {
     a.setAttribute('data-original-name', line);
 
      a.addEventListener('click', (event) => {
+        editor1.setOption("mode", "javascript");
+        editor2.setOption("mode", "javascript");
         if (window.innerWidth >= 1000) editorElement[1].style.visibility = "visible";
         document.getElementById("crane_img").style.top = "15";
         const inputFieldsDiv = document.getElementById("inputFields");

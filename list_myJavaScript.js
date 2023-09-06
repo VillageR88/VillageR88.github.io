@@ -23,8 +23,9 @@ var lookfor;
         fetch(url)
         .then(response => response.text())
         .then(code => {
-            editor2.setOption("lineNumbers", "true");
             editor1.setOption("mode", "javascript");
+            editor2.setOption("mode", "javascript");
+            editor2.setOption("lineNumbers", "true");
             editor1.setValue(code);
             var lines = code.match(/\/\/My(.*?)\/\/Codewars recommended/gs).toString().split('\n');
             lines.shift();

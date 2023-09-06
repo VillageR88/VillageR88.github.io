@@ -12,8 +12,9 @@ lines.forEach((line) => {
     a.href = "javascript:void(0);";
     a.textContent = `1.1.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6).slice(0, -3);
     a.setAttribute('data-original-name', line);
-
     a.addEventListener('click', (event) => {
+        editor1.setOption("mode", "javascript");
+        editor2.setOption("mode", "javascript");
         if (window.innerWidth >= 1000) editorElement[1].style.visibility = "visible";
         document.getElementById("crane_img").style.top = "15";
         const inputFieldsDiv = document.getElementById("inputFields");
