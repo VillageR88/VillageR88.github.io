@@ -10,3 +10,5 @@
 000010. The 'if' function/UnitTest1.cs
 000011. Name on billboard/UnitTest1.cs
 000012. Define a card suit/UnitTest1.cs
+000013. Student's Final Grade/UnitTest1.cs
+000014. Greet Me/UnitTest1.cs
