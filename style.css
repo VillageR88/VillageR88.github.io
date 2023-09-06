@@ -96,12 +96,20 @@ img {
   .cm-editor.cm-content { font-family: "Consolas" }
 }
 
+#theme1 {
+  background-color:black;
+  color: white;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 10; 
+  height: 30;
+}
+
 @media only screen and (max-width: 480px) , only screen and (max-height: 500px) {
   #right {
     display: none;
    }
   
-
   #wrapper0 {
     width: 100%
   }
