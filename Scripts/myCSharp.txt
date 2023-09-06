@@ -8,3 +8,5 @@
 000008. Do you speak English/UnitTest1.cs
 000009. Return the day/UnitTest1.cs
 000010. The 'if' function/UnitTest1.cs
+000011. Name on billboard/UnitTest1.cs
+000012. Define a card suit/UnitTest1.cs
