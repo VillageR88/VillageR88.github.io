@@ -1,5 +1,4 @@
 localStorage.getItem("theme1");
-
 if (localStorage.getItem("theme1") == "light") {
     editor1.setOption("theme", "3024-day");
     editor2.setOption("theme", "3024-day");
@@ -9,8 +8,8 @@ if (localStorage.getItem("theme1") == "light") {
     wrapper1.classList.add('enhanced');
     center.classList.add('enhanced');
     document.body.classList.add('enhanced');
-    document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
-  } else {
+  } 
+  else {
     editor1.setOption("theme", "twilight");
     editor2.setOption("theme", "twilight");
     theme1.textContent = "Dark theme";
@@ -20,7 +19,6 @@ if (localStorage.getItem("theme1") == "light") {
     wrapper1.classList.remove('enhanced');
     center.classList.remove('enhanced');
     document.body.classList.remove('enhanced');
-    document.querySelectorAll('a').forEach(link => link.classList.remove('enhanced'));
   }
 
 document.getElementById('theme1').addEventListener('click', function() {
@@ -35,8 +33,8 @@ document.getElementById('theme1').addEventListener('click', function() {
     center.classList.add('enhanced');
     document.body.classList.add('enhanced');
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
-
-  } else {
+  } 
+  else {
     editor1.setOption("theme", "twilight");
     editor2.setOption("theme", "twilight");
     theme1.textContent = "Dark theme";
@@ -49,3 +47,19 @@ document.getElementById('theme1').addEventListener('click', function() {
     document.querySelectorAll('a').forEach(link => link.classList.remove('enhanced'));
   }
 });
+
+function workaround() {
+  if (localStorage.getItem("theme1") == "light") {
+    document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
+  }
+};
+  setTimeout(workaround, 100);
+  workaround();
+  setTimeout(workaround, 500);
+  workaround();
+  setTimeout(workaround, 1000);
+  workaround();
+  setTimeout(workaround, 2000);
+  workaround();
+  setTimeout(workaround, 5000);
+  workaround();
