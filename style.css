@@ -10,7 +10,7 @@ body {
 body.enhanced {
   background-color:#e4e4e7;
   color:black;
-  text-shadow: 1px 1px 4px #e4e4e7;
+  text-shadow: 1px 1px 1px #e4e4e7;
  
 }
 
@@ -91,13 +91,14 @@ td.CodeMirror {
 h1, h2{
   font-size:x-large;
   text-shadow: 
-  1px 1px 4px black;
+  1px 1px 1px black;
 }
 
 a {
   color:#d6e4a3;
   text-decoration: none;
 }
+
 a.enhanced {
   color:#2e00fa;
 }
