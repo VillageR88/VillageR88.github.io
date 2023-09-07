@@ -12,3 +12,5 @@
 000012. Define a card suit/UnitTest1.cs
 000013. Student's Final Grade/UnitTest1.cs
 000014. Greet Me/UnitTest1.cs
+000015. Lario and Muigi Pipe Problem/UnitTest1.cs
+000016. Remove n exclamation marks in the sentence/UnitTest1.cs
