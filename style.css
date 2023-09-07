@@ -141,6 +141,13 @@ img {
   color: black;
 }
 
+#outputContainer {
+  color: white;
+}
+#outputContainer.enhanced {
+  color: black;
+}
+
 @media only screen and (max-width: 480px) , only screen and (max-height: 500px) {
   #right {
     display: none;
