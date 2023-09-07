@@ -75,8 +75,13 @@ a.enhanced {
 
 #center {
   flex: 4;
-  background-color:#212325;
-}
+  background-color:#141414;
+  text-shadow: 
+  -0.5px -0.5px 0 rgba(0, 0, 0, 0.4), /* Lewy górny cień */
+   0.5px -0.5px 0 rgba(0, 0, 0, 0.4), /* Prawy górny cień */
+  -0.5px 0.5px 0 rgba(0, 0, 0, 0.4), /* Lewy dolny cień */
+   0.5px 0.5px 0 rgba(0, 0, 0, 0.4); /* Prawy dolny cień */
+        }
 #center.enhanced {
   background-color:#ececee;
 }
@@ -120,6 +125,7 @@ img {
   .cm-editor.cm-focused { outline: 2px solid cyan }
   .cm-editor.cm-content { font-family: "Consolas" }
 }
+
 
 #theme1 {
   background-color:black;

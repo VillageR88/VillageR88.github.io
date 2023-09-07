@@ -2,6 +2,7 @@ localStorage.getItem("theme1");
 if (localStorage.getItem("theme1") == "light") {
     editor1.setOption("theme", "3024-day");
     editor2.setOption("theme", "3024-day");
+    editor1.setOption();
     theme1.textContent = "Light theme";
     theme1.classList.add('enhanced');
     wrapper0.classList.add('enhanced');
