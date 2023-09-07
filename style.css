@@ -11,7 +11,7 @@ body {
 body.enhanced {
   background-color:#e4e4e7;
   color:black;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 4px rgb(206, 206, 206);
 }
 
 #wrapper0{
@@ -101,12 +101,14 @@ a {
 
 a.enhanced {
   color:#2e00fa;
+  text-decoration: none;
 }
 
 ul {
-  display: block;
   margin-left: -30px;
 } 
+
+
 
 img {
   border: 1px solid white;
