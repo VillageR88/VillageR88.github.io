@@ -51,7 +51,9 @@ var lookfor;
                         document.getElementById("crane_img").style.top = `${(i + 1) * 56}px`; //drops crane_img
                         const label = document.createElement("label");
                         label.textContent = `${parameters[i]}:`;
-                        label.style.color = "white";
+                        if (localStorage.getItem("theme1") == "light")
+                        {label.style.color = "black";}
+                        else {label.style.color = "white";}
                         label.setAttribute("for", `param${i}`);
                         const textarea = document.createElement("textarea");
                         textarea.setAttribute("id", `param${i}`);

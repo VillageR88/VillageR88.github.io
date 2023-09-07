@@ -37,6 +37,7 @@ document.getElementById('theme1').addEventListener('click', function() {
     document.body.classList.add('enhanced');
     outputContainer.classList.add('enhanced');
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
+    document.querySelectorAll('label').forEach(label => label.style.color = 'black');
   } 
   else {
     editor1.setOption("theme", "twilight");
@@ -50,6 +51,7 @@ document.getElementById('theme1').addEventListener('click', function() {
     document.body.classList.remove('enhanced');
     outputContainer.classList.remove('enhanced');
     document.querySelectorAll('a').forEach(link => link.classList.remove('enhanced'));
+    document.querySelectorAll('label').forEach(label => label.style.color = 'white');
   }
 });
 
