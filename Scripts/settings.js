@@ -1,6 +1,8 @@
 localStorage.getItem("theme1");
 
 if (localStorage.getItem("theme1") == "light") {
+    editor1.setOption("theme", "3024-day");
+    editor2.setOption("theme", "3024-day");
     theme1.textContent = "Light theme";
     theme1.classList.add('enhanced');
     wrapper0.classList.add('enhanced');
@@ -9,6 +11,8 @@ if (localStorage.getItem("theme1") == "light") {
     document.body.classList.add('enhanced');
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
   } else {
+    editor1.setOption("theme", "twilight");
+    editor2.setOption("theme", "twilight");
     theme1.textContent = "Dark theme";
     localStorage.setItem('theme1', 'dark');
     theme1.classList.remove('enhanced');
@@ -21,6 +25,8 @@ if (localStorage.getItem("theme1") == "light") {
 
 document.getElementById('theme1').addEventListener('click', function() {
   if (localStorage.getItem("theme1") == "dark") {
+    editor1.setOption("theme", "3024-day");
+    editor2.setOption("theme", "3024-day");
     theme1.textContent = "Light theme";
     localStorage.setItem('theme1', 'light');
     theme1.classList.add('enhanced');
@@ -31,6 +37,8 @@ document.getElementById('theme1').addEventListener('click', function() {
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
 
   } else {
+    editor1.setOption("theme", "twilight");
+    editor2.setOption("theme", "twilight");
     theme1.textContent = "Dark theme";
     localStorage.setItem('theme1', 'dark');
     theme1.classList.remove('enhanced');
