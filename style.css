@@ -54,7 +54,7 @@ a.enhanced {
 
 #left{
   width: 200px; /* Ustaw szerokość lewego panelu */
-  height: calc(96vh - 17px); /* 100vh minus 17px, aby uniknąć minimalnych przesunięć */  
+  height: calc(95vh - 17px); /* 100vh minus 17px, aby uniknąć minimalnych przesunięć */  
   flex: 1;
   overflow-y: scroll; /* Dodaj pasek przewijania do lewego panelu */
 }
