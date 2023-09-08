@@ -13,6 +13,8 @@ if (localStorage.getItem("theme1") == "light") {
     center.classList.add('enhanced');
     document.body.classList.add('enhanced');
     outputContainer.classList.add('enhanced');
+    tipsfield.classList.add('enhanced');
+    debugfield.classList.add('enhanced');
   } 
   else {
     editor1.setOption("theme", dark);
@@ -25,6 +27,8 @@ if (localStorage.getItem("theme1") == "light") {
     center.classList.remove('enhanced');
     document.body.classList.remove('enhanced');
     outputContainer.classList.remove('enhanced');
+    tipsfield.classList.remove('enhanced');
+    debugfield.classList.remove('enhanced');
   }
 
 document.getElementById('theme1').addEventListener('click', function() {
@@ -39,6 +43,8 @@ document.getElementById('theme1').addEventListener('click', function() {
     center.classList.add('enhanced');
     document.body.classList.add('enhanced');
     outputContainer.classList.add('enhanced');
+    tipsfield.classList.add('enhanced');
+    debugfield.classList.add('enhanced');
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
     document.querySelectorAll('label').forEach(label => label.style.color = 'black');
   } 
@@ -53,6 +59,8 @@ document.getElementById('theme1').addEventListener('click', function() {
     center.classList.remove('enhanced');
     document.body.classList.remove('enhanced');
     outputContainer.classList.remove('enhanced');
+    tipsfield.classList.remove('enhanced');
+    debugfield.classList.remove('enhanced');
     document.querySelectorAll('a').forEach(link => link.classList.remove('enhanced'));
     document.querySelectorAll('label').forEach(label => label.style.color = 'white');
   }
