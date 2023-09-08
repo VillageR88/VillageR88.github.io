@@ -33,14 +33,17 @@ a.enhanced:hover {
   display: flex;
   background-color:#16171b85;
   border-bottom: 1px solid #646464;
+  
 }
 #wrapper1.enhanced{
   background-color:rgb(212, 219, 231);
   border-bottom: 1px solid #646464;
+  
 }
 
 #wrapper2{
   display: flex;
+  
 }
 
 #up_left{
@@ -68,7 +71,8 @@ a.enhanced:hover {
 #center {
   flex: 4;
   background-color:#141414;
-        }
+  
+}
 #center.enhanced {
   background-color:#ececee;
   text-shadow: 
@@ -80,6 +84,7 @@ a.enhanced:hover {
 
 table {
   width: 100%;
+  
 }
 
 td {
@@ -88,6 +93,7 @@ td {
 
 td.CodeMirror {
   display: hidden; /* Ukryj komórkę oznaczoną klasą "hidden" */
+  
 }
 
 #right{
@@ -112,6 +118,7 @@ img {
 .CodeMirror {
   border: 1px solid #646464;
   min-height: 400px;
+  
 }
 
 #theme1 {
@@ -121,6 +128,8 @@ img {
   margin-left: 20px;
   margin-top: 15; 
   height: 30;
+  border-radius: 10px;
+
 }
 
 #theme1.enhanced {
