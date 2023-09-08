@@ -23,27 +23,13 @@ a.enhanced {
   text-decoration: none;
 }
 
-#wrapper0{
-  position: sticky;
-  display: flex;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color:#0f0f0f;
-  min-height: 51;
-  z-index: 1000;
-}
-#wrapper0.enhanced{
-  background-color: #b8b8bd;
-}
-
 #wrapper1{
   display: flex;
   background-color:#213555;
   border-bottom: 1px solid #646464;
 }
 #wrapper1.enhanced{
-  background-color:rgb(222, 224, 228);
+  background-color:rgb(212, 219, 231);
   border-bottom: 1px solid #646464;
 }
 
@@ -68,7 +54,7 @@ a.enhanced {
 
 #left{
   width: 200px; /* Ustaw szerokość lewego panelu */
-  height: calc(90vh - 17px); /* 100vh minus 17px, aby uniknąć minimalnych przesunięć */  
+  height: calc(96vh - 17px); /* 100vh minus 17px, aby uniknąć minimalnych przesunięć */  
   flex: 1;
   overflow-y: scroll; /* Dodaj pasek przewijania do lewego panelu */
 }
