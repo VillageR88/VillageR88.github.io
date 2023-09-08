@@ -5,7 +5,7 @@ var lookfor;
     const p = document.createElement('p');
     const a = document.createElement('a');
     a.href = "javascript:void(0);";
-    a.textContent = `1.2.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6).slice(0, -3);
+    a.textContent = `1.1.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6).slice(0, -3);
     a.setAttribute('data-original-name', line);
     a.addEventListener('click', (event) => {
         if (window.innerWidth >= 1000) editorElement[1].style.visibility = "visible";
@@ -78,7 +78,7 @@ var lookfor;
             .catch(error => console.error('Error:', error));
     });
     p.appendChild(a);
-    document.getElementById('fileContent2').appendChild(p);
+    document.getElementById('fileContent1').appendChild(p);
     document.getElementById("runButton").addEventListener("click", function () {
         try {
             var code = editor2.getValue();

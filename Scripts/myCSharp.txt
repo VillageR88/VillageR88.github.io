@@ -17,3 +17,5 @@
 000017. Find out whether the shape is a cube/UnitTest1.cs
 000018. Enumerable Magic - Does My List Include This/UnitTest1.cs
 000019. L1 Bartender, drinks!/UnitTest1.cs
+000020. USD CNY/UnitTest1.cs
+000021. Find Nearest square number/UnitTest1.cs

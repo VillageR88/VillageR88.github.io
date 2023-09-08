@@ -2,7 +2,7 @@ async function displayFileContent() {
 const response = await fetch("Scripts/myPython.txt");
 const text = await response.text();
 const lines = text.split('\n');
-const fileContentElement = document.getElementById('fileContent3');
+const fileContentElement = document.getElementById('fileContent4');
 const codeTitle = document.getElementById('codeTitle');
 
 lines.forEach((line) => {
@@ -22,7 +22,7 @@ lines.forEach((line) => {
         inputFieldsDiv.innerHTML = "";
         document.getElementById("outputContainer").textContent = "Output:";
         document.getElementById("tipsfield").textContent = "Tips:";
-        document.getElementById("debugfield").textContent = "Debug:";
+        document.getElementById("debugfield").textContent = "Debug: Function implementation in progress. Please come back later.";
         document.getElementById("runButton").disabled = true;
         codeTitle.textContent = "My code: " + line.slice(7).slice(0, -3);
         const clickedElement = event.target;
