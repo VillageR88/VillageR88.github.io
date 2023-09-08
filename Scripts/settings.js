@@ -1,7 +1,10 @@
+var light = "default";
+var dark = "twilight"
+
 localStorage.getItem("theme1");
 if (localStorage.getItem("theme1") == "light") {
-    editor1.setOption("theme", "3024-day");
-    editor2.setOption("theme", "3024-day");
+    editor1.setOption("theme", light);
+    editor2.setOption("theme", light);
     editor1.setOption();
     theme1.textContent = "Light theme";
     theme1.classList.add('enhanced');
@@ -12,8 +15,8 @@ if (localStorage.getItem("theme1") == "light") {
     outputContainer.classList.add('enhanced');
   } 
   else {
-    editor1.setOption("theme", "twilight");
-    editor2.setOption("theme", "twilight");
+    editor1.setOption("theme", dark);
+    editor2.setOption("theme", dark);
     theme1.textContent = "Dark theme";
     localStorage.setItem('theme1', 'dark');
     theme1.classList.remove('enhanced');
@@ -26,8 +29,8 @@ if (localStorage.getItem("theme1") == "light") {
 
 document.getElementById('theme1').addEventListener('click', function() {
   if (localStorage.getItem("theme1") == "dark") {
-    editor1.setOption("theme", "3024-day");
-    editor2.setOption("theme", "3024-day");
+    editor1.setOption("theme", light);
+    editor2.setOption("theme", light);
     theme1.textContent = "Light theme";
     localStorage.setItem('theme1', 'light');
     theme1.classList.add('enhanced');
@@ -40,8 +43,8 @@ document.getElementById('theme1').addEventListener('click', function() {
     document.querySelectorAll('label').forEach(label => label.style.color = 'black');
   } 
   else {
-    editor1.setOption("theme", "twilight");
-    editor2.setOption("theme", "twilight");
+    editor1.setOption("theme", dark);
+    editor2.setOption("theme", dark);
     theme1.textContent = "Dark theme";
     localStorage.setItem('theme1', 'dark');
     theme1.classList.remove('enhanced');

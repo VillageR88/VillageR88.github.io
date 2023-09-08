@@ -76,14 +76,14 @@ a.enhanced {
 #center {
   flex: 4;
   background-color:#141414;
-  text-shadow: 
-  -0.5px -0.5px 0 rgba(0, 0, 0, 0.4), /* Lewy górny cień */
-   0.5px -0.5px 0 rgba(0, 0, 0, 0.4), /* Prawy górny cień */
-  -0.5px 0.5px 0 rgba(0, 0, 0, 0.4), /* Lewy dolny cień */
-   0.5px 0.5px 0 rgba(0, 0, 0, 0.4); /* Prawy dolny cień */
         }
 #center.enhanced {
   background-color:#ececee;
+  text-shadow: 
+  -0.5px -0.5px 0 rgba(0, 0, 0, 0.001), /* Lewy górny cień */
+   0.5px -0.5px 0 rgba(0, 0, 0, 0.001), /* Prawy górny cień */
+  -0.5px 0.5px 0 rgba(0, 0, 0, 0.001), /* Lewy dolny cień */
+   0.5px 0.5px 0 rgba(0, 0, 0, 0.001); /* Prawy dolny cień */
 }
 
 table {
@@ -122,10 +122,7 @@ img {
 .CodeMirror {
   border: 1px solid #646464;
   min-height: 400px;
-  .cm-editor.cm-focused { outline: 2px solid cyan }
-  .cm-editor.cm-content { font-family: "Consolas" }
 }
-
 
 #theme1 {
   background-color:black;
