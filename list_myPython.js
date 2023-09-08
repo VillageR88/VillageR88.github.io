@@ -17,7 +17,6 @@ lines.forEach((line) => {
         editor1.setOption("mode", "python");
         editor2.setOption("mode", "python");
         if (window.innerWidth >= 1000) editorElement[1].style.visibility = "visible";
-        document.getElementById("crane_img").style.top = "15";
         const inputFieldsDiv = document.getElementById("inputFields");
         inputFieldsDiv.innerHTML = "";
         document.getElementById("outputContainer").textContent = "Output:";

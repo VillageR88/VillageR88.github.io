@@ -17,7 +17,6 @@ lines.forEach((line) => {
         editor1.setOption("mode", "javascript");
         editor2.setOption("mode", "javascript");
         if (window.innerWidth >= 1000) editorElement[1].style.visibility = "visible";
-        document.getElementById("crane_img").style.top = "15";
         const inputFieldsDiv = document.getElementById("inputFields");
         inputFieldsDiv.innerHTML = ""; // Wyczyść zawartość diva przed dodaniem nowych pól
         document.getElementById("outputContainer").textContent = "Output:";
