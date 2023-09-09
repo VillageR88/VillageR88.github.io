@@ -110,3 +110,4 @@
 000110. Training JS No 3 Basic data types--String.js
 000111. Area or Perimeter.js
 000112. Sum of Minimums!.js
+000113. Two Sum.js

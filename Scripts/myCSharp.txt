@@ -19,3 +19,6 @@
 000019. L1 Bartender, drinks!/UnitTest1.cs
 000020. USD CNY/UnitTest1.cs
 000021. Find Nearest square number/UnitTest1.cs
+000022. Deodorant Evaporator/UnitTest1.cs
+000023. Convert number to reversed array of digits/UnitTest1.cs
+000024. Sum of numbers from 0 to N/UnitTest1.cs
