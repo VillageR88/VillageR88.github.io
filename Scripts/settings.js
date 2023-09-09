@@ -14,6 +14,7 @@ if (localStorage.getItem("theme1") == "light") {
     outputContainer.classList.add('enhanced');
     tipsfield.classList.add('enhanced');
     debugfield.classList.add('enhanced');
+    img1.classList.add('enhanced');
   } 
   else {
     editor1.setOption("theme", dark);
@@ -27,6 +28,7 @@ if (localStorage.getItem("theme1") == "light") {
     outputContainer.classList.remove('enhanced');
     tipsfield.classList.remove('enhanced');
     debugfield.classList.remove('enhanced');
+    img1.classList.remove('enhanced');
   }
 
 document.getElementById('theme1').addEventListener('click', function() {
@@ -44,6 +46,7 @@ document.getElementById('theme1').addEventListener('click', function() {
     debugfield.classList.add('enhanced');
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
     document.querySelectorAll('label').forEach(label => label.style.color = 'black');
+    img1.classList.add('enhanced');
   } 
   else {
     editor1.setOption("theme", dark);
@@ -59,6 +62,7 @@ document.getElementById('theme1').addEventListener('click', function() {
     debugfield.classList.remove('enhanced');
     document.querySelectorAll('a').forEach(link => link.classList.remove('enhanced'));
     document.querySelectorAll('label').forEach(label => label.style.color = 'white');
+    img1.classList.remove('enhanced');
   }
 });
 

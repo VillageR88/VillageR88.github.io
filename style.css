@@ -228,3 +228,13 @@ img {
   }
 
 }
+
+#img1 {
+    width: 200px;
+    filter: invert(1);
+}
+
+#img1.enhanced {
+  width: 200px;
+  filter: invert(0);
+}
