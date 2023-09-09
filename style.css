@@ -218,11 +218,11 @@ img {
 }
 @media only screen and (max-width: 480px) {
 
-  #body, #center, h1, h2, #left, #wrapper0, #wrapper1 {
+  #center, h1, h2, #left, #wrapper0, #wrapper1 {
     display: none;
   }
   #flipper {
-    display: block;
+    display:block;
     text-align: center;
     font-size:xx-large;
   }
