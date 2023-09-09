@@ -1,3 +1,7 @@
+#flipper {
+  display: none;
+}
+
 body {
   background-color: #1b1c1ff8;
   color: white;
@@ -178,8 +182,7 @@ img {
   color: darkgreen;
 }
 
-@media only screen and (max-width: 480px),
-only screen and (max-height: 500px) {
+@media only screen and (max-height: 500px) {
   #right {
     display: none;
   }
@@ -212,4 +215,16 @@ only screen and (max-height: 500px) {
   td:nth-child(2) {
     display: none;
   }
+}
+@media only screen and (max-width: 480px) {
+
+  #body, #center, h1, h2, #left, #wrapper0, #wrapper1 {
+    display: none;
+  }
+  #flipper {
+    display: block;
+    text-align: center;
+    font-size:xx-large;
+  }
+
 }
