@@ -89,6 +89,7 @@ table {
 
 td {
   width: 50%;
+
 }
 
 td.CodeMirror {
@@ -138,6 +139,9 @@ img {
 }
 
 #outputContainer {
+  margin:0;
+  padding-top: 4;
+  padding-bottom: 7;
   color: white;
 }
 #outputContainer.enhanced {
@@ -145,6 +149,9 @@ img {
 }
 
 #tipsfield {
+  margin:0;
+  padding-top: 4;
+  padding-bottom: 7;
   color: cornflowerblue;
 }
 #tipsfield.enhanced {
@@ -152,6 +159,9 @@ img {
 }
 
 #debugfield {
+  margin:0;
+  padding-top: 4;
+  padding-bottom: 7;
   color:#72c459;
 }
 #debugfield.enhanced {
@@ -177,4 +187,9 @@ img {
     font-size: small;
 
   }
+  td {
+    display: block; /* Ustaw komórki jako bloki na małych ekranach */
+    width: 100%; /* Szerokość komórek na pełną szerokość ekranu */
+    box-sizing: border-box; /* Dołącz padding i border do szerokości komórek */
+}
 }
