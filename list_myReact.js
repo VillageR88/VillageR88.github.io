@@ -10,7 +10,7 @@ lines.forEach((line) => {
     const a = document.createElement('a');
 
     a.href = "javascript:void(0);";
-    a.textContent = `1.2.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6).slice(0, -3);
+    a.textContent = `1.2.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6).slice(0, -4);
     a.setAttribute('data-original-name', line);
     a.addEventListener('click', (event) => {
         editor1.setOption("mode", "javascript");
@@ -22,7 +22,7 @@ lines.forEach((line) => {
         document.getElementById("tipsfield").textContent = "Tips:";
         document.getElementById("debugfield").textContent = "Debug: Function implementation in progress. Please come back later.";
         document.getElementById("runButton").disabled = true;
-        codeTitle.textContent = "My code: " + line.slice(7).slice(0, -3);
+        codeTitle.textContent = "My code: " + line.slice(7).slice(0, -4);
         const clickedElement = event.target;
         const originalName = clickedElement.getAttribute('data-original-name');
         window.scrollTo({

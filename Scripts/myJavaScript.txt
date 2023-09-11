@@ -111,3 +111,5 @@
 000111. Area or Perimeter.js
 000112. Sum of Minimums!.js
 000113. Two Sum.js
+000114. Summing a number's digits.js
+000115. Write Number in Expanded Form.js
