@@ -1,6 +1,8 @@
 .cm-s-customized.CodeMirror {
-  background: #141414;
+  background: #1c2333 ;
   color: #f7f7f7;
+  text-shadow: 1px 1px 0.1px black;
+
 }
 .cm-s-customized div.CodeMirror-selected {
   background: #323232;
@@ -16,8 +18,7 @@
   background: rgba(50, 50, 50, 0.99);
 }
 .cm-s-customized .CodeMirror-gutters {
-  background: #222;
-  border-right: 1px solid #aaa;
+  background: #c0c0c0;
 }
 .cm-s-customized .CodeMirror-guttermarker {
   color: #fff;
@@ -26,7 +27,7 @@
   color: #aaa;
 }
 .cm-s-customized .CodeMirror-linenumber {
-  color: #aaa;
+  color: #020101;
 }
 .cm-s-customized .CodeMirror-cursor {
   border-left: 1px solid #fff;
@@ -38,30 +39,30 @@
   color: #fc0;
 }
 .cm-s-customized .cm-number {
-  color: #ca7841;
+  color: #06b0f3;
 }
 .cm-s-customized .cm-def {
   color: #8da6ce;
 }
 .cm-s-customized span.cm-tag,
 .cm-s-customized span.cm-variable-2 {
-  color: #607392;
+  color: greenyellow;
 }
 .cm-s-customized span.cm-def,
 .cm-s-customized span.cm-type,
 .cm-s-customized span.cm-variable-3 {
-  color: #607392;
+  color: orangered;
 }
 .cm-s-customized .cm-operator {
-  color: #cda869;
+  color: yellow;
 }
 .cm-s-customized .cm-comment {
-  color: #777;
+  color: white;
   font-style: italic;
   font-weight: 400;
 }
 .cm-s-customized .cm-string {
-  color: #8f9d6a;
+  color: #fff6a0;
   font-style: italic;
 }
 .cm-s-customized .cm-string-2 {

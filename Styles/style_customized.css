@@ -1,0 +1,83 @@
+body.customized {
+  background-color: #281d61 ;
+  color: orange;
+  text-shadow: none;
+}
+
+a.customized {
+  color: white;
+  text-decoration: none;
+}
+
+a.customized:hover {
+  color: blue;
+  /* Change color on hover */
+}
+
+#wrapper1.customized {
+  background-color: #251d44;
+  border-bottom: 1px solid #646464;
+}
+
+#center.customized {
+  background-color: #251d44;
+  text-shadow: -0.5px -0.5px 0 rgba(0 , 0, 0, 0.001),
+    /* Lewy górny cień */ 0.5px -0.5px 0 rgba(0, 0, 0, 0.001),
+    /* Prawy górny cień */ -0.5px 0.5px 0 rgba(0, 0, 0, 0.001),
+    /* Lewy dolny cień */ 0.5px 0.5px 0 rgba(0, 0, 0, 0.001);
+  /* Prawy dolny cień */
+}
+
+#theme1.customized {
+  background-color: #044a10;
+  color: #ffffff;
+}
+
+#outputContainer.customized {
+  color: rgb(235, 12, 142);
+}
+
+#tipsfield.customized {
+  color: rgb(0, 204, 255);
+}
+
+#debugfield.customized {
+  color: rgb(68, 201, 15);
+}
+
+@media only screen and (max-height: 500px) {
+  #wrapper0 {
+    width: 100%;
+  }
+
+  #wrapper1 {
+    width: 100%;
+  }
+
+  h1,
+  h2 {
+    font-size: medium;
+  }
+
+  ul {
+    font-size: small;
+  }
+
+  td {
+    display: block;
+    /* Ustaw komórki jako bloki na małych ekranach */
+    width: 100%;
+    /* Szerokość komórek na pełną szerokość ekranu */
+    box-sizing: border-box;
+    /* Dołącz padding i border do szerokości komórek */
+  }
+
+  td:nth-child(2) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #img1.customized {
+    filter: invert(0);
+  }
+}
