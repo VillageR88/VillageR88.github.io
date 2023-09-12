@@ -19,6 +19,8 @@ else if(localStorage.getItem("theme1") == light) {
   tipsfield.classList.add('enhanced');
   debugfield.classList.add('enhanced');
   img1.classList.add('enhanced');
+  document.querySelectorAll('h1').forEach(link => link.classList.add('enhanced'));
+  document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
 }
 else if(localStorage.getItem("theme1") == customized) {
   editor1.setOption("theme", customized);
@@ -33,6 +35,8 @@ else if(localStorage.getItem("theme1") == customized) {
   tipsfield.classList.add('customized');
   debugfield.classList.add('customized');
   img1.classList.add('customized');
+  document.querySelectorAll('h1').forEach(link => link.classList.add('customized'));
+  document.querySelectorAll('a').forEach(link => link.classList.add('customized'));
 }
 else localStorage.setItem('theme1', dark);
 
@@ -49,6 +53,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     outputContainer.classList.add('enhanced');
     tipsfield.classList.add('enhanced');
     debugfield.classList.add('enhanced');
+    document.querySelectorAll('h1').forEach(link => link.classList.add('enhanced'));
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
     document.querySelectorAll('label').forEach(label => label.style.color = 'black');
     img1.classList.add('enhanced');
@@ -66,6 +71,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     outputContainer.classList.add('customized');
     tipsfield.classList.add('customized');
     debugfield.classList.add('customized');
+    document.querySelectorAll('h1').forEach(link => link.classList.add('customized'));
     document.querySelectorAll('a').forEach(link => link.classList.add('customized'));
     document.querySelectorAll('label').forEach(label => label.style.color = 'white');
     img1.classList.add('customized');
@@ -84,6 +90,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     tipsfield.classList.remove('enhanced', 'customized');
     debugfield.classList.remove('enhanced', 'customized');
     document.querySelectorAll('a').forEach(link => link.classList.remove('enhanced', 'customized'));
+    document.querySelectorAll('h1').forEach(link => link.classList.remove('enhanced', 'customized'));
     document.querySelectorAll('label').forEach(label => label.style.color = 'white');
     img1.classList.remove('enhanced', 'customized');
   }

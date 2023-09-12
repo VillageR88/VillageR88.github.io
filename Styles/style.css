@@ -25,6 +25,19 @@ a {
   /* Transition for color change */
 }
 
+h1 {
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  /* Transition for color change */
+}
+h1.enhanced {
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  /* Transition for color change */
+}
+
 a:hover {
   color: #d6e4a3;
   /* Change color on hover */

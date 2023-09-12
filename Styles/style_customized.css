@@ -1,6 +1,6 @@
 body.customized {
   background-color: #281d61 ;
-  color: orange;
+  color: white;
   text-shadow: none;
 }
 
@@ -9,6 +9,12 @@ a.customized {
   text-decoration: none;
 }
 
+h1.customized {
+  color: orange;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  /* Transition for color change */
+}
 a.customized:hover {
   color: blue;
   /* Change color on hover */
