@@ -138,7 +138,7 @@ img {
   font-size: 14px;
 }
 .CodeMirror .cm-comment { 
-  color: rgb(122, 30, 30);   
+  color: rgb(82, 17, 17);   
   font-style:normal;  } /* italic*/
 .CodeMirror-gutters {background: #e4e4e7; border-right: 1px solid #646464; }
 .CodeMirror-linenumber { color: dimgray; }
@@ -192,7 +192,7 @@ img {
 }
 
 #debugfield.enhanced {
-  color: rgb(122, 30, 30);
+  color: rgb(82, 17, 17);
 }
 
 @media only screen and (max-height: 500px) {
