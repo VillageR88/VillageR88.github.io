@@ -34,7 +34,7 @@ h1.customized {
   /* Prawy dolny cień */
 }
 
-#theme1.customized {
+#theme1.customized, #debugButton.customized {
   background-color: #044a10;
   color: #ffffff;
 }

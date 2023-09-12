@@ -175,12 +175,15 @@ img {
   font-style: normal;
 } /* italic*/
 
-#theme1 {
+#theme1, #debugButton {
   background-color: black;
   color: white;
   height: 30;
   border-radius: 10px;
 }
+
+#debugButton {margin-top: 3px}
+#hiddenConsole {margin-top: 5px; font-size: small;}
 
 #theme1settings {
   display: none;
@@ -191,7 +194,7 @@ img {
   border-radius: 10px;
 }
 
-#theme1.enhanced {
+#theme1.enhanced, #debugButton.enhanced {
   background-color: white;
   color: black;
 }

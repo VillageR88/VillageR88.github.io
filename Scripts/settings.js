@@ -12,6 +12,7 @@ else if(localStorage.getItem("theme1") == light) {
   editor2.setOption("theme", light);
   theme1.textContent = "Light theme";
   theme1.classList.add('enhanced');
+  debugButton.classList.add('enhanced');
   wrapper1.classList.add('enhanced');
   center.classList.add('enhanced');
   document.body.classList.add('enhanced');
@@ -27,6 +28,7 @@ else if(localStorage.getItem("theme1") == customized) {
   editor2.setOption("theme", customized);
   theme1.textContent = "Custom theme";
   theme1.classList.add('customized');
+  debugButton.classList.add('customized');
   theme1settings.classList.add('customized');
   wrapper1.classList.add('customized');
   center.classList.add('customized');
@@ -47,6 +49,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     theme1.textContent = "Light theme";
     localStorage.setItem('theme1', light);
     theme1.classList.add('enhanced');
+    debugButton.classList.add('enhanced');
     wrapper1.classList.add('enhanced');
     center.classList.add('enhanced');
     document.body.classList.add('enhanced');
@@ -64,6 +67,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     theme1.textContent = "Custom theme";
     localStorage.setItem('theme1', customized);
     theme1.classList.add('customized');
+    debugButton.classList.add('customized');
     theme1settings.classList.add('customized');
     wrapper1.classList.add('customized');
     center.classList.add('customized');
@@ -82,6 +86,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     theme1.textContent = "Dark theme";
     localStorage.setItem('theme1', dark);
     theme1.classList.remove('enhanced', 'customized');
+    debugButton.classList.remove('enhanced', 'customized');
     theme1settings.classList.remove('enhanced', 'customized');
     wrapper1.classList.remove('enhanced', 'customized');
     center.classList.remove('enhanced', 'customized');
