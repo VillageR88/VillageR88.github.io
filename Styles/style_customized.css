@@ -15,9 +15,6 @@ a.customized:hover {
 
 h1.customized {
   color: orange;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  /* Transition for color change */
 }
 
 #wrapper1.customized {
