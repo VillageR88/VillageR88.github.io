@@ -226,7 +226,7 @@ img {
 }
 
 #debugfield.enhanced {
-  color: rgb(82, 17, 17);
+  color: red;
 }
 
 @media only screen and (max-height: 500px) {

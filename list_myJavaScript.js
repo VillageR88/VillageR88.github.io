@@ -51,7 +51,7 @@ async function displayFileContent() {
                             for (let i = 0; i < array.length; i++) {
                                 const label = document.createElement("label");
                                 label.textContent = `${parameters[i]}:`;
-                                if (localStorage.getItem("theme1") == "light") { label.style.color = "black"; }
+                                if (localStorage.getItem("theme1") == "default") { label.style.color = "black"; }
                                 else { label.style.color = "white"; }
                                 label.setAttribute("for", `param${i}`);
                                 const textarea = document.createElement("textarea");
