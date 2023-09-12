@@ -1,8 +1,8 @@
 var light = "default";
-var dark = "twilight"
+var dark = "twilight";
 
 localStorage.getItem("theme1");
-if (localStorage.getItem("theme1") == "light") {
+if (localStorage.getItem("theme1") == light) {
     editor1.setOption("theme", light);
     editor2.setOption("theme", light);
     editor1.setOption();
@@ -20,7 +20,7 @@ if (localStorage.getItem("theme1") == "light") {
     editor1.setOption("theme", dark);
     editor2.setOption("theme", dark);
     theme1.textContent = "Dark theme";
-    localStorage.setItem('theme1', 'dark');
+    localStorage.setItem('theme1', dark);
     theme1.classList.remove('enhanced');
     wrapper1.classList.remove('enhanced');
     center.classList.remove('enhanced');
@@ -32,11 +32,11 @@ if (localStorage.getItem("theme1") == "light") {
   }
 
 document.getElementById('theme1').addEventListener('click', function() {
-  if (localStorage.getItem("theme1") == "dark") {
+  if (localStorage.getItem("theme1") == dark) {
     editor1.setOption("theme", light);
     editor2.setOption("theme", light);
     theme1.textContent = "Light theme";
-    localStorage.setItem('theme1', 'light');
+    localStorage.setItem('theme1', light);
     theme1.classList.add('enhanced');
     wrapper1.classList.add('enhanced');
     center.classList.add('enhanced');
@@ -52,7 +52,7 @@ document.getElementById('theme1').addEventListener('click', function() {
     editor1.setOption("theme", dark);
     editor2.setOption("theme", dark);
     theme1.textContent = "Dark theme";
-    localStorage.setItem('theme1', 'dark');
+    localStorage.setItem('theme1', dark);
     theme1.classList.remove('enhanced');
     wrapper1.classList.remove('enhanced');
     center.classList.remove('enhanced');
@@ -67,7 +67,7 @@ document.getElementById('theme1').addEventListener('click', function() {
 });
 
 function workaround() {
-  if (localStorage.getItem("theme1") == "light") {
+  if (localStorage.getItem("theme1") == light) {
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
   }
 };
