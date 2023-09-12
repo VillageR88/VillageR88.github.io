@@ -1,7 +1,7 @@
 body.customized {
   background-color: #281d61;
   color: white;
-  text-shadow: none;
+  text-shadow: 1px 1px 1px black;
 }
 
 a.customized {
