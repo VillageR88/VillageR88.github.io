@@ -1,5 +1,5 @@
 body.customized {
-  background-color: #281d61 ;
+  background-color: #281d61;
   color: white;
   text-shadow: none;
 }
@@ -9,15 +9,15 @@ a.customized {
   text-decoration: none;
 }
 
+a.customized:hover {
+  color: greenyellow;
+}
+
 h1.customized {
   color: orange;
   text-decoration: none;
   transition: background-color 0.3s;
   /* Transition for color change */
-}
-a.customized:hover {
-  color: blue;
-  /* Change color on hover */
 }
 
 #wrapper1.customized {
@@ -27,7 +27,7 @@ a.customized:hover {
 
 #center.customized {
   background-color: #251d44;
-  text-shadow: -0.5px -0.5px 0 rgba(0 , 0, 0, 0.001),
+  text-shadow: -0.5px -0.5px 0 rgba(0, 0, 0, 0.001),
     /* Lewy górny cień */ 0.5px -0.5px 0 rgba(0, 0, 0, 0.001),
     /* Prawy górny cień */ -0.5px 0.5px 0 rgba(0, 0, 0, 0.001),
     /* Lewy dolny cień */ 0.5px 0.5px 0 rgba(0, 0, 0, 0.001);
