@@ -1,8 +1,6 @@
 var light = "default";
 var dark = "twilight";
 var customized = "customized"
-
-localStorage.getItem("theme1");
 if (localStorage.getItem("theme1") == dark) {
   editor1.setOption("theme", dark);
   editor2.setOption("theme", dark);
@@ -12,7 +10,6 @@ if (localStorage.getItem("theme1") == dark) {
 else if(localStorage.getItem("theme1") == light) {
   editor1.setOption("theme", light);
   editor2.setOption("theme", light);
-  editor1.setOption();
   theme1.textContent = "Light theme";
   theme1.classList.add('enhanced');
   wrapper1.classList.add('enhanced');
@@ -26,7 +23,6 @@ else if(localStorage.getItem("theme1") == light) {
 else if(localStorage.getItem("theme1") == customized) {
   editor1.setOption("theme", customized);
   editor2.setOption("theme", customized);
-  editor1.setOption();
   theme1.textContent = "Custom theme";
   theme1.classList.add('customized');
   theme1settings.classList.add('customized');
@@ -38,6 +34,7 @@ else if(localStorage.getItem("theme1") == customized) {
   debugfield.classList.add('customized');
   img1.classList.add('customized');
 }
+else localStorage.setItem('theme1', dark);
 
 document.getElementById('theme1').addEventListener('click', function () {
   if (localStorage.getItem("theme1") == dark) {
@@ -95,6 +92,9 @@ document.getElementById('theme1').addEventListener('click', function () {
 function workaround() {
   if (localStorage.getItem("theme1") == light) {
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
+  }
+  else if (localStorage.getItem("theme1") == customized) {
+    document.querySelectorAll('a').forEach(link => link.classList.add('customized'));
   }
 };
 setTimeout(workaround, 100);
