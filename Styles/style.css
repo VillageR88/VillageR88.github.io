@@ -171,17 +171,6 @@ img {
   font-style: normal;
 } /* italic*/
 
-#theme1,
-#debugButton {
-  background-color: black;
-  color: white;
-  height: 30;
-  border-radius: 10px;
-}
-
-#debugButton {
-  margin-top: 3px;
-}
 #hiddenConsole {
   margin-top: 5px;
   font-size: small;
@@ -196,8 +185,33 @@ img {
   border-radius: 10px;
 }
 
+#debugButton {
+  margin-top: 3px;
+}
+
+#runButton {
+  margin-top: 2;
+  height: 25;
+  margin-bottom: 2;
+  border-radius: 5px;
+  border-width: 1;
+}
+#theme1,
+#debugButton {
+  background-color: black;
+  color: white;
+  height: 30;
+  border-radius: 10px;
+}
+#runButton:enabled   {
+  background-color: darkslategray;
+  color: white;
+  height: 25;
+  border-radius: 6px;
+}
+
 #theme1.enhanced,
-#debugButton.enhanced {
+#debugButton.enhanced, #runButton:enabled.enhanced {
   background-color: white;
   color: black;
 }

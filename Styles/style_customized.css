@@ -35,6 +35,10 @@ h1.customized {
   background-color: #044a10;
   color: #ffffff;
 }
+#runButton:enabled.customized {
+  background-color: #123685;
+  color: #ffffff;
+}
 #theme1settings.customized {
   display: block;
   margin-left: 3;
