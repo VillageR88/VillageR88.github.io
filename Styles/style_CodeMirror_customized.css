@@ -2,7 +2,6 @@
   background: #1c2333 ;
   color: #f7f7f7;
   text-shadow: 1px 1px 0.1px black;
-
 }
 .cm-s-customized div.CodeMirror-selected {
   background: #323232;
@@ -58,12 +57,12 @@
 }
 .cm-s-customized .cm-comment {
   color: white;
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
 }
 .cm-s-customized .cm-string {
   color: #fff6a0;
-  font-style: italic;
+  font-style: normal;
 }
 .cm-s-customized .cm-string-2 {
   color: #bd6b18;
