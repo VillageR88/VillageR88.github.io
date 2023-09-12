@@ -18,7 +18,7 @@
   background: rgba(50, 50, 50, 0.99);
 }
 .cm-s-customized .CodeMirror-gutters {
-  background: #c0c0c0;
+  background: #2b1e6b;
 }
 .cm-s-customized .CodeMirror-guttermarker {
   color: #fff;
@@ -27,7 +27,7 @@
   color: #aaa;
 }
 .cm-s-customized .CodeMirror-linenumber {
-  color: #020101;
+  color: white;
 }
 .cm-s-customized .CodeMirror-cursor {
   border-left: 1px solid #fff;
