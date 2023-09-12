@@ -1,5 +1,6 @@
 var light = "default";
-var dark = "twilight"
+var dark = "twilight";
+var customized = "customized";
 
 localStorage.getItem("theme1");
 if (localStorage.getItem("theme1") == "light") {

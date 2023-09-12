@@ -133,7 +133,7 @@ img {
 .CodeMirror .cm-comment {
   color: rgb(82, 17, 17);
   font-style: normal;
-} /* italic*/
+}
 .CodeMirror-gutters {
   background: #e4e4e7;
   border-right: 1px solid #646464;
