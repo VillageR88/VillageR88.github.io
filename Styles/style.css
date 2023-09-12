@@ -308,3 +308,34 @@ img {
 #img1.enhanced {
   filter: invert(0);
 }
+
+/* Styl dla overlay (tła) */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Przezroczyste tło */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Umieść na wierzchu innych elementów */
+}
+
+/* Styl dla zawartości pop-upu */
+.popup {
+  background-color: white;
+  padding: 20%;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+/* Styl dla przycisku zamykającego */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
