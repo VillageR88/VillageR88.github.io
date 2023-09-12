@@ -191,21 +191,26 @@ img {
   margin-top: 2;
   height: 25;
   margin-bottom: 2;
-  border-radius: 5px;
+  border-radius: 6px;
   border-width: 1;
 }
-#theme1,
-#debugButton {
+#theme1 {
   background-color: black;
   color: white;
   height: 30;
   border-radius: 10px;
 }
-#runButton:enabled {
-  background-color: darkslategray;
+
+#debugButton {
+  background-color: #437943;
   color: white;
   height: 25;
   border-radius: 6px;
+  border-width: 1;
+}
+#runButton:enabled {
+  background-color: darkslategray;
+  color: white;
 }
 
 #theme1.enhanced,
