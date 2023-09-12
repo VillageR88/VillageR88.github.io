@@ -169,6 +169,15 @@ img {
   border-radius: 10px;
 }
 
+#theme1settings {
+  display: none;
+  margin-left: 10;
+  background-color: black;
+  color: white;
+  height: 30;
+  border-radius: 10px;
+}
+
 #theme1.enhanced {
   background-color: white;
   color: black;

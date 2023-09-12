@@ -29,6 +29,7 @@ else if(localStorage.getItem("theme1") == customized) {
   editor1.setOption();
   theme1.textContent = "Custom theme";
   theme1.classList.add('customized');
+  theme1settings.classList.add('customized');
   wrapper1.classList.add('customized');
   center.classList.add('customized');
   document.body.classList.add('customized');
@@ -37,8 +38,6 @@ else if(localStorage.getItem("theme1") == customized) {
   debugfield.classList.add('customized');
   img1.classList.add('customized');
 }
-
-
 
 document.getElementById('theme1').addEventListener('click', function () {
   if (localStorage.getItem("theme1") == dark) {
@@ -63,6 +62,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     theme1.textContent = "Custom theme";
     localStorage.setItem('theme1', customized);
     theme1.classList.add('customized');
+    theme1settings.classList.add('customized');
     wrapper1.classList.add('customized');
     center.classList.add('customized');
     document.body.classList.add('customized');
@@ -79,6 +79,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     theme1.textContent = "Dark theme";
     localStorage.setItem('theme1', dark);
     theme1.classList.remove('enhanced', 'customized');
+    theme1settings.classList.remove('enhanced', 'customized');
     wrapper1.classList.remove('enhanced', 'customized');
     center.classList.remove('enhanced', 'customized');
     document.body.classList.remove('enhanced', 'customized');

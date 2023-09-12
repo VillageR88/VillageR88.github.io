@@ -32,6 +32,14 @@ a.customized:hover {
   background-color: #044a10;
   color: #ffffff;
 }
+#theme1settings.customized {
+  display: block;
+  margin-left: 3;
+  background-color: black;
+  color: white;
+  height: 30;
+  border-radius: 10px;
+}
 
 #outputContainer.customized {
   color: rgb(235, 12, 142);
@@ -45,37 +53,6 @@ a.customized:hover {
   color: rgb(68, 201, 15);
 }
 
-@media only screen and (max-height: 500px) {
-  #wrapper0 {
-    width: 100%;
-  }
-
-  #wrapper1 {
-    width: 100%;
-  }
-
-  h1,
-  h2 {
-    font-size: medium;
-  }
-
-  ul {
-    font-size: small;
-  }
-
-  td {
-    display: block;
-    /* Ustaw komórki jako bloki na małych ekranach */
-    width: 100%;
-    /* Szerokość komórek na pełną szerokość ekranu */
-    box-sizing: border-box;
-    /* Dołącz padding i border do szerokości komórek */
-  }
-
-  td:nth-child(2) {
-    display: none;
-  }
-}
 @media only screen and (max-width: 480px) {
   #img1.customized {
     filter: invert(0);
