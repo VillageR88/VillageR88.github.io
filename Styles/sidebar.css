@@ -1,0 +1,46 @@
+.sidebar {
+  height: 100%;
+  width: 0; /* 0 width - change this with JavaScript */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.togglebtn {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+.togglebtn.enhanced {
+  color: black;
+  background-color: white;
+}
+.togglebtn.customized {
+  background-color:orange;
+  color: black;
+}
+.togglebtn:hover {
+
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}

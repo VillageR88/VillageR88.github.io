@@ -42,11 +42,14 @@ ul.customized {
   background-color: #044a10;
   color: #ffffff;
 }
+
 #runButton:enabled.customized {
   background-color: #123685;
   color: #ffffff;
 }
+
 #theme1settings.customized {
+  cursor: pointer;
   display: block;
   margin-left: 3;
   background-color: black;

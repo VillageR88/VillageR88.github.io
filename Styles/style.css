@@ -157,6 +157,7 @@ img {
 }
 
 #runButton {
+  cursor: pointer;
   margin-top: 2;
   height: 25;
   margin-bottom: 2;
@@ -164,6 +165,7 @@ img {
   border-width: 1;
 }
 #theme1 {
+  cursor: pointer;
   background-color: black;
   color: white;
   height: 30;
@@ -171,6 +173,7 @@ img {
 }
 
 #debugButton {
+  cursor: pointer;
   background-color: #1a5c2e;
   color: white;
   height: 25;
@@ -278,35 +281,4 @@ img {
 
 #img1.enhanced {
   filter: invert(0);
-}
-
-/* Styl dla overlay (tła) */
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Przezroczyste tło */
-  justify-content: center;
-  align-items: center;
-  z-index: 1000; /* Umieść na wierzchu innych elementów */
-}
-
-/* Styl dla zawartości pop-upu */
-.popup {
-  background-color: white;
-  padding: 20%;
-  border-radius: 5px;
-  text-align: center;
-  position: relative;
-}
-
-/* Styl dla przycisku zamykającego */
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
 }
