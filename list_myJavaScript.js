@@ -53,8 +53,7 @@ async function displayFileContent() {
                             for (let i = 0; i < array.length; i++) {
                                 const label = document.createElement("label");
                                 label.textContent = `${parameters[i]}:`;
-                                if (localStorage.getItem("theme1") == "default") { label.style.color = "black"; }
-                                else { label.style.color = "white"; }
+                               
                                 label.setAttribute("for", `param${i}`);
                                 const textarea = document.createElement("textarea");
                                 textarea.setAttribute("id", `param${i}`);
@@ -63,6 +62,21 @@ async function displayFileContent() {
                                 textarea.setAttribute("cols", "100%");
                                 textarea.style.width = "100%";
                                 textarea.style.resize = "none";
+                                if (localStorage.getItem("theme1") == "default") { 
+                                    label.style.color = "black"; 
+                                    textarea.style.color = "black";
+                                    textarea.style.backgroundColor = "white";
+                                }
+                                else if (localStorage.getItem("theme1") == "twilight") { 
+                                    label.style.color = "white";
+                                    textarea.style.color = "white";
+                                    textarea.style.backgroundColor = "#212225";
+                                }
+                                else if (localStorage.getItem("theme1") == "customized") { 
+                                    label.style.color = "white";
+                                    textarea.style.color = "white";
+                                    textarea.style.backgroundColor = "#2b1e6b";
+                                }
                                 inputFieldsDiv.appendChild(label);
                                 inputFieldsDiv.appendChild(textarea);
                             }

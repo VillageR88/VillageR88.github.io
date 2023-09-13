@@ -7,7 +7,7 @@ if (localStorage.getItem("theme1") == dark) {
   theme1.textContent = "Dark theme";
   localStorage.setItem('theme1', dark);
 }
-else if(localStorage.getItem("theme1") == light) {
+else if (localStorage.getItem("theme1") == light) {
   editor1.setOption("theme", light);
   editor2.setOption("theme", light);
   theme1.textContent = "Light theme";
@@ -27,7 +27,7 @@ else if(localStorage.getItem("theme1") == light) {
   document.querySelectorAll('ul').forEach(link => link.classList.add('enhanced'));
   document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
 }
-else if(localStorage.getItem("theme1") == customized) {
+else if (localStorage.getItem("theme1") == customized) {
   editor1.setOption("theme", customized);
   editor2.setOption("theme", customized);
   theme1.textContent = "Custom theme";
@@ -70,6 +70,8 @@ document.getElementById('theme1').addEventListener('click', function () {
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
     document.querySelectorAll('label').forEach(label => label.style.color = 'black');
     img1.classList.add('enhanced');
+    document.querySelectorAll("label").forEach(function (label) {label.style.color = "black"});
+    document.querySelectorAll("textarea").forEach(function (textarea) {textarea.style.backgroundColor = "white"});
   }
   else if (localStorage.getItem("theme1") == light) {
     editor1.setOption("theme", customized);
@@ -92,6 +94,8 @@ document.getElementById('theme1').addEventListener('click', function () {
     document.querySelectorAll('a').forEach(link => link.classList.add('customized'));
     document.querySelectorAll('label').forEach(label => label.style.color = 'white');
     img1.classList.add('customized');
+    document.querySelectorAll("label").forEach(function (label) {label.style.color = "white"});
+    document.querySelectorAll("textarea").forEach(function (textarea) {textarea.style.backgroundColor = "#2b1e6b"});
   }
   else if (localStorage.getItem("theme1") == customized) {
     editor1.setOption("theme", dark);
@@ -114,6 +118,8 @@ document.getElementById('theme1').addEventListener('click', function () {
     document.querySelectorAll('a').forEach(link => link.classList.remove('enhanced', 'customized'));
     document.querySelectorAll('label').forEach(label => label.style.color = 'white');
     img1.classList.remove('enhanced', 'customized');
+    document.querySelectorAll("label").forEach(function (label) {label.style.color = "white"});
+    document.querySelectorAll("textarea").forEach(function (textarea) {textarea.style.backgroundColor = "#212225"});
   }
 });
 
