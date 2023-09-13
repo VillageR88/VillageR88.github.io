@@ -40,7 +40,10 @@
       <div id="left">
         <p></p>
         <ul><b>Contents:</b></ul>
-        <ul>1. My Codewars solutions</ul>
+        <ul>1. My Codewars solutions
+          <button onclick="toggleLock()" style="background-color: transparent; border: none; cursor: pointer;">📌</button>
+          <word id="locker">🔓</word>
+        </ul>
         <ul>
           <a href="javascript:void(0);" id="toggleList1">1.1. JavaScript</a>
           <ul id="nestedList1" style="display: none;">
@@ -97,7 +100,7 @@
       <hr style="margin:0;">
       <div id="debugfield">Debug: </div>
       <hr id="hr3" style="margin:0;">
-      <button id="debugButton">Toggle debug</button>&#128204;
+      <button id="debugButton">Toggle debug</button>
       <div id="hiddenConsole"></div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js"></script>

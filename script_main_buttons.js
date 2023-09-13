@@ -38,10 +38,29 @@ document.getElementById('toggleList4').addEventListener('click', () => {
     }
 });
 
-function collapseAll() {
+var lock = 0;
+function toggleLock() {
+    if (lock == 0) {
+        lock = 1;
+        document.getElementById("locker").textContent = "🔒";
+    }
+    else {
+        lock = 0;
+        document.getElementById("locker").textContent = "🔓";
+    }
+}
+
+function collapser() {
     document.getElementById('nestedList1').style.display = 'none';
     document.getElementById('nestedList1b').style.display = 'none';
     document.getElementById('nestedList2').style.display = 'none';
     document.getElementById('nestedList3').style.display = 'none';
     document.getElementById('nestedList4').style.display = 'none';
-};
+}
+
+function collapseAll() {
+    if (lock == 0) {
+        setTimeout(collapser, 500);
+        document.querySelector('.sidebar').style.width = '0';
+    }
+}

@@ -14,8 +14,7 @@ lines.forEach((line) => {
     a.setAttribute('data-original-name', line);
 
     a.addEventListener('click', (event) => {
-        setTimeout(collapseAll, 500);
-        document.querySelector('.sidebar').style.width = '0';
+        collapseAll();
         editor1.setOption("mode", "python");
         editor2.setOption("mode", "python");
         if (window.innerWidth >= 1000) editorElement[1].style.visibility = "visible";
