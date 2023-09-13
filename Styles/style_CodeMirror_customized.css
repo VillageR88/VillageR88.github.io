@@ -27,6 +27,7 @@
 }
 .cm-s-customized .CodeMirror-linenumber {
   color: white;
+  text-shadow: none;
 }
 .cm-s-customized .CodeMirror-cursor {
   border-left: 1px solid #fff;
