@@ -93,12 +93,9 @@ ul.enhanced {
 }
 
 #left {
-  /* Ustaw szerokość lewego panelu */
   height: calc(95.4vh - 17px);
-  /* 100vh minus 17px, aby uniknąć minimalnych przesunięć */
   flex: 1;
   overflow-y: scroll;
-  /* Dodaj pasek przewijania do lewego panelu */
 }
 
 #center {
@@ -197,10 +194,12 @@ img {
   padding-top: 4;
   padding-bottom: 7;
   color: white;
+  text-shadow: none;
 }
 
 #outputContainer.enhanced {
   color: black;
+  text-shadow: 1px 1px 1px white;
 }
 
 #tipsfield {

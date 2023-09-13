@@ -57,6 +57,7 @@ ul.customized {
 
 #outputContainer.customized {
   color: rgb(235, 12, 142);
+  text-shadow: none;
 }
 
 #tipsfield.customized {
@@ -69,6 +70,6 @@ ul.customized {
 
 @media only screen and (max-width: 480px) {
   #img1.customized {
-    filter: invert(0);
+    filter: invert(1);
   }
 }
