@@ -74,14 +74,10 @@ ul.enhanced {
 }
 
 #up_left {
-  flex: 1;
-}
-
-#up_center {
   display: flex;
-  flex: 3;
-  justify-content: start;
-  align-items: end;
+  flex: 4;
+  justify-content: left;
+  align-items: center;
 }
 
 #up_right {
@@ -92,7 +88,7 @@ ul.enhanced {
 }
 
 #left {
-  height: calc(95.4vh - 17px);
+  height: calc(95.4vh - 24px);
   flex: 1;
   overflow-y: scroll;
 }
