@@ -126,12 +126,7 @@ function workaround() {
   }
 };
 setTimeout(workaround, 100);
-workaround();
 setTimeout(workaround, 500);
-workaround();
 setTimeout(workaround, 1000);
-workaround();
 setTimeout(workaround, 2000);
-workaround();
 setTimeout(workaround, 5000);
-workaround();

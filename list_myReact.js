@@ -13,6 +13,8 @@ lines.forEach((line) => {
     a.textContent = `1.2.`+ line.slice(0,6).split(/^0+/g).join("")+line.slice(6).slice(0, -4);
     a.setAttribute('data-original-name', line);
     a.addEventListener('click', (event) => {
+        setTimeout(collapseAll, 500);
+        document.querySelector('.sidebar').style.width = '0';
         editor1.setOption("mode", "javascript");
         editor2.setOption("mode", "javascript");
         if (window.innerWidth >= 1000) editorElement[1].style.visibility = "visible";

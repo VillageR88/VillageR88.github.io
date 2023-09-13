@@ -8,6 +8,8 @@ async function displayFileContent() {
         a.textContent = `1.1.` + line.slice(0, 6).split(/^0+/g).join("") + line.slice(6).slice(0, -3);
         a.setAttribute('data-original-name', line);
         a.addEventListener('click', (event) => {
+            setTimeout(collapseAll, 500);
+            document.querySelector('.sidebar').style.width = '0';
             if (window.innerWidth >= 1000) editorElement[1].style.visibility = "visible";
             document.getElementById("outputContainer").textContent = "Output:";
             document.getElementById("tipsfield").textContent = "Tips:";

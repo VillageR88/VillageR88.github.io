@@ -37,3 +37,11 @@ document.getElementById('toggleList4').addEventListener('click', () => {
         document.getElementById('nestedList4').style.display = 'none';
     }
 });
+
+function collapseAll() {
+    document.getElementById('nestedList1').style.display = 'none';
+    document.getElementById('nestedList1b').style.display = 'none';
+    document.getElementById('nestedList2').style.display = 'none';
+    document.getElementById('nestedList3').style.display = 'none';
+    document.getElementById('nestedList4').style.display = 'none';
+};
