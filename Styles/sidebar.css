@@ -8,10 +8,6 @@
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
 .togglebtn {
   cursor: pointer;
   color: white;
@@ -26,9 +22,6 @@
 .togglebtn.customized {
   background-color:orange;
   color: black;
-}
-.togglebtn:hover {
-
 }
 
 #main {
