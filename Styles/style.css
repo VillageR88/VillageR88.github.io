@@ -41,10 +41,22 @@ a.enhanced:hover {
 
 h1 {
   color: white;
+  text-shadow: none;
 }
 
 h1.enhanced {
   color: black;
+  text-shadow: 1px 1px 1px white;
+}
+
+ul {
+  color: white;
+  text-shadow: none;
+}
+
+ul.enhanced {
+  color: black;
+  text-shadow: 1px 1px 1px white;
 }
 
 #wrapper1 {
@@ -98,10 +110,8 @@ h1.enhanced {
 #center.enhanced {
   background-color: #ececee;
   text-shadow: -0.5px -0.5px 0 rgba(0, 0, 0, 0.001),
-    /* Lewy górny cień */ 0.5px -0.5px 0 rgba(0, 0, 0, 0.001),
-    /* Prawy górny cień */ -0.5px 0.5px 0 rgba(0, 0, 0, 0.001),
-    /* Lewy dolny cień */ 0.5px 0.5px 0 rgba(0, 0, 0, 0.001);
-  /* Prawy dolny cień */
+    0.5px -0.5px 0 rgba(0, 0, 0, 0.001), -0.5px 0.5px 0 rgba(0, 0, 0, 0.001),
+    0.5px 0.5px 0 rgba(0, 0, 0, 0.001);
 }
 
 table {
@@ -114,7 +124,6 @@ td {
 
 td.CodeMirror {
   display: hidden;
-  /* Ukryj komórkę oznaczoną klasą "hidden" */
 }
 
 h1,

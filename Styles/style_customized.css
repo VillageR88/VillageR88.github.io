@@ -16,6 +16,12 @@ a.customized:hover {
 
 h1.customized {
   color: orange;
+  text-shadow: none;
+}
+
+ul.customized {
+  color: white;
+  text-shadow: none;
 }
 
 #wrapper1.customized {
