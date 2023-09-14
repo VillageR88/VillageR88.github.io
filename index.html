@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/base16-light.min.css">
   <link rel="stylesheet" href="Styles/style.css" />
   <link rel="stylesheet" href="Styles/sidebar.css" />
+  <link rel="stylesheet" href="Styles/reactbar.css" />
   <link rel="stylesheet" href="Styles/tooltip.css" />
   <link rel="stylesheet" href="Styles/style_customized.css" />
   <link rel="stylesheet" href="Styles/style_CodeMirror.css" />
@@ -25,23 +26,26 @@
   <div id="wrapper1">
     <div id="up_left">
       <div id="main">
-        <button class="togglebtn" onclick="toggleNav()">&#9776; </button>
+        <button class="togglebtn">&#9776; </button>
       </div>
       <h1 id="codeTitle" style="margin-left: 1%">My code: Hello World!</h1>
     </div>
     <div id="up_center">
     </div>
     <div id="up_right">
-      <button id="theme1"></button>
+      <button id="theme1" ></button>
       <div class="tooltip">
         <button id="theme1settings">⚙</button>
         <span style="font-size: small;" class="tooltiptext">Not available yet</span>
       </div>
-      <div><button id="reactor"></button></div>
+      <div>
+        <button id="reactor"></button>
+        <div id="myReactbar" class="reactbar">
+        </div>
+      </div>
     </div>
   </div>
   <div id="wrapper2">
-
     <div id="mySidebar" class="sidebar">
       <div id="left">
         <p></p>
@@ -128,6 +132,7 @@
       <script src="Scripts/settings.js"></script>
       <script src="Scripts/settings2.js"></script>
       <script src="Scripts/sidebar.js"></script>
+      <script src="Scripts/reactbar.js"></script>
       <script>document.getElementById("runButton").disabled = true;</script>
       <script>document.getElementById("codeEditor2").hidden = true;</script>
 </body>

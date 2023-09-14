@@ -310,6 +310,9 @@ img {
   td:nth-child(2) {
     display: none;
   }
+  #reactor {
+    display: none;
+  }
 }
 @media only screen and (max-width: 480px) {
   #center,
