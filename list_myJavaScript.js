@@ -83,8 +83,8 @@ async function displayFileContent() {
                         createInputFields(parameters);
                         document.getElementById("debugfield").textContent = "Debug:"
                             + " function " + modifiedCode.match(lookfor)[1]
-                            + " , number_of_parameters = " + document.getElementById("inputFields").children.length / 2
-                            + " , parameters = (" + modifiedCode.match(lookfor)[2] + ").";
+                            + " , number_of_parameters (" + document.getElementById("inputFields").children.length / 2 + ")"
+                            + " , parameters (" + modifiedCode.match(lookfor)[2] + ").";
                     }
                     catch (error) {
                         document.getElementById("debugfield").textContent = "Debug: " + "Function implementation in progress. Please come back later."
