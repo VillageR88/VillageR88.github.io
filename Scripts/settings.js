@@ -15,6 +15,7 @@ else if (localStorage.getItem("theme1") == light) {
   editor2.setOption("theme", light);
   theme1.textContent = "☀";
   theme1.classList.add('enhanced');
+  reactor.classList.add('enhanced');
   debugButton.classList.add('enhanced');
   runButton.classList.add('enhanced');
   debugButton.classList.add('enhanced');
@@ -38,6 +39,7 @@ else if (localStorage.getItem("theme1") == customized) {
   editor2.setOption("theme", customized);
   theme1.textContent = "✰";
   theme1.classList.add('customized');
+  reactor.classList.add('customized');
   debugButton.classList.add('customized');
   document.querySelector('.togglebtn').classList.add('customized');
   runButton.classList.add('customized');
@@ -65,6 +67,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     theme1.textContent = "☀";
     localStorage.setItem('theme1', light);
     theme1.classList.add('enhanced');
+    reactor.classList.add('enhanced');
     debugButton.classList.add('enhanced');
     document.querySelector('.togglebtn').classList.add('enhanced');
     runButton.classList.add('enhanced');
@@ -95,6 +98,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     theme1.textContent = "✰";
     localStorage.setItem('theme1', customized);
     theme1.classList.add('customized');
+    reactor.classList.add('customized');
     debugButton.classList.add('customized');
     document.querySelector('.togglebtn').classList.add('customized');
     runButton.classList.add('customized');
@@ -126,6 +130,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     theme1.textContent = "☽";
     localStorage.setItem('theme1', dark);
     theme1.classList.remove('enhanced', 'customized');
+    reactor.classList.remove('enhanced', 'customized');
     debugButton.classList.remove('enhanced', 'customized');
     document.querySelector('.togglebtn').classList.remove('enhanced', 'customized');
     runButton.classList.remove('enhanced', 'customized');

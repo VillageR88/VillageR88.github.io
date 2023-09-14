@@ -70,8 +70,15 @@ ul.customized {
   padding-right: 7;
 }
 
-
-
+#reactor.customized {
+  background-color: #123685;
+  border-color: #2f5bbb;
+  filter: grayscale(90%);
+  border-style: outset;
+}
+#reactor.customized:active {
+  border-style: inset;
+}
 #outputContainer.customized {
   color: rgb(238, 72, 169);
   text-shadow: none;
