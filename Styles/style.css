@@ -218,6 +218,20 @@ img {
   color: red;
 }
 
+#hr0,
+#hr1,
+#hr2,
+#hr3 {
+  color: #3d3d3d;
+}
+
+#hr0.enhanced,
+#hr1.enhanced,
+#hr2.enhanced,
+#hr3.enhanced {
+  color: #bfc6c8;
+}
+
 @media only screen and (max-height: 500px) {
   #wrapper0 {
     width: 100%;

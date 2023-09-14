@@ -66,6 +66,14 @@ ul.customized {
   color: rgb(68, 201, 15);
 }
 
+#hr0.customized,
+#hr1.customized,
+#hr2.customized,
+#hr3.customized {
+  color: #4613be;
+}
+
+
 @media only screen and (max-width: 480px) {
   #img1.customized {
     filter: invert(1);
