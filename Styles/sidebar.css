@@ -14,14 +14,17 @@
   background-color: black;
   padding: 6px 10px;
   border-radius: 10px;
+  border-color: #4b4d4e;
 }
 .togglebtn.enhanced {
   color: black;
   background-color: white;
+  border-color: #dbd5d5;
 }
 .togglebtn.customized {
   background-color:#5239cc;
   color: white;
+  border-color: #715cda;
 }
 
 #main {

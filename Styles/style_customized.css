@@ -42,6 +42,7 @@ ul.customized {
 #debugButton.customized {
   background-color: #044a10;
   color: #ffffff;
+  border-color: green;
 }
 
 #runButton:enabled.customized {
@@ -53,14 +54,15 @@ ul.customized {
   cursor: pointer;
   display: block;
   margin-left: 3;
-  background-color: black;
+  background-color: rgb(109, 42, 116);
   color: white;
   height: 30;
   border-radius: 10px;
+  border-color: rgb(134, 95, 126);
 }
 
 #outputContainer.customized {
-  color: rgb(235, 12, 142);
+  color: rgb(238, 72, 169);
   text-shadow: none;
 }
 
