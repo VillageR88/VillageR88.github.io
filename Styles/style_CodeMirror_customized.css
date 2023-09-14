@@ -17,8 +17,8 @@
   background: rgba(50, 50, 50, 0.99);
 }
 .cm-s-customized .CodeMirror-gutters {
-  background: #2b1e6b;
-  border-right: 1px solid rgb(70, 19, 190);
+  background: #241a55;
+  border-right: 1px solid rgb(65, 22, 165);
 }
 .cm-s-customized .CodeMirror-guttermarker {
   color: #fff;
