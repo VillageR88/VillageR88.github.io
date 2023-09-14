@@ -202,6 +202,10 @@ img {
   color: black;
   border-color: #c4c8ca;
 }
+#theme1.enhanced{
+  padding-left: 7;
+  padding-right: 7;
+}
 
 #outputContainer {
   margin: 0;

@@ -45,6 +45,11 @@ ul.customized {
   border-color: green;
 }
 
+#theme1.customized{
+  padding-left: 7;
+  padding-right: 7;
+}
+
 #runButton:enabled.customized {
   background-color: #123685;
   color: #ffffff;
@@ -59,7 +64,13 @@ ul.customized {
   height: 30;
   border-radius: 10px;
   border-color: rgb(134, 95, 126);
+  font-size:x-large;
+  padding-bottom: 32;
+  padding-left: 7;
+  padding-right: 7;
 }
+
+
 
 #outputContainer.customized {
   color: rgb(238, 72, 169);
