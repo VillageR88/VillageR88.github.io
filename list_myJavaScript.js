@@ -48,7 +48,6 @@ async function displayFileContent() {
                         function createInputFields(array) {
                             const inputFieldsDiv = document.getElementById("inputFields");
                             inputFieldsDiv.innerHTML = "";
-                            inputFieldsDiv.style.width = "100%";
                             for (let i = 0; i < array.length; i++) {
                                 const label = document.createElement("label");
                                 label.textContent = `${parameters[i]}:`;
@@ -58,26 +57,25 @@ async function displayFileContent() {
                                 textarea.setAttribute("id", `param${i}`);
                                 textarea.setAttribute("name", `param${i}`);
                                 textarea.setAttribute("rows", "1");
-                                textarea.setAttribute("cols", "100%");
-                                textarea.style.width = "100%";
+                                textarea.style.width = "99.3%";
                                 textarea.style.resize = "none";
                                 if (localStorage.getItem("theme1") == "default") {
                                     label.style.color = "black";
                                     textarea.style.color = "black";
                                     textarea.style.backgroundColor = "white";
-                                    textarea.style.borderBlockColor = "#white";
+                                    textarea.style.borderColor = "white";
                                 }
                                 else if (localStorage.getItem("theme1") == "twilight") {
                                     label.style.color = "white";
                                     textarea.style.color = "white";
                                     textarea.style.backgroundColor = "#2b2d30";
-                                    textarea.style.borderBlockColor = "#212225";
+                                    textarea.style.borderColor = "#212225";
                                 }
                                 else if (localStorage.getItem("theme1") == "customized") {
                                     label.style.color = "white";
                                     textarea.style.color = "white";
                                     textarea.style.backgroundColor = "#5239cc";
-                                    textarea.style.borderBlockColor = "#2b1e6b";
+                                    textarea.style.borderColor = "#2b1e6b";
                                 }
                                 inputFieldsDiv.appendChild(label);
                                 inputFieldsDiv.appendChild(textarea);
