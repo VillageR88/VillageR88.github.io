@@ -6,15 +6,14 @@ const mediaQuery = window.matchMedia("(max-height: 500px)");
 if (localStorage.getItem("theme1") == dark) {
   editor1.setOption("theme", dark);
   editor2.setOption("theme", dark);
-  theme1.textContent = "Dark theme";
+  theme1.textContent = "☽";
   if (mediaQuery.matches) theme1.textContent = theme1.textContent.slice(0, -6);  
   localStorage.setItem('theme1', dark);
 }
 else if (localStorage.getItem("theme1") == light) {
   editor1.setOption("theme", light);
   editor2.setOption("theme", light);
-  theme1.textContent = "Light theme";
-  if (mediaQuery.matches) theme1.textContent = theme1.textContent.slice(0, -6);  
+  theme1.textContent = "☀";
   theme1.classList.add('enhanced');
   debugButton.classList.add('enhanced');
   runButton.classList.add('enhanced');
@@ -37,8 +36,7 @@ else if (localStorage.getItem("theme1") == light) {
 else if (localStorage.getItem("theme1") == customized) {
   editor1.setOption("theme", customized);
   editor2.setOption("theme", customized);
-  theme1.textContent = "Custom theme";
-  if (mediaQuery.matches) theme1.textContent = theme1.textContent.slice(0, -6);  
+  theme1.textContent = "✰";
   theme1.classList.add('customized');
   debugButton.classList.add('customized');
   document.querySelector('.togglebtn').classList.add('customized');
@@ -64,8 +62,7 @@ document.getElementById('theme1').addEventListener('click', function () {
   if (localStorage.getItem("theme1") == dark) {
     editor1.setOption("theme", light);
     editor2.setOption("theme", light);
-    theme1.textContent = "Light theme";
-    if (mediaQuery.matches) theme1.textContent = theme1.textContent.slice(0, -6);  
+    theme1.textContent = "☀";
     localStorage.setItem('theme1', light);
     theme1.classList.add('enhanced');
     debugButton.classList.add('enhanced');
@@ -95,8 +92,7 @@ document.getElementById('theme1').addEventListener('click', function () {
   else if (localStorage.getItem("theme1") == light) {
     editor1.setOption("theme", customized);
     editor2.setOption("theme", customized);
-    theme1.textContent = "Custom theme";
-    if (mediaQuery.matches) theme1.textContent = theme1.textContent.slice(0, -6);  
+    theme1.textContent = "✰";
     localStorage.setItem('theme1', customized);
     theme1.classList.add('customized');
     debugButton.classList.add('customized');
@@ -127,8 +123,7 @@ document.getElementById('theme1').addEventListener('click', function () {
   else if (localStorage.getItem("theme1") == customized) {
     editor1.setOption("theme", dark);
     editor2.setOption("theme", dark);
-    theme1.textContent = "Dark theme";
-    if (mediaQuery.matches) theme1.textContent = theme1.textContent.slice(0, -6);  
+    theme1.textContent = "☽";
     localStorage.setItem('theme1', dark);
     theme1.classList.remove('enhanced', 'customized');
     debugButton.classList.remove('enhanced', 'customized');

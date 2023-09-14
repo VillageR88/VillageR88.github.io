@@ -173,6 +173,12 @@ img {
   height: 30;
   border-radius: 10px;
   border-color: #4b4d4e;
+  font-size:x-large;
+  padding-bottom: 33;
+  padding-left: 10;
+  padding-right: 10;
+  padding-top: 0;
+  margin: 0;
 }
 
 #debugButton {
