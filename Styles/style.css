@@ -60,15 +60,13 @@ ul.enhanced {
 
 #wrapper1 {
   display: flex;
-  background-color: #16171b85;
+  margin: 0;
 }
 
-#wrapper1.enhanced {
-  background-color: rgb(212, 219, 231);
-}
 
 #wrapper2 {
   display: flex;
+  margin: 0;
 }
 
 #up_left {
@@ -97,8 +95,8 @@ ul.enhanced {
   margin-right: 5px;
   margin-left: 5px;
   margin-top: 0px;
-
   border-radius: 10px;
+  border-style:hidden;
 }
 
 #center.enhanced {
@@ -114,10 +112,6 @@ table {
 
 td {
   width: 50%;
-}
-
-td.CodeMirror {
-  display: hidden;
 }
 
 h1,

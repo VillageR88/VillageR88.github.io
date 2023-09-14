@@ -1,6 +1,4 @@
 .CodeMirror {
-  border: 0 px;
-  margin: 0 px;
   min-height: 400px;
   font-size: 14px;
 }
@@ -37,6 +35,7 @@
 .cm-s-twilight .CodeMirror-linenumber {
   text-shadow: none;
 }
+
 .cm-s-twilight .cm-comment {
   color: lightgreen;
   font-style: normal;
