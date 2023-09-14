@@ -259,7 +259,8 @@ img {
   h2,
   #left,
   #wrapper0,
-  #wrapper1 {
+  #wrapper1,
+  .togglebtn {
     display: none;
   }
   #flipper {
