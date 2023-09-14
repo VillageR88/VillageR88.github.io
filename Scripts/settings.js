@@ -80,7 +80,11 @@ document.getElementById('theme1').addEventListener('click', function () {
     document.querySelectorAll('label').forEach(label => label.style.color = 'black');
     img1.classList.add('enhanced');
     document.querySelectorAll("label").forEach(function (label) {label.style.color = "black"});
-    document.querySelectorAll("textarea").forEach(function (textarea) {textarea.style.backgroundColor = "white"});
+    document.querySelectorAll("textarea").forEach(function (textarea) {
+      textarea.style.backgroundColor = "white";
+      textarea.style.borderColor = "white";
+      textarea.style.color = "black";
+    });
   }
   else if (localStorage.getItem("theme1") == light) {
     editor1.setOption("theme", customized);
@@ -107,7 +111,11 @@ document.getElementById('theme1').addEventListener('click', function () {
     document.querySelectorAll('label').forEach(label => label.style.color = 'white');
     img1.classList.add('customized');
     document.querySelectorAll("label").forEach(function (label) {label.style.color = "white"});
-    document.querySelectorAll("textarea").forEach(function (textarea) {textarea.style.backgroundColor = "#2b1e6b"});
+    document.querySelectorAll("textarea").forEach(function (textarea) {
+      textarea.style.backgroundColor = "#5239cc";
+      textarea.style.borderColor = "#2b1e6b";
+      textarea.style.color = "white";
+    });
   }
   else if (localStorage.getItem("theme1") == customized) {
     editor1.setOption("theme", dark);
@@ -134,7 +142,11 @@ document.getElementById('theme1').addEventListener('click', function () {
     document.querySelectorAll('label').forEach(label => label.style.color = 'white');
     img1.classList.remove('enhanced', 'customized');
     document.querySelectorAll("label").forEach(function (label) {label.style.color = "white"});
-    document.querySelectorAll("textarea").forEach(function (textarea) {textarea.style.backgroundColor = "#212225"});
+    document.querySelectorAll("textarea").forEach(function (textarea) {
+      textarea.style.backgroundColor = "#2b2d30";
+      textarea.style.borderColor = "#212225";
+      textarea.style.color = "white";
+    });
   }
 });
 

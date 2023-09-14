@@ -52,7 +52,7 @@ async function displayFileContent() {
                             for (let i = 0; i < array.length; i++) {
                                 const label = document.createElement("label");
                                 label.textContent = `${parameters[i]}:`;
-                               
+
                                 label.setAttribute("for", `param${i}`);
                                 const textarea = document.createElement("textarea");
                                 textarea.setAttribute("id", `param${i}`);
@@ -61,20 +61,23 @@ async function displayFileContent() {
                                 textarea.setAttribute("cols", "100%");
                                 textarea.style.width = "100%";
                                 textarea.style.resize = "none";
-                                if (localStorage.getItem("theme1") == "default") { 
-                                    label.style.color = "black"; 
+                                if (localStorage.getItem("theme1") == "default") {
+                                    label.style.color = "black";
                                     textarea.style.color = "black";
                                     textarea.style.backgroundColor = "white";
+                                    textarea.style.borderBlockColor = "#white";
                                 }
-                                else if (localStorage.getItem("theme1") == "twilight") { 
+                                else if (localStorage.getItem("theme1") == "twilight") {
                                     label.style.color = "white";
                                     textarea.style.color = "white";
-                                    textarea.style.backgroundColor = "#212225";
+                                    textarea.style.backgroundColor = "#2b2d30";
+                                    textarea.style.borderBlockColor = "#212225";
                                 }
-                                else if (localStorage.getItem("theme1") == "customized") { 
+                                else if (localStorage.getItem("theme1") == "customized") {
                                     label.style.color = "white";
                                     textarea.style.color = "white";
-                                    textarea.style.backgroundColor = "#2b1e6b";
+                                    textarea.style.backgroundColor = "#5239cc";
+                                    textarea.style.borderBlockColor = "#2b1e6b";
                                 }
                                 inputFieldsDiv.appendChild(label);
                                 inputFieldsDiv.appendChild(textarea);
