@@ -107,7 +107,7 @@ ul.enhanced {
 
 #codeEditor1Title,
 #codeEditor2Title {
-  background-color:#2b2d30;
+  background-color: #2b2d30;
   border-radius: 10px 10px 0 0;
 }
 
@@ -247,10 +247,7 @@ img {
 }
 
 @media only screen and (max-height: 500px) {
-  #wrapper0 {
-    width: 100%;
-  }
-
+  #wrapper0,
   #wrapper1 {
     width: 100%;
   }
@@ -272,7 +269,10 @@ img {
     box-sizing: border-box;
     /* Dołącz padding i border do szerokości komórek */
   }
-
+  #codeEditor1Title,
+  #codeEditor2Title {
+    display: none;
+  }
   td:nth-child(2) {
     display: none;
   }
@@ -287,6 +287,7 @@ img {
   .togglebtn {
     display: none;
   }
+
   #flipper {
     display: block;
     text-align: center;

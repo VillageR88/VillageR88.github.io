@@ -1,7 +1,8 @@
 var light = "default";
 var dark = "twilight";
+var customized = "customized";
 const mediaQuery = window.matchMedia("(max-height: 500px)");
-var customized = "customized"
+
 if (localStorage.getItem("theme1") == dark) {
   editor1.setOption("theme", dark);
   editor2.setOption("theme", dark);
