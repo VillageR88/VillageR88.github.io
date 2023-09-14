@@ -70,8 +70,7 @@ ul.enhanced {
 
 #up_left {
   display: flex;
-  flex: 25;
-  
+  flex: 4;
   justify-content: left;
   align-items: center;
 }
@@ -80,8 +79,8 @@ ul.enhanced {
   display: flex;
   flex-direction:row;
   flex: 1;
-  margin-right: 14px;
-  justify-content: left;
+  justify-content: right;
+  margin-right: 12px;
   align-items: center;
 }
 
