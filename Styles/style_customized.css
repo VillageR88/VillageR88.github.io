@@ -73,7 +73,7 @@ ul.customized {
 #reactor.customized {
   background-color: #123685;
   border-color: #2f5bbb;
-  filter: grayscale(90%);
+  filter: grayscale(0.4);
   border-style: outset;
 }
 #reactor.customized:active {

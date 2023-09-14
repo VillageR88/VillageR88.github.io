@@ -70,14 +70,17 @@ ul.enhanced {
 
 #up_left {
   display: flex;
-  flex: 4;
+  flex: 25;
+  
   justify-content: left;
   align-items: center;
 }
 
 #up_right {
   display: flex;
+  flex-direction:row;
   flex: 1;
+  margin-right: 14px;
   justify-content: left;
   align-items: center;
 }
