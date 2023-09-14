@@ -30,6 +30,7 @@ else if (localStorage.getItem("theme1") == light) {
   debugfield.classList.add('enhanced');
   img1.classList.add('enhanced');
   myReactbar.classList.add('enhanced');
+  myReactbar2.classList.add('enhanced');
   document.querySelectorAll('h1').forEach(link => link.classList.add('enhanced'));
   document.querySelectorAll('ul').forEach(link => link.classList.add('enhanced'));
   document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
@@ -55,6 +56,7 @@ else if (localStorage.getItem("theme1") == customized) {
   debugfield.classList.add('customized');
   img1.classList.add('customized');
   myReactbar.classList.add('customized');
+  myReactbar2.classList.add('customized');
   document.querySelectorAll('h1').forEach(link => link.classList.add('customized'));
   document.querySelectorAll('ul').forEach(link => link.classList.add('customized'));
   document.querySelectorAll('a').forEach(link => link.classList.add('customized'));
@@ -82,6 +84,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     tipsfield.classList.add('enhanced');
     debugfield.classList.add('enhanced');
     myReactbar.classList.add('enhanced');
+    myReactbar2.classList.add('enhanced');
     document.querySelectorAll('h1').forEach(link => link.classList.add('enhanced'));
     document.querySelectorAll('ul').forEach(link => link.classList.add('enhanced'));
     document.querySelectorAll('a').forEach(link => link.classList.add('enhanced'));
@@ -115,6 +118,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     tipsfield.classList.add('customized');
     debugfield.classList.add('customized');
     myReactbar.classList.add('customized');
+    myReactbar2.classList.add('customized');
     document.querySelectorAll('h1').forEach(link => link.classList.add('customized'));
     document.querySelectorAll('ul').forEach(link => link.classList.add('customized'));
     document.querySelectorAll('a').forEach(link => link.classList.add('customized'));
@@ -148,6 +152,7 @@ document.getElementById('theme1').addEventListener('click', function () {
     tipsfield.classList.remove('enhanced', 'customized');
     debugfield.classList.remove('enhanced', 'customized');
     myReactbar.classList.remove('enhanced', 'customized');
+    myReactbar2.classList.remove('enhanced', 'customized');
     document.querySelectorAll('h1').forEach(link => link.classList.remove('enhanced', 'customized'));
     document.querySelectorAll('ul').forEach(link => link.classList.remove('enhanced', 'customized'));
     document.querySelectorAll('a').forEach(link => link.classList.remove('enhanced', 'customized'));
