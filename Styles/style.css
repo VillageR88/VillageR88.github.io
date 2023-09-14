@@ -63,7 +63,6 @@ ul.enhanced {
   margin: 0;
 }
 
-
 #wrapper2 {
   display: flex;
   margin: 0;
@@ -85,18 +84,18 @@ ul.enhanced {
 
 #left {
   height: calc(95.4vh - 24px);
-  flex: 1;  
+  flex: 1;
   overflow-y: scroll;
 }
 
 #center {
   flex: 4;
   background-color: #141414;
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-top: 0px;
+  margin-right: 3px;
+  margin-left: 3px;
+  border-top: 0;
   border-radius: 10px;
-  border-style:hidden;
+  border-style: hidden;
 }
 
 #center.enhanced {
@@ -108,6 +107,7 @@ ul.enhanced {
 
 table {
   width: 100%;
+  margin: -3px;
 }
 
 td {
