@@ -46,8 +46,8 @@ ul.customized {
 }
 
 #theme1.customized{
-  padding-left: 7;
-  padding-right: 7;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 #runButton:enabled.customized {
@@ -58,16 +58,16 @@ ul.customized {
 #theme1settings.customized {
   cursor: pointer;
   display: block;
-  margin-left: 3;
+  margin-left: 3px;
   background-color: rgb(109, 42, 116);
   color: white;
-  height: 30;
+  height: 30px;
   border-radius: 10px;
   border-color: rgb(134, 95, 126);
   font-size:x-large;
-  padding-bottom: 32;
-  padding-left: 7;
-  padding-right: 7;
+  padding-bottom: 32px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 #reactor.customized {
