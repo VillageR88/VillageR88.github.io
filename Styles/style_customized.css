@@ -24,8 +24,13 @@ ul.customized {
   text-shadow: none;
 }
 
+#codeEditor1Title.customized,
+#codeEditor2Title.customized {
+  background-color: #5239cc;
+}
+
 #center.customized {
-  background-color: #251d44;
+  background-color: #2b1e6b;
   text-shadow: -0.5px -0.5px 0 rgba(0, 0, 0, 0.001),
     /* Lewy górny cień */ 0.5px -0.5px 0 rgba(0, 0, 0, 0.001),
     /* Prawy górny cień */ -0.5px 0.5px 0 rgba(0, 0, 0, 0.001),
@@ -33,7 +38,8 @@ ul.customized {
   /* Prawy dolny cień */
 }
 
-#theme1.customized, #debugButton.customized {
+#theme1.customized,
+#debugButton.customized {
   background-color: #044a10;
   color: #ffffff;
 }
@@ -72,7 +78,6 @@ ul.customized {
 #hr3.customized {
   color: #4613be;
 }
-
 
 @media only screen and (max-width: 480px) {
   #img1.customized {

@@ -18,6 +18,8 @@ else if (localStorage.getItem("theme1") == light) {
   document.querySelector('.togglebtn').classList.add('enhanced');
   wrapper1.classList.add('enhanced');
   center.classList.add('enhanced');
+  codeEditor1Title.classList.add('enhanced');
+  codeEditor2Title.classList.add('enhanced');
   document.body.classList.add('enhanced');
   outputContainer.classList.add('enhanced');
   tipsfield.classList.add('enhanced');
@@ -39,6 +41,8 @@ else if (localStorage.getItem("theme1") == customized) {
   theme1settings.classList.add('customized');
   wrapper1.classList.add('customized');
   center.classList.add('customized');
+  codeEditor1Title.classList.add('customized');
+  codeEditor2Title.classList.add('customized');
   document.body.classList.add('customized');
   outputContainer.classList.add('customized');
   tipsfield.classList.add('customized');
@@ -63,6 +67,8 @@ document.getElementById('theme1').addEventListener('click', function () {
     runButton.classList.add('enhanced');
     wrapper1.classList.add('enhanced');
     center.classList.add('enhanced');
+    codeEditor1Title.classList.add('enhanced');
+    codeEditor2Title.classList.add('enhanced');
     document.body.classList.add('enhanced');
     outputContainer.classList.add('enhanced');
     tipsfield.classList.add('enhanced');
@@ -88,6 +94,8 @@ document.getElementById('theme1').addEventListener('click', function () {
     theme1settings.classList.add('customized');
     wrapper1.classList.add('customized');
     center.classList.add('customized');
+    codeEditor1Title.classList.add('customized');
+    codeEditor2Title.classList.add('customized');
     document.body.classList.add('customized');
     outputContainer.classList.add('customized');
     tipsfield.classList.add('customized');
@@ -113,6 +121,8 @@ document.getElementById('theme1').addEventListener('click', function () {
     theme1settings.classList.remove('enhanced', 'customized');
     wrapper1.classList.remove('enhanced', 'customized');
     center.classList.remove('enhanced', 'customized');
+    codeEditor1Title.classList.remove('enhanced', 'customized');
+    codeEditor2Title.classList.remove('enhanced', 'customized');
     document.body.classList.remove('enhanced', 'customized');
     outputContainer.classList.remove('enhanced', 'customized');
     tipsfield.classList.remove('enhanced', 'customized');

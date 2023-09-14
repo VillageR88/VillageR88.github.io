@@ -99,10 +99,21 @@ ul.enhanced {
 }
 
 #center.enhanced {
-  background-color: #ececee;
+  background-color: #e4e4e7;
   text-shadow: -0.5px -0.5px 0 rgba(0, 0, 0, 0.001),
     0.5px -0.5px 0 rgba(0, 0, 0, 0.001), -0.5px 0.5px 0 rgba(0, 0, 0, 0.001),
     0.5px 0.5px 0 rgba(0, 0, 0, 0.001);
+}
+
+#codeEditor1Title,
+#codeEditor2Title {
+  background-color:#2b2d30;
+  border-radius: 10px 10px 0 0;
+}
+
+#codeEditor1Title.enhanced,
+#codeEditor2Title.enhanced {
+  background-color: #ececee;
 }
 
 table {
