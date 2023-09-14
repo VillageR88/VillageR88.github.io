@@ -61,12 +61,10 @@ ul.enhanced {
 #wrapper1 {
   display: flex;
   background-color: #16171b85;
-  border-bottom: 1px solid #646464;
 }
 
 #wrapper1.enhanced {
   background-color: rgb(212, 219, 231);
-  border-bottom: 1px solid #646464;
 }
 
 #wrapper2 {
@@ -98,6 +96,9 @@ ul.enhanced {
   background-color: #141414;
   margin-right: 5px;
   margin-left: 5px;
+  margin-top: 0px;
+
+  border-radius: 10px;
 }
 
 #center.enhanced {
