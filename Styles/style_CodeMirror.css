@@ -28,7 +28,7 @@
   color: rgb(237, 150, 100);
 }
 .cm-s-twilight .CodeMirror-gutters {
-  background: #141414;
+  background: #141414;  
   border-right: 1px solid rgb(61, 61, 61);
 }
 
