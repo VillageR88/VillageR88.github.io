@@ -2,6 +2,18 @@
   min-height: 400px;
   font-size: 14px;
 }
+
+@media only screen and (max-height: 500px) {
+  .CodeMirror {
+    min-height: auto;
+    max-height: 170px;
+    font-size: 12px;
+  }
+  #left {
+    height: calc(80.4vh - 24px);
+  }
+}
+
 .CodeMirror .cm-comment {
   color: darkblue;
   font-style: normal;
@@ -28,7 +40,7 @@
   color: rgb(237, 150, 100);
 }
 .cm-s-twilight .CodeMirror-gutters {
-  background: #141414;  
+  background: #141414;
   border-right: 1px solid rgb(61, 61, 61);
 }
 
