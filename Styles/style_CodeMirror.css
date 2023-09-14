@@ -5,8 +5,8 @@
 
 @media only screen and (max-height: 500px) {
   .CodeMirror {
-    min-height: auto;
-    max-height: auto;
+    min-height: fit-content;
+    max-height: fit-content;
     font-size: 12px;
   }
   #left {
