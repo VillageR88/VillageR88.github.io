@@ -8,3 +8,14 @@
     line-height: 150%;
     text-shadow: none;
 }
+
+#myReactortext3{
+    position: fixed;
+    left: 1360px;
+    top: 60px;
+    z-index: 3  ;
+    margin-top: 10px;
+    white-space: pre-line;
+    line-height: 150%;
+    text-shadow: none;
+}

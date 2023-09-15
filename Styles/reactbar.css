@@ -9,14 +9,6 @@
   color: white;
 }
 
-#myReactbar.enhanced {
-  background-color: #ffffff;
-}
-
-#myReactbar.customized {
-  background-color: #1c2333;
-}
-
 #myReactbar2 {
     z-index: 2;
     position: fixed;
@@ -27,10 +19,31 @@
     background-color: #212225;
   }
 
+  #myReactbar3 {
+    z-index: 2;
+    position: fixed;
+    top: 6.4%;
+    right: 0%;
+    height: 93%;
+    width: 30%;
+    background-color: #141414;
+    border: solid 2px;
+    border-color: rgb(187, 245, 179);
+  }
+
   #myReactbar2.enhanced {
     background-color: #e4e4e7;
   }
-  
+
   #myReactbar2.customized {
     background-color: #2b1e6b;
+  }
+  
+  #myReactbar.enhanced, #myReactbar3.enhanced {
+    background-color: white;
+
+  }
+  
+  #myReactbar.customized, #myReactbar3.customized {
+    background-color: #1c2333;
   }
