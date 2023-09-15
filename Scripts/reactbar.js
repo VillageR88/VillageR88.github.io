@@ -20,3 +20,5 @@ function toggleReactbar() {
     isReactbarOpen = !isReactbarOpen;
 }
 reactorButton.addEventListener('click', toggleReactbar);
+
+export default toggleReactbar;
