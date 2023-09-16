@@ -88,7 +88,7 @@ export function runReact() {
         await sleep(3000);
       }
 
-      for (var i = 30; i < 45; i++) {
+      for (var i = 30; i < 44; i++) {
         pr += 1;
         const newText = `React autoloader ver 1.0 - installation progress ${pr}%\n\nInstalling Dependencies`;
         element3.textContent = newText;
