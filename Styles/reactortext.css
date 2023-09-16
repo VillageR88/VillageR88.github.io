@@ -1,9 +1,9 @@
 #myReactortext{
     position: fixed;
-    left: 10px;
-    top: 60px;
-    z-index: 3  ;
-    margin-top: 10px;
+    left: 0.5208%; /* (10px / 1920px) * 100% */
+    top: 7%; /* (60px / 1920px) * 100% */
+    z-index: 3;
+    margin-top: 0.5208%; /* (10px / 1920px) * 100% */
     white-space: pre-line;
     line-height: 150%;
     text-shadow: none;
@@ -11,10 +11,10 @@
 
 #myReactortext3{
     position: fixed;
-    left: 1360px;
-    top: 60px;
-    z-index: 3  ;
-    margin-top: 10px;
+    left: 70.8333%; /* (1360px / 1920px) * 100% */
+    top: 7%; /* (60px / 1920px) * 100% */
+    z-index: 3;
+    margin-top: 0.5208%; /* (10px / 1920px) * 100% */
     white-space: pre-line;
     line-height: 150%;
     text-shadow: none;
