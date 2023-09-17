@@ -121,7 +121,7 @@ export function runReact() {
     await typeText(element1, "Expect changes in the nearest future.", go);
     await blinking(element1, 2, rest);
     document.getElementById("reactor").disabled = false;
-
+    document.getElementById('reactor').click();
     /*
     await blinking(element1, 4, rest);
     element1.textContent += "Jeff-AI: ";

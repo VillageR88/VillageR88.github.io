@@ -2,7 +2,7 @@ import { runReact } from "./myReactortext.js";
 
 const reactorButton = document.getElementById('reactor');
 const myReactbar = document.getElementById('myReactbar');
-const myReactbar2 = document.getElementById('myReactbar2'); // Dodaj brakujący element
+const myReactbar2 = document.getElementById('myReactbar2');
 const myReactbar3 = document.getElementById('myReactbar3');
 
 let isReactbarOpen = false;
