@@ -1,19 +1,28 @@
-<!DOCTYPE html> 
-<html> 
-  <head> 
-    <meta charset="UTF-8" /> 
-    <title>Steps To Add React to a Website </title> 
-  </head> 
-  <body> 
- 
-    <h2>Steps To Add React to a Website </h2> 
-    <div id="some_random_id"></div> 
- 
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> 
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> 
- 
-    <!-- To Load our React component. --> 
-    <script src="Scripts/my_component.js"></script> 
- 
-  </body> 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Steps To Add React to a Website</title>
+</head>
+<body>
+
+  <h2>Steps To Add React to a Website</h2>
+  <div id="some_random_id"></div>
+
+  <!-- Załaduj React i ReactDOM -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Załaduj Babel do przekształcania kodu JSX -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+  <!-- Załaduj plik JSX -->
+  <script type="text/babel" src="Scripts/my_component.jsx"></script>
+
+  <!-- To Load our React component. -->
+  <script>
+    const domContainer = document.querySelector('#some_random_id');
+    ReactDOM.render(<MyComponent />, domContainer);
+  </script>
+</body>
 </html>
