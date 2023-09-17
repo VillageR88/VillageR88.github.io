@@ -120,6 +120,11 @@ export function runReact() {
     element1.textContent += "Karol (automated response): ";
     await typeText(element1, "Expect changes in the nearest future.", go);
     await blinking(element1, 2, rest);
+    element1.textContent += "\n";
+
+    element1.textContent += "Karol (automated response): ";
+    await typeText(element1, "Good luck!.", go);
+    await blinking(element1, 2, rest);
     document.getElementById("reactor").disabled = false;
     document.getElementById('reactor').click();
     /*
