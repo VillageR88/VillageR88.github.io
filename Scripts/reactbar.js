@@ -1,5 +1,13 @@
 import { runReact } from "./myReactortext.js";
 
+/*debug
+localStorage.removeItem("firstTime");*/
+document.addEventListener("DOMContentLoaded", function () {
+    if (document.getElementById('reactor').disabled == false && localStorage.getItem("firstTime") != "no") {
+        document.getElementById('reactor').click();
+    }
+});
+
 const reactorButton = document.getElementById('reactor');
 const myReactbar = document.getElementById('myReactbar');
 const myReactbar2 = document.getElementById('myReactbar2');
