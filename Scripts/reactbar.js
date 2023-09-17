@@ -6,9 +6,9 @@ const myReactbar2 = document.getElementById('myReactbar2'); // Dodaj brakujący 
 const myReactbar3 = document.getElementById('myReactbar3');
 
 let isReactbarOpen = false;
-myReactbar.style.transition = 'transform 5s ease';
-myReactbar2.style.transition = 'transform 5s ease';
-myReactbar3.style.transition = 'transform 3s ease';
+myReactbar.style.transition = 'transform 0.6s ease';
+myReactbar2.style.transition = 'transform 0.6s ease';
+myReactbar3.style.transition = 'transform 0.6s ease';
 
 export function toggleReactbar() {
     if (isReactbarOpen) {

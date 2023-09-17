@@ -25,13 +25,13 @@ export function runReact() {
 
   async function loading(element, rest, delay) {
     for (var i = 0; i < rest; i++) {
-      element.textContent += " .";
+      element.innerHTML += " .";
       await sleep(delay);
-      element.textContent += ".";
+      element.innerHTML += ".";
       await sleep(delay);
-      element.textContent += ".";
+      element.innerHTML += ".";
       await sleep(delay);
-      element.textContent = element.textContent.replace(/\.*$/g, '');
+      element.innerHTML = element.innerHTML.replace(/\.*$/g, '');
       await sleep(delay);
     }
   }
@@ -45,7 +45,81 @@ export function runReact() {
   go = 0, fastgo = 0, rest = 0, load = 0;*/
 
   async function main() {
+    
     document.getElementById("reactor").disabled = true;
+    await blinking(element1, 2, rest);
+
+    element1.textContent += "Karol (automated response): ";
+    await typeText(element1, "Hello there!", go);
+    await blinking(element1, 4, rest);
+    element1.textContent += "\n";
+
+    element1.textContent += "Karol (automated response): ";
+    await typeText(element1, " Welcome to my html repository for the first time on your desktop computer.", go);
+    await blinking(element1, 2, rest);
+    element1.textContent += "\n";
+    element1.textContent += "Karol (automated response): ";
+
+    await typeText(element1, "I will run some quick integrity check before we start.", go);
+    await blinking(element1, 2, rest);
+    element1.textContent += "\n";
+   
+    document.getElementById('myReactbar3').style.transform = 'translate(-103%, 0%)';
+    await blinking(element1, 1, rest);
+
+    async function test1() {
+      for (var i = 0; i < 25; i++) {
+        element3.innerHTML = `Integrity check ver 1.0 - progress ${i}%\n\nHTML`;
+        await loading(element3, 1, 30);
+      }
+      for (var i = 25; i < 50; i++) {
+        element3.innerHTML = `Integrity check ver 1.0 - progess ${i}%
+        \nHTML&emsp;-&emsp;<span class="green-text">passed</span>
+        CSS`;
+        await loading(element3, 1, 30);
+      }
+      for (var i = 50; i < 75; i++) {
+        element3.innerHTML = `Integrity check ver 1.0 - progess ${i}%
+        \nHTML&emsp;-&emsp;<span class="green-text">passed</span>
+        CSS&emsp;&emsp;-&emsp;<span class="green-text">passed</span>
+        JS</span>`;
+        await loading(element3, 1, 30);
+      }
+      for (var i = 75; i < 100; i++) {
+        element3.innerHTML = `Integrity check ver 1.0 - progess ${i}%
+        \nHTML&emsp;-&emsp;<span class="green-text">passed</span>
+        CSS&emsp;&emsp;-&emsp;<span class="green-text">passed</span>
+        JS&emsp;&emsp;&nbsp;&nbsp;&nbsp;-&emsp;<span class="green-text">passed</span>
+        React`;
+        await loading(element3, 1, 30);
+      }
+      element3.innerHTML = `Integrity check ver 1.0 - progess ${i}%
+      \nHTML&emsp;-&emsp;<span class="green-text">passed</span>
+      CSS&emsp;&emsp;-&emsp;<span class="green-text">passed</span>
+      JS&emsp;&emsp;&nbsp;&nbsp;&nbsp;-&emsp;<span class="green-text">passed</span>
+      React&emsp;&nbsp;-&emsp;<span class="red-text">failed</span>`;
+    }
+    await test1();
+
+    document.getElementById("reactor").disabled = true;
+    await blinking(element1, 2, rest);
+
+    element1.textContent += "Karol (automated response): ";
+    await typeText(element1, "Site is currently running without React.", go);
+    await blinking(element1, 2, rest);
+    element1.textContent += "\n";
+
+    element1.textContent += "Karol (automated response): ";
+    await typeText(element1, "So far this is expected behaviour.", go);
+    await blinking(element1, 2, rest);
+    element1.textContent += "\n";
+
+    element1.textContent += "Karol (automated response): ";
+    await typeText(element1, "Expect changes in the nearest future.", go);
+    await blinking(element1, 2, rest);
+    document.getElementById("reactor").disabled = false;
+
+    /*
     await blinking(element1, 4, rest);
     element1.textContent += "Jeff-AI: ";
     await typeText(element1, "Hello there!", go);
@@ -68,7 +142,7 @@ export function runReact() {
     element1.textContent += "Jeff-AI: ";
     await typeText(element1, "Initializing the React startup routine.", go);
     document.getElementById('myReactbar3').style.transform = 'translate(-103%, 0%)';
-    await blinking(element1, 4, rest);
+    await blinking(element1, 1, rest);
     element1.textContent = "";
 
     var pr = -1;
@@ -173,7 +247,8 @@ export function runReact() {
       document.getElementById("reactor").disabled = false;
     }
 
-    await Promise.allSettled([progress(), func1(), func2()]);
+    await Promise.allSettled([progress(), func1(), func2()]);*/
   }
   main();
-}
+  
+  }
