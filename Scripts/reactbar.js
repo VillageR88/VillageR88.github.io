@@ -4,7 +4,7 @@ import { runReact } from "./myReactortext.js";
 localStorage.removeItem("firstTime");*/
 document.addEventListener("DOMContentLoaded", function () {
     if (document.getElementById('reactor').disabled == false && localStorage.getItem("firstTime") != "no") {
-        document.getElementById('reactor').click();
+        toggleReactbar();
     }
 });
 
@@ -36,7 +36,6 @@ export function toggleReactbar() {
     isReactbarOpen = !isReactbarOpen;
 }
 
-reactorButton.addEventListener('click', toggleReactbar);
 
 export function toggleReactbar3() {
     myReactbar3.style.transform = 'translate(-103%, 0%)';
