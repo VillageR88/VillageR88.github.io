@@ -45,7 +45,7 @@ export function runReact() {
   go = 0, fastgo = 0, rest = 0, load = 0;*/
 
   async function main() {
-    
+
     document.getElementById("reactor").disabled = true;
     await blinking(element1, 2, rest);
 
@@ -54,16 +54,19 @@ export function runReact() {
     await blinking(element1, 4, rest);
     element1.textContent += "\n";
 
+    if (localStorage.getItem("firstTime") != "no") {
     element1.textContent += "Karol (automated response): ";
     await typeText(element1, " Welcome to my html repository for the first time on your desktop computer.", go);
     await blinking(element1, 2, rest);
     element1.textContent += "\n";
-    element1.textContent += "Karol (automated response): ";
+    localStorage.setItem('firstTime', "no");
+    }
 
+    element1.textContent += "Karol (automated response): ";
     await typeText(element1, "I will run some quick integrity check before we start.", go);
     await blinking(element1, 2, rest);
     element1.textContent += "\n";
-   
+
     document.getElementById('myReactbar3').style.transform = 'translate(-103%, 0%)';
     await blinking(element1, 1, rest);
 
@@ -250,5 +253,4 @@ export function runReact() {
     await Promise.allSettled([progress(), func1(), func2()]);*/
   }
   main();
-  
-  }
+}
