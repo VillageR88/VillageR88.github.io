@@ -1,2 +1,6 @@
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<h1>Hello, world!</h1>);
+root.render(
+    <div>
+        <h1>Hello, react!</h1>
+    </div>
+);
