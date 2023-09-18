@@ -5,6 +5,7 @@ class Counter extends React.Component {
             counter: 0,
         };
     }
+    
     handleZeroing = () => {
         this.setState((prevState) => ({
             counter: prevState.counter = 0,
