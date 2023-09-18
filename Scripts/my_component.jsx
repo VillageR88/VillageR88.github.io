@@ -113,7 +113,7 @@ class App extends React.Component {
                         {nowTime}
                     </h2>
                     <h1 style={{
-                        fontSize: 30,
+                        fontSize: 24,
                         //textShadow: "1px 0px 0.1px pink",
                         //color: "black",
                         display: "flex",
@@ -127,7 +127,7 @@ class App extends React.Component {
                         marginLeft: "3px"
                     }} type="button" id="theme1" onClick={this.handleTheme}>Theme</button>
                     <button style={{
-                        marginRight: "3px"
+                        marginRight: "12px"
 
                     }} type="button" id="htmlr" onClick={this.handleExit}></button>
                 </tb>
