@@ -23,10 +23,10 @@ class Counter extends React.Component {
             <div>
                 <h1>Hello, react!</h1>
                 <h1 id="counter">{this.state.counter}</h1>
-                <button type="button" id="decrement" onClick={this.handleDecrement}>
+                <button style={{ backgroundColor: 'red' }} type="button" id="decrement" onClick={this.handleDecrement}>
                     Decrement
                 </button>
-                <button type="button" id="increment" onClick={this.handleIncrement}>
+                <button style={{ backgroundColor: 'lime' }} type="button" id="increment" onClick={this.handleIncrement}>
                     Increment
                 </button>
             </div>
