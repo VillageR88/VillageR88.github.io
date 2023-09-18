@@ -210,7 +210,7 @@ img {
   padding-right: 7px;
 }
 
-#reactor, #htmlr {
+#reactor {
   cursor: pointer;
   margin-left: 3px;
   border-radius: 10px;
@@ -221,20 +221,48 @@ img {
   filter: sepia() grayscale() contrast(1) brightness(1.3);
 }
 
+#htmlr {
+  cursor: pointer;
+  margin-left: 3px;
+  border-radius: 10px;
+  padding: 16.5px;
+  background-size: cover;
+  border-style: inset;
+  background-color: white;
+  border-color: rgb(199, 198, 198);
+  filter: invert();
+  border-style: inset;
+}
+#htmlr:active {
+  border-style: outset;
+}
+
 #reactor {
   background-image: url(/Images/react.png);
 }
 
 #htmlr {
-  background-image: url(/Images/react.png);
+  background-image: url(/Images/html1.png);
 }
 
-#reactor.enhanced, #htmlr.enhanced {
+#reactor.enhanced {
   border-color: rgb(104, 99, 99);
   filter:brightness(1.3) grayscale() invert();
   border-style: inset;
 }
-#reactor.enhanced:active, #htmlr.enhanced:active {
+
+#htmlr.enhanced {
+  filter: inherit;
+  border-style: outset;
+
+}
+
+#htmlr.enhanced:active {
+  border-style: inset;
+
+}
+
+#reactor.enhanced:active {
   border-style: outset;
 }
 

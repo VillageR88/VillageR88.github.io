@@ -45,7 +45,7 @@ ul.customized {
   border-color: green;
 }
 
-#theme1.customized{
+#theme1.customized {
   padding-left: 7px;
   padding-right: 7px;
 }
@@ -64,21 +64,36 @@ ul.customized {
   height: 30px;
   border-radius: 10px;
   border-color: rgb(134, 95, 126);
-  font-size:x-large;
+  font-size: x-large;
   padding-bottom: 32px;
   padding-left: 7px;
   padding-right: 7px;
 }
 
-#reactor.customized, #htmlr.customized {
+#reactor.customized {
   background-color: #123685;
   border-color: #2f5bbb;
   filter: grayscale(0.4);
   border-style: outset;
 }
-#reactor.customized:active, #htmlr.customized:active {
+
+#htmlr.customized {
+  filter: inherit;
+  filter: invert();
+  background-color: #858312;
+  border-color: #a6bb2f;
+  border-style: inset;
+
+}
+
+#reactor.customized:active {
   border-style: inset;
 }
+
+#htmlr.customized:active {
+  border-style: outset;
+}
+
 #outputContainer.customized {
   color: rgb(238, 72, 169);
   text-shadow: none;
