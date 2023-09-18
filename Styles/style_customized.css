@@ -80,8 +80,8 @@ ul.customized {
 #htmlr.customized {
   filter: inherit;
   filter: invert();
-  background-color: #858312;
-  border-color: #a6bb2f;
+  background-color: rgb(247, 186, 136);
+  border-color: rgba(199, 168, 84, 0.514);
   border-style: inset;
 
 }
