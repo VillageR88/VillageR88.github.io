@@ -5,7 +5,7 @@ class Counter extends React.Component {
             counter: 0,
         };
     }
-    
+
     handleZeroing = () => {
         this.setState((prevState) => ({
             counter: prevState.counter = 0,
@@ -50,6 +50,7 @@ class Counter extends React.Component {
                 }}>
                     <button style={{
                         fontWeight: "bold",
+                        textShadow: "1px 1px 1px white",
                         fontSize: 22,
                         backgroundColor: "lightgrey",
                         padding: 20
@@ -58,6 +59,7 @@ class Counter extends React.Component {
                     </button>
                     <button style={{
                         fontWeight: "bold",
+                        textShadow: "1px 1px 1px white",
                         fontSize: 22,
                         backgroundColor: "lightcoral",
                         padding: 20
@@ -66,6 +68,7 @@ class Counter extends React.Component {
                     </button>
                     <button style={{
                         fontWeight: "bold",
+                        textShadow: "1px 1px 1px white",
                         fontSize: 22,
                         backgroundColor: "lightgreen",
                         padding: 20
