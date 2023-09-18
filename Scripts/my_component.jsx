@@ -127,11 +127,7 @@ class App extends React.Component {
                         marginLeft: "3px"
                     }} type="button" id="theme1" onClick={this.handleTheme}>Theme</button>
                     <button style={{
-                        fontSize: "20px",
-                        border: "solid",
-                        padding: "10px",
-                        marginRight: "10px",
-                        marginLeft: "5px"
+                        marginRight: "3px"
 
                     }} type="button" id="htmlr" onClick={this.handleExit}></button>
                 </tb>
