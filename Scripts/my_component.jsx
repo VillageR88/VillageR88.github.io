@@ -5,6 +5,11 @@ class Counter extends React.Component {
             counter: 0,
         };
     }
+    handleZeroing = () => {
+        this.setState((prevState) => ({
+            counter: prevState.counter = 0,
+        }));
+    }
 
     handleIncrement = () => {
         this.setState((prevState) => ({
@@ -42,6 +47,14 @@ class Counter extends React.Component {
                     display: "flex",
                     justifyContent: "center",
                 }}>
+                    <button style={{
+                        fontWeight: "bold",
+                        fontSize: 22,
+                        backgroundColor: "lightgrey",
+                        padding: 20
+                    }} type="button" id="decrement" onClick={this.handleZeroing}>
+                        Zeroing
+                    </button>
                     <button style={{
                         fontWeight: "bold",
                         fontSize: 22,
