@@ -22,8 +22,9 @@ class Counter extends React.Component {
         return (
             <div>
                 <h1 style={{
+                    fontSize: 40,
                     textShadow: "1px 1px 1px black",
-                    color: "purple",
+                    color: "white",
                     backgroundColor: "cornflowerblue",
                     padding: "30px",
                     display: "flex",
@@ -41,10 +42,20 @@ class Counter extends React.Component {
                     display: "flex",
                     justifyContent: "center",
                 }}>
-                    <button style={{ backgroundColor: "red", padding: 30 }} type="button" id="decrement" onClick={this.handleDecrement}>
+                    <button style={{
+                        fontWeight: "bold",
+                        fontSize: 22,
+                        backgroundColor: "lightcoral",
+                        padding: 20
+                    }} type="button" id="decrement" onClick={this.handleDecrement}>
                         Decrement
                     </button>
-                    <button style={{ backgroundColor: "lime", padding: 30 }} type="button" id="increment" onClick={this.handleIncrement}>
+                    <button style={{
+                        fontWeight: "bold",
+                        fontSize: 22,
+                        backgroundColor: "lightgreen",
+                        padding: 20
+                    }} type="button" id="increment" onClick={this.handleIncrement}>
                         Increment
                     </button>
                 </td>
@@ -52,7 +63,6 @@ class Counter extends React.Component {
         );
     }
 }
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Counter />);
