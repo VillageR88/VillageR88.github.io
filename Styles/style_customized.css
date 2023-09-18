@@ -70,13 +70,13 @@ ul.customized {
   padding-right: 7px;
 }
 
-#reactor.customized {
+#reactor.customized, #htmlr.customized {
   background-color: #123685;
   border-color: #2f5bbb;
   filter: grayscale(0.4);
   border-style: outset;
 }
-#reactor.customized:active {
+#reactor.customized:active, #htmlr.customized:active {
   border-style: inset;
 }
 #outputContainer.customized {

@@ -210,24 +210,31 @@ img {
   padding-right: 7px;
 }
 
-#reactor {
+#reactor, #htmlr {
   cursor: pointer;
   margin-left: 3px;
   border-radius: 10px;
   background-color: black;
   border-color: #2f3131;
-  background-image: url(/Images/react.png);
   padding: 16.5px;
   background-size: cover;
   filter: sepia() grayscale() contrast(1) brightness(1.3);
 }
 
-#reactor.enhanced {
+#reactor {
+  background-image: url(/Images/react.png);
+}
+
+#htmlr {
+  background-image: url(/Images/react.png);
+}
+
+#reactor.enhanced, #htmlr.enhanced {
   border-color: rgb(104, 99, 99);
   filter:brightness(1.3) grayscale() invert();
   border-style: inset;
 }
-#reactor.enhanced:active {
+#reactor.enhanced:active, #htmlr.enhanced:active {
   border-style: outset;
 }
 

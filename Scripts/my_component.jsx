@@ -17,6 +17,7 @@ class App extends React.Component {
         localStorage.setItem('theme1', light);
         document.body.classList.add('enhanced');
         theme1.classList.add('enhanced');
+        htmlr.classList.add('enhanced');
     }
 
     dark = () => {
@@ -24,6 +25,7 @@ class App extends React.Component {
         localStorage.setItem('theme1', dark);
         document.body.classList.remove('enhanced', 'customized');
         theme1.classList.remove('enhanced', 'customized');
+        htmlr.classList.remove('enhanced', 'customized');
     }
 
     customized = () => {
@@ -31,6 +33,7 @@ class App extends React.Component {
         localStorage.setItem('theme1', customized);
         document.body.classList.add('customized');
         theme1.classList.add('customized');
+        htmlr.classList.add('customized');
     }
 
     handleZeroing = () => {
@@ -127,8 +130,10 @@ class App extends React.Component {
                         fontSize: "20px",
                         border: "solid",
                         padding: "10px",
-                        marginRight: "10px"
-                    }} type="button" id="exitReact" onClick={this.handleExit}>Exit React</button>
+                        marginRight: "10px",
+                        marginLeft: "5px"
+
+                    }} type="button" id="htmlr" onClick={this.handleExit}></button>
                 </tb>
                 <div style={{
                     fontSize: "30px",
