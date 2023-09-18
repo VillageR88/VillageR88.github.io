@@ -115,3 +115,6 @@
 000115. Write Number in Expanded Form.js
 000116 No oddities here.js
 000117. Hello, Name or World!.js
+000118. Alan Partridge II - Apple Turnover.js
+000119. Consonant value.js
+000120. Alternate capitalization.js
