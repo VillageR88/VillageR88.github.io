@@ -36,7 +36,7 @@ class Counter extends React.Component {
                     display: "flex",
                     justifyContent: "center"
                 }}>
-                    Hello, React! I'm just messing around.
+                    Hello, React 💪 I'm just messing around. 🐒
                 </h1>
                 <h1 style={{
                     border: "solid",
