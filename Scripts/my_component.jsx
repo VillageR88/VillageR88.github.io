@@ -6,7 +6,6 @@ class Counter extends React.Component {
         };
     }
 
-
     handleZeroing = () => {
         this.setState({
             counter: 0,
