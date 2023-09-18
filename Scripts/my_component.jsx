@@ -1,4 +1,4 @@
-class Counter extends React.Component {
+class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -26,35 +26,51 @@ class Counter extends React.Component {
     }
 
     componentDidMount() {
+        //document.body.style.backgroundColor = 'lightblue';
         this.timer = setInterval(() => {
-          this.setState({
-            nowTime: new Date().toLocaleTimeString(),
-          });
+            this.setState({
+                nowTime: new Date().toLocaleTimeString(),
+            });
         }, 1000);
-      }
+    }
 
     componentWillUnmount() {
+        //document.body.style.backgroundColor = '';
         clearInterval(this.timer);
     }
 
     render() {
         const nowTime = new Date().toLocaleTimeString();
         return (
+
             <div>
-                <h1 style={{
-                    fontSize: 40,
-                    textShadow: "1px 1px 1px black",
-                    color: "white",
-                    backgroundColor: "cornflowerblue",
-                    padding: "30px",
+                <tb style={{
                     display: "flex",
-                    justifyContent: "center"
+                    alignItems: "center",
+
                 }}>
-                    Hello, React 💪 I'm just messing around. 🐒
-                </h1>
-                <h2>
-                    {nowTime}
-                </h2>
+                    <h2 style={{
+                        display: "flex",
+                        justifyContent: "left",
+                        marginLeft: "10px",
+                        border: "solid",
+                        padding: "6px",
+                        position: "absolute",
+                    }}>
+                        {nowTime}
+                    </h2>
+                    <h1 style={{
+                        fontSize: 40,
+                        //textShadow: "1px 0px 0.1px pink",
+                        color: "black",
+                        padding: "10px",
+                        display: "flex",
+                        flex: 4,
+                        justifyContent: "center"
+                    }}>
+                        Hello, React 💪 I'm just messing around. 🐒
+                    </h1>
+                </tb>
                 <h1 style={{
                     border: "solid",
                     padding: 10,
@@ -98,4 +114,4 @@ class Counter extends React.Component {
     }
 }
 
-ReactDOM.render(<Counter />, document.getElementById('root'));  
+ReactDOM.render(<App />, document.getElementById('root'));  
