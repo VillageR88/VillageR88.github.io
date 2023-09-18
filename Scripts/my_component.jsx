@@ -3,6 +3,7 @@ class Counter extends React.Component {
         super(props);
         this.state = {
             counter: 0,
+            nowTime: new Date().toLocaleTimeString(),
         };
     }
 
@@ -26,10 +27,12 @@ class Counter extends React.Component {
 
     componentDidMount() {
         this.timer = setInterval(() => {
-            this.forceUpdate();
+          this.setState({
+            nowTime: new Date().toLocaleTimeString(),
+          });
         }, 1000);
+      }
 
-    }
     componentWillUnmount() {
         clearInterval(this.timer);
     }
@@ -37,9 +40,7 @@ class Counter extends React.Component {
     render() {
         const nowTime = new Date().toLocaleTimeString();
         return (
-
-            <div >
-
+            <div>
                 <h1 style={{
                     fontSize: 40,
                     textShadow: "1px 1px 1px black",
