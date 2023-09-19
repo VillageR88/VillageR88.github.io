@@ -143,31 +143,34 @@ class App extends React.Component {
                     justifyContent: "center",
                 }}>
                     <button style={{
+                        color: "inherit",
+                        backgroundColor: "inherit",
                         fontWeight: "bold",
-                        textShadow: "1px 1px 1px white",
                         fontSize: "18px",
-                        backgroundColor: "lightgrey",
                         padding: "10px",
+                        borderRadius: "15%",
                     }} type="button" id="zero" onClick={this.handleZeroing}>
-                        Zeroing
+                        0
                     </button>
                     <button style={{
+                        color: "inherit",
+                        backgroundColor: "inherit",
                         fontWeight: "bold",
-                        textShadow: "1px 1px 1px white",
                         fontSize: "18px",
-                        backgroundColor: "lightcoral",
                         padding: "10px",
+                        borderRadius: "15%",
                     }} type="button" id="decrement" onClick={this.handleDecrement}>
-                        Decrement
+                        -
                     </button>
                     <button style={{
+                        color: "inherit",
+                        backgroundColor: "inherit",
                         fontWeight: "bold",
-                        textShadow: "1px 1px 1px white",
                         fontSize: "18px",
-                        backgroundColor: "lightgreen",
                         padding: "10px",
+                        borderRadius: "15%",
                     }} type="button" id="increment" onClick={this.handleIncrement}>
-                        Increment
+                        +
                     </button>
                 </div>
             </div>

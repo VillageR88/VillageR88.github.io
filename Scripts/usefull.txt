@@ -1,0 +1,3 @@
+document.body.style.backgroundColor = '';
+textShadow: "1px 0px 0.1px pink",
+backgroundColor: "lightgrey",
