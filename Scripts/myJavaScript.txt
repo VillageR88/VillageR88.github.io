@@ -123,3 +123,11 @@
 000123. Pillars.js
 000124. A wolf in sheep's clothing.js
 000125. Reverse or rotate.js
+000126. Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string.js
+000127. Simple calculator.js
+000128 Meeting.js
+000129. Multiplication table.js
+000130. Basic data types Boolean and conditional statements if..else.js
+000131. Most digits.js
+000132. Row Weights.js
+000133. Kata Example Twist.js
