@@ -103,6 +103,7 @@ class App extends React.Component {
                     alignItems: "center",
                 }}>
                     <h2 style={{
+                        textShadow: "inherit",
                         display: "flex",
                         justifyContent: "left",
                         marginLeft: "10px",
@@ -113,6 +114,7 @@ class App extends React.Component {
                         {nowTime}
                     </h2>
                     <h1 style={{
+                        textShadow: "inherit",
                         fontSize: 24,
                         //textShadow: "1px 0px 0.1px pink",
                         //color: "black",
