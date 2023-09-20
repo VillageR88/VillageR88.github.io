@@ -131,3 +131,7 @@
 000131. Most digits.js
 000132. Row Weights.js
 000133. Kata Example Twist.js
+000134. Loop statement --for.js
+000135. Holiday VI - Shark Pontoon.js
+000136. Encrypt this.js
+000137. How good are you really.js
