@@ -137,3 +137,5 @@
 000137. How good are you really.js
 000138. A Rule of Divisibility by 13.js
 000139. Sum of Multiples.js
+000140. Love vs friendship.js
+000141. Title Case.js
