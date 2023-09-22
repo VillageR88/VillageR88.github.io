@@ -139,3 +139,4 @@
 000139. Sum of Multiples.js
 000140. Love vs friendship.js
 000141. Title Case.js
+000142. Calculating with Functions.js
