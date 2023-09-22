@@ -140,3 +140,5 @@
 000140. Love vs friendship.js
 000141. Title Case.js
 000142. Calculating with Functions.js
+000143. Friend or Foe.js
+000144. Grasshopper - Function syntax debugging.js
