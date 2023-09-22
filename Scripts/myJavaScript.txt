@@ -142,3 +142,5 @@
 000142. Calculating with Functions.js
 000143. Friend or Foe.js
 000144. Grasshopper - Function syntax debugging.js
+000145. Regex Password Validation.js
+000146. Sum of two lowest positive integers.js
