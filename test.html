@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wheel Zoom &amp; Drag</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/uplot@1.6.2/dist/uPlot.min.css">
+  </head>
+  <body>
+    <div id="chart-container" style="width: 600px; height: 400px;"></div>
+    <script src="https://unpkg.com/uplot@1.6.2/dist/uPlot.iife.js"></script>
+    <script>
+      function makeChart() {
+        console.time('chart');
+
+        let opts = {
+          title: "Wheel Zoom & Drag",
+          width: 600,
+          height: 400,
+          scales: {
+            x: {
+              time: false,
+            },
+          },
+          series: [
+            {},
+            {
+              label: "One",
+              stroke: "red",
+            },
+            {
+              label: "Two",
+              stroke: "blue",
+            },
+          ]
+        };
+
+        const data = [
+          [1, 2, 3, 4, 5, 6, 7],
+          [40, 43, 60, 65, 71, 73, 80],
+          [18, 24, 37, 55, 55, 60, 63],
+        ];
+
+        let u = new uPlot(opts, data, document.getElementById("chart-container"));
+
+        // Dodaj obsługę zoomu i przesuwania za pomocą rolki myszy
+        document.getElementById("chart-container").addEventListener("wheel", (e) => {
+          e.preventDefault();
+
+          // Wartość przesunięcia rolki myszy
+          const delta = e.deltaY;
+
+          // Skala x
+          const xScale = u.scales.x;
+          const xRange = xScale.max - xScale.min;
+          const xCenter = xScale.min + xRange / 2;
+
+          // Skala y
+          const yScale = u.scales.y;
+          const yRange = yScale.max - yScale.min;
+          const yCenter = yScale.min + yRange / 2;
+
+          // Nowy zakres skal
+          const newRange = delta > 0 ? xRange * 1.1 : xRange / 1.1;
+
+          // Nowe minimum i maksimum dla skali x (szerokość)
+          const newXMin = xCenter - newRange / 2;
+          const newXMax = xCenter + newRange / 2;
+
+          // Ustaw nowy zakres na wykresie (szerokość)
+          u.setScale("x", { min: newXMin, max: newXMax });
+        });
+
+        console.timeEnd('chart');
+      }
+
+      makeChart();
+    </script>
+  </body>
+</html>
