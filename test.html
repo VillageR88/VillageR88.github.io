@@ -43,32 +43,36 @@
 
         let u = new uPlot(opts, data, document.getElementById("chart-container"));
 
-        // Dodaj obsługę zoomu i przesuwania za pomocą rolki myszy
+        // Original y-axis scale settings
+        const originalYScale = {
+          min: u.scales.y.min,
+          max: u.scales.y.max,
+        };
+
+        // Add zoom and pan handling using the mouse wheel
         document.getElementById("chart-container").addEventListener("wheel", (e) => {
           e.preventDefault();
 
-          // Wartość przesunięcia rolki myszy
+          // Mouse wheel delta value
           const delta = e.deltaY;
 
-          // Skala x
+          // x-axis scale
           const xScale = u.scales.x;
           const xRange = xScale.max - xScale.min;
           const xCenter = xScale.min + xRange / 2;
 
-          // Skala y
-          const yScale = u.scales.y;
-          const yRange = yScale.max - yScale.min;
-          const yCenter = yScale.min + yRange / 2;
-
-          // Nowy zakres skal
+          // Calculate the new scale range
           const newRange = delta > 0 ? xRange * 1.1 : xRange / 1.1;
 
-          // Nowe minimum i maksimum dla skali x (szerokość)
+          // Calculate new minimum and maximum values for the x-axis (width)
           const newXMin = xCenter - newRange / 2;
           const newXMax = xCenter + newRange / 2;
 
-          // Ustaw nowy zakres na wykresie (szerokość)
+          // Set the new scale on the chart (width)
           u.setScale("x", { min: newXMin, max: newXMax });
+
+          // Restore the original y-axis scale settings (constant height)
+          u.setScale("y", originalYScale);
         });
 
         console.timeEnd('chart');
