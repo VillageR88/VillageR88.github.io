@@ -24,7 +24,7 @@ async function displayFileContent() {
             document.getElementById("tipsfield").textContent = "Tips:";
             document.getElementById("debugfield").textContent = "Debug: Function implementation in progress. Please come back later.";
             document.getElementById("runButton").disabled = true;
-            codeTitle.textContent = "My code: " + line.slice(7).slice(0, -4);
+            codeTitle.textContent = "My code: " + line.slice(13, -4);
             const clickedElement = event.target;
             const originalName = clickedElement.getAttribute('data-original-name');
             window.scrollTo({
