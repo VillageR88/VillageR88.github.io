@@ -64,6 +64,7 @@ function collapser() {
     document.getElementById('nestedList2').style.display = 'none';
     document.getElementById('nestedList3').style.display = 'none';
     document.getElementById('nestedList4').style.display = 'none';
+    document.getElementById('nestedList5').style.display = 'none';
 }
 
 function collapseAll() {
