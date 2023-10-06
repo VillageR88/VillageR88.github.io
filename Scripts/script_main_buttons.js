@@ -38,6 +38,14 @@ document.getElementById('toggleList4').addEventListener('click', () => {
     }
 });
 
+document.getElementById('toggleList5').addEventListener('click', () => {
+    if (document.getElementById('nestedList5').style.display === 'none') {
+        document.getElementById('nestedList5').style.display = 'block';
+    } else {
+        document.getElementById('nestedList5').style.display = 'none';
+    }
+});
+
 var lock = 0;
 function toggleLock() {
     if (lock == 0) {
