@@ -46,6 +46,14 @@ document.getElementById('toggleList5').addEventListener('click', () => {
     }
 });
 
+document.getElementById('toggleList6').addEventListener('click', () => {
+    if (document.getElementById('nestedList6').style.display === 'none') {
+        document.getElementById('nestedList6').style.display = 'block';
+    } else {
+        document.getElementById('nestedList6').style.display = 'none';
+    }
+});
+
 var lock = 0;
 function toggleLock() {
     if (lock == 0) {
@@ -65,6 +73,7 @@ function collapser() {
     document.getElementById('nestedList3').style.display = 'none';
     document.getElementById('nestedList4').style.display = 'none';
     document.getElementById('nestedList5').style.display = 'none';
+    document.getElementById('nestedList6').style.display = 'none';
 }
 
 function collapseAll() {
