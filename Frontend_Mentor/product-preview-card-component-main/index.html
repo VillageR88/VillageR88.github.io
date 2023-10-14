@@ -1,36 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="styles/style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Product preview card component</title>
 </head>
+
 <body>
 
-  Perfume
+  <main>
+    <div class="wrapper">
+      <div class="left-container">
+        <img class="picture" src="images/image-product-desktop.jpg" alt="product image">
+      </div>
+      <div class="right-container">
+        <first-row>PERFUME</first-row>
+        <second-row>Gabrielle Essence Eau De Parfum</second-row>
+        <third-row>
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </third-row>
+        <div class="fourth-row">
+          <span-one>$149.99</span-one>
+          <span-two>$169.99</span-two>
+        </div>
+        <button class="btn">
+          <img class="cart-img" src="images\icon-cart.svg" alt="cart image">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </main>
 
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
