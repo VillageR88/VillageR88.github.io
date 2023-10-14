@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Hanken Grotesk Bold";
+  src: url("../assets/fonts/static/HankenGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Hanken Grotesk Extra Bold";
+  src: url("../assets/fonts/static/HankenGrotesk-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Hanken Grotesk Medium";
+  src: url("../assets/fonts/static/HankenGrotesk-Medium.ttf");
+}
+
+body {
+  margin: 0;
+}
+
+/*All wrapper*/
+main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  border-radius: 1.5rem;
+  box-shadow: 0.01em 1em 3em 1em rgb(230, 233, 233)
+}
+
+/*Left side of main*/
+.result-info {
+  z-index: 1;
+  font-family: "Hanken Grotesk Bold";
+  font-size: x-large;
+  color: #cac3ff;
+  background-image: linear-gradient(#6743ff, #312cea);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em;
+  border-radius: 1em;
+  height: 16em;
+}
+
+.result-header {
+  font-size: 98%;
+}
+
+.result-middle {
+  color: white;
+  font-size: 300%;
+  background-image: linear-gradient(#4821ca, #4635f3);
+  border-radius: 100%;
+  height: 2.5em;
+  width: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.result-middle-bottom {
+  font-family: 'Hanken Grotesk Bold';
+  font-size: 25%;
+  color: #8a7eff;
+}
+
+.result-bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.result-bottom-up {
+  color: white;
+  margin-top: 8%;
+  font-size: 130%;
+}
+
+.result-bottom-down {
+  font-family: 'Hanken Grotesk';
+  font-size: 75%;
+  margin-top: 4%;
+  width: 14em;
+}
+
+/*Right side of main*/
+.summary-box {
+  font-family: "Hanken Grotesk Extra Bold";
+  font-size: x-large;
+  background-color: white;
+  color: #303b59;
+  /*box-shadow: -50px 50px 50px 40px rgb(238, 238, 238);*/
+  height: 16em;
+  padding: 1.5em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  border-radius: 0 1.5em 1.5em 0;
+}
+
+.summary-header {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.first {
+  color: #303b59;
+  font-family: Hanken Grotesk Bold;
+  margin-left: 70px;
+}
+
+.summary-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.second {
+  color: gray;
+  font-family: Hanken Grotesk Bold;
+}
+
+.summary-reaction {
+  background-color: #fff6f5;
+  color: #db6d70;
+  font-size: 80%;
+  font-family: Hanken Grotesk Medium;
+  padding: 0.6em;
+  border-radius: 0.6em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-memory {
+  background-color: #fffbf2;
+  color: #e7b126;
+  font-size: 80%;
+  font-family: Hanken Grotesk Medium;
+  padding: 0.6em;
+  border-radius: 0.6em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-verbal {
+  background-color: #f2fbfa;
+  color: #00bb8f;
+  font-size: 80%;
+  font-family: Hanken Grotesk Medium;
+  padding: 0.6em;
+  border-radius: 0.6em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-visual {
+  background-color: #f3f3fd;
+  color: #1f2b9b;
+  font-size: 80%;
+  font-family: Hanken Grotesk Medium;
+  padding: 0.6em;
+  border-radius: 0.6em;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  margin: 0 0.8em 0 0.1em;
+  padding: 0;
+  position: relative;
+  top: 0.14em;
+}
+
+/*.button-position {}*/
+
+.button {
+  color: white;
+  background-color: #303b59;
+  border-radius: 22.8rem;
+  font-family: Hanken Grotesk Bold;
+  font-size: 70%;
+  width: 100%;
+  cursor: pointer;
+  padding: 1em;
+  border: none;
+}
+
+.button:hover {
+  background-image: linear-gradient(#6743ff, #312cea);
+}
+
+@media only screen and (max-width: 680px) {
+  body {
+    width: 100%;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    outline:none;
+  }
+
+  .result-info {
+    border-radius: 0 0 1.5em 1.5em;
+  }
+
+  .result-bottom-down {
+    width: 17em;
+  }
+}
