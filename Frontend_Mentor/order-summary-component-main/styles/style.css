@@ -1,0 +1,124 @@
+button {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 28em;
+    text-align: center;
+    gap: 1.8em;
+    background-color: white;
+    border-radius: 1.2em;
+    padding: 0 0 3em;
+}
+
+.hero{
+    border-radius: 1.2em 1.2em 0 0;
+}
+
+.header_text {
+    position: relative;
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    top: 0.7em
+}
+
+.information_text {
+    position: relative;
+    font-size: 1.05rem;
+    color: hsl(224, 23%, 55%);
+    align-self: center;
+    width: 18.5em;
+    line-height: 1.6em;
+    top: 0.5em;
+}
+
+.choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    margin: 0 3em;
+    border-radius: 1em;
+    padding: 1.6em 1.6em;
+}
+
+.box {
+    position: relative;
+    left: -3em;
+    display: flex;
+    flex-direction: column;
+    margin-right: -2em;
+    gap: 0.4em;
+}
+
+.first-line_text {
+    font-weight: 909;
+    color: hsl(223, 47%, 23%);
+}
+
+.second-line_text {
+    color: hsl(224, 23%, 55%);
+}
+
+.change_text {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    text-underline-offset: 1px;
+}
+
+.change_text:hover {
+    cursor: pointer;
+    color: #766cf1;
+    text-decoration: none;
+}
+
+.proceed {
+    margin: 0 3.5em;
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 1em 0;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 0 1em 1em 0.4em rgb(218, 219, 221);
+}
+
+.proceed:hover{
+    cursor: pointer;
+    background-color: #766cf1;
+}
+
+.cancel {
+    font-size: 0.95rem;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+    align-self: center;
+    background-color: transparent;
+    border: none;
+}
+
+.cancel:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
