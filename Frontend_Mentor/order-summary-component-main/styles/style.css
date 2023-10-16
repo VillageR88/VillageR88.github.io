@@ -7,6 +7,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: hsl(225, 100%, 94%);
+    background-position: 0 -6em;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -121,4 +122,11 @@ body {
 .cancel:hover {
     cursor: pointer;
     color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+
 }
