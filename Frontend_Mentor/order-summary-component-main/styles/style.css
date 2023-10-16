@@ -27,6 +27,7 @@ body {
     background-color: white;
     border-radius: 1.2em;
     padding: 0 0 3em;
+    box-shadow: 0 1em 1em 0.4em rgb(225, 226, 230);
 }
 
 .hero{
