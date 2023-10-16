@@ -1,0 +1,121 @@
+button {
+    padding: 1em 2em;
+    border-radius: 2em;
+    border: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.95rem;
+    background-color: hsl(0, 0%, 95%);
+}
+
+button:hover {
+    background-color: transparent;
+    border: solid 0.15em hsl(0, 0%, 95%);
+    padding: 0.85em 1.85em;
+    color: hsl(0, 0%, 95%);
+}
+
+img {
+    position: relative;
+    top: 0.4em;
+}
+
+body {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.wrapper-all {
+    display: flex;
+
+}
+
+.header {
+    position: relative;
+    top: -0.2em;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 95%);
+}
+
+.description {
+    position: relative;
+    top: -1.7em;
+    width: 14em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.wrapper {
+    padding: 2.8em 3em 3em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3em;
+}
+
+.wrapper-sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.6em 0 0 0.6em;
+}
+
+.wrapper-suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.wrapper-luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0.6em 0.6em 0;
+}
+
+.button1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.button2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.button3 {
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 4em 0;
+    }
+    button {
+        position: relative;
+        top: -3.2em
+    }
+
+    .wrapper-all,
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        padding-bottom: 0em;
+    }
+
+    .wrapper-sedans {
+        border-radius: 0.6em 0.6em 0 0;
+    }
+
+    .wrapper-luxury {
+        border-radius: 0 0 0.6em 0.6em;
+    }
+
+    .description {
+        width: 15em;
+        padding: 0;
+    }
+
+}
