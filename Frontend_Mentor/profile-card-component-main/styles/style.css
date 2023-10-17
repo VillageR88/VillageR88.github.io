@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-position: -15em -40em;
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+
+.background-images {
+    position: absolute;
+    z-index: -1;
+}
+
+.person_img {
+    position: relative;
+    top: -3.3em;
+    border: 0.35em solid white;
+    border-radius: 100%;
+}
+
+.top_img {
+    border-radius: 1em 1em 0 0;
+}
+
+.bg1 {
+    position: relative;
+    left: -17em;
+    top: 5em;
+}
+
+.bg2 {
+    position: relative;
+    left: 40em;
+    top: 2em;
+}
+
+.wrapper {
+    z-index: 2;
+    border-radius: 1em;
+    height: 23.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.name_n_age {
+    display: flex;
+    position: relative;
+    top: -2em;
+    gap: 0.6em;
+}
+
+.name {
+    font-size: large;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.age {
+    font-size: large;
+    color: hsl(227, 10%, 46%);
+}
+
+.city {
+    font-size: 0.88rem;
+    position: relative;
+    top: -1.7em;
+    color: hsl(227, 10%, 46%);
+}
+
+.bottom_containers {
+    position: relative;
+    top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 3em;
+    left: -0.4em;
+}
+
+.bleft,
+.bmiddle,
+.bright {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    align-items: center;
+}
+
+.bright {
+    position: relative;
+    left: 0.3em;
+}
+
+.up {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.down {
+    font-size: 0.6rem;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 0.2em;
+}
+
+.line {
+    width: 100%;
+    height: 0.1px;
+    border-bottom: solid 1px;
+    color: rgb(233, 229, 229);
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bg1 {
+        position: relative;
+        left: -27em;
+
+    }
+
+    .bg2 {
+        position: relative;
+        left: 30em;
+        top: -3em;
+    }
+}
