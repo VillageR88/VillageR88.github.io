@@ -30,14 +30,14 @@ body {
 }
 
 .bg1 {
-    position: relative;
-    left: -17em;
-    top: 5em;
+    position: absolute;
+    left: -62em;
+    top: -55em;
 }
 
 .bg2 {
-    position: relative;
-    left: 40em;
+    position: absolute;
+    left: -3em;
     top: 2em;
 }
 
@@ -119,23 +119,4 @@ body {
     border-bottom: solid 1px;
     color: rgb(233, 229, 229);
     overflow: hidden;
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .bg1 {
-        position: relative;
-        left: -27em;
-
-    }
-
-    .bg2 {
-        position: relative;
-        left: 30em;
-        top: -3em;
-    }
 }
