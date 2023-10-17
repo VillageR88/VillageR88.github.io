@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.box {
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 45em;
+    overflow: hidden;
+    width: 57.5em;
+    height: 31.8em;
+    border-radius: 1.5em;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+}
+
+.right-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 29em;
+    left: 5em;
+    gap: 1.5em;
+    margin-right: 13em;
+    font-size: small;
+}
+
+.header_text {
+    font-size: xx-large;
+    font-weight: bold;
+    color: hsl(238, 29%, 16%);
+}
+
+.middle-text {
+    line-height: 2em;
+    font-weight: normal;
+}
+
+.question {
+    font-size: 0.9rem;
+    position: relative;
+    color: hsl(237, 12%, 33%);
+    line-height: 3em;
+    top: 0.5em;
+}
+
+.answer {
+    display: none;
+    color: hsl(237, 12%, 33%);
+    font-size: 0.7rem;
+    line-height: 1.5em;
+}
+
+.mark {
+    position: relative;
+    width: 0.8em;
+    height: 0.55em;
+    align-self: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2;
+}
+
+.question:hover {
+    cursor: pointer;
+    color: hsl(14, 88%, 65%);
+}
+
+.picture1 {
+    position: absolute;
+    left: -36.0em;
+    top: -18.5em
+}
+
+.picture2 {
+    z-index: 2;
+    position: absolute;
+    left: -5.8em;
+    top: 12.6em;
+}
+
+.picture3 {
+    position: absolute;
+    margin: 0 38.5em 0.9em 0;
+}
+
+.line {
+    position: relative;
+    width: 100%;
+    height: 0.1px;
+    border-bottom: solid 1px;
+    color: hsl(240, 5%, 91%);
+    overflow: hidden;
+    top: 0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        width: auto;
+        min-height: 100%;
+        height: auto;
+        padding: 6em 0 4em;
+        margin-top: 4em;
+    }
+
+    .picture1,
+    .picture2,
+    .picture3 {
+        display: none;
+    }
+
+    .left-side {
+        display: none;
+    }
+
+    .right-side {
+        position: relative;
+        margin: 0;
+        left: 0;
+        width: 27em;
+        height: auto;
+    }
+
+    .header_text {
+        position: relative;
+        align-self: center;
+    }
+
+    .middle-text {
+        text-align: center;
+        height: auto;
+    }
+
+
+    .question {
+        position: relative;
+        margin: 1em;
+    }
+
+    .mark {
+        position: relative;
+        left: -2em;
+        top: 0.5em;
+    }
+
+    .answer {
+        position: relative;
+        max-width: 25em;
+        text-align: left;
+        left: 1.5em;
+        top: -1em;
+    }
+
+
+
+
+}
