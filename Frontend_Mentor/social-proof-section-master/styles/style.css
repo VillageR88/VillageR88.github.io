@@ -17,11 +17,9 @@ body {
     display: flex;
     align-items: center;
     font-family: 'League Spartan', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
     justify-content: center;
 }
-
-
 
 background1 {
     position: absolute;
@@ -47,14 +45,13 @@ background4 {
 }
 
 .wrapper {
-    padding: 0 10em;
+    padding: 2em;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8em;
-    justify-content: left;
-
+    justify-content: center;
 }
 
 .top {
@@ -63,7 +60,6 @@ background4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .top-left-text1 {
@@ -197,7 +193,7 @@ background4 {
     color: var(--Soft_Pink);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 
     background1,
     background2 {
@@ -221,7 +217,6 @@ background4 {
         background-image: url(../images/bg-pattern-bottom-mobile.svg);
         background-repeat: no-repeat;
         top: 27em;
-        left: 4em;
     }
 
     body {
