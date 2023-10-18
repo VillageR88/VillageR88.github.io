@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Social proof section</title>
+</head>
+
+<body>
+  <background1></background1>
+  <background2></background2>
+  <background3></background3>
+  <background4></background4>
+  <main>
+    <div class="wrapper">
+      <div class="top">
+        <div class="top-left">
+          <span class="top-left-text1">10,000+ of our users love our products.</span>
+          <span class="top-left-text2">
+            We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.
+          </span>
+        </div>
+        <div class="top-right">
+          <div class="boxes1 top-right-box1">
+            <div class="star-container"></div>
+            <span class="rbox rbox-text1">Rated 5 Stars in Reviews</span>
+          </div>
+          <div class="boxes1 top-right-box2">
+            <div class="star-container"></div>
+            <span class="rbox rbox-text2">Rated 5 Stars in Report Guru</span>
+          </div>
+          <div class="boxes1 top-right-box3">
+            <div class="star-container"></div>
+            <span class="rbox rbox-text3">Rated 5 Stars in BestTech</span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="boxes2 bottom-left">
+          <div class="cred">
+            <img class="face" src="./images/image-colton.jpg" alt="Picture of Colton">
+            <div class="user">
+              <span class="name">Colton Smith</span>
+              <span class="tag">Verified Buyer</span>
+            </div>
+          </div>
+          <span class="comment">
+            "We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"
+          </span>
+        </div>
+        <div class="boxes2 bottom-centre">
+          <div class="cred">
+            <img class="face" src="./images/image-irene.jpg" alt="Picture of Colton">
+            <div class="user">
+              <span class="name">Irene Roberts</span>
+              <span class="tag">Verified Buyer</span>
+            </div>
+          </div>
+          <span class="comment">
+            "Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."
+          </span>
+        </div>
+        <div class="boxes2 bottom-right">
+          <div class="cred">
+            <img class="face" src="./images/image-anne.jpg" alt="Picture of Colton">
+            <div class="user">
+              <span class="name">Anne Wallace</span>
+              <span class="tag">Verified Buyer</span>
+            </div>
+          </div>
+          <span class="comment">
+            "Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<div id="star-container"></div>
+
+<script>
+  for (var i = 0; i < document.getElementsByClassName("star-container").length; i++) {
+    const starContainer = document.getElementsByClassName("star-container")[i];
+    for (let i = 0; i < 5; i++) {
+      const starImage = document.createElement("img");
+      starImage.className = "star";
+      starImage.src = "../images/icon-star.svg";
+      starImage.alt = "star image";
+      starContainer.appendChild(starImage);
+    }
+  }
+</script>
+
+</html>
