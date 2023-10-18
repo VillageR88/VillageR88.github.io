@@ -2,7 +2,7 @@ body {
     margin: 0;
     display: flex;
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     min-height: 100%;
     align-items: center;
     justify-content: center;
@@ -87,6 +87,7 @@ background {
     width: 0.8em;
     height: 0.55em;
     align-self: center;
+    top: 0.5em;
 }
 
 .row {
@@ -118,6 +119,20 @@ background {
     margin: 0 38.5em 0.9em 0;
 }
 
+.mobile-container {
+    z-index: 1;
+    position: absolute;
+    top: -3.3em;
+    left: 3em;
+    width: 16em;
+}
+
+.picture4,
+.picture5 {
+    display: none;
+}
+
+
 .line {
     position: relative;
     width: 100%;
@@ -136,6 +151,10 @@ background {
         height: auto;
     }
 
+    main {
+        margin-top: 3em;
+    }
+
     .wrapper {
         flex-direction: column;
         width: auto;
@@ -143,12 +162,24 @@ background {
         height: auto;
         padding: 6em 0 4em;
         margin-top: 4em;
+
     }
 
     .picture1,
     .picture2,
     .picture3 {
         display: none;
+    }
+
+    .picture4 {
+        display: flex;
+    }
+
+    .picture5 {
+        position: relative;
+        width: 100%;
+        display: flex;
+        top: -5em;
     }
 
     .left-side {
@@ -166,6 +197,7 @@ background {
     .header_text {
         position: relative;
         align-self: center;
+        top: 1em
     }
 
     .middle-text {
@@ -177,6 +209,7 @@ background {
     .question {
         position: relative;
         margin: 1em;
+        left: 0.5em;
     }
 
     .mark {
@@ -192,8 +225,10 @@ background {
         left: 1.5em;
         top: -1em;
     }
+}
 
-
-
-
+@media only screen and (max-width: 800px) {
+    main {
+        margin: 5em 3em;
+    }
 }
