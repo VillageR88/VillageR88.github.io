@@ -16,7 +16,7 @@
             <path fill="#1D1D1F" d="M294.547 40L283 20l11.547-20h93.906L400 20l-11.547 20z" />
             <text id="dynamicText" fill="#AAA"
                 font-family="Lato, HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14"
-                text-anchor="middle" x="322" y="25">1,272</text>
+                text-anchor="middle" x="322" y="25">score</text>
             <div
                 style="border-radius:100%; margin-left: 22.3em; top:0.80em; position: absolute; width:1.8em; height:1.9em; background: white">
                 <svg width="400" height="40" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg">
@@ -33,13 +33,44 @@
             <g style="position: absolute; left: 12em">
             </g>
         </svg>
-
     </main>
+
+    <script>
+
+        var dynamicText = document.getElementById("dynamicText");
+        var dynamicValue = NaN;
+
+        // Wywołanie funkcji do pobierania danych JSON po załadowaniu strony
+        // Wywołanie funkcji do pobierania danych JSON po załadowaniu strony
+        getDataFromAPI();
+
+        // Funkcja do pobierania danych z API
+        // Funkcja do pobierania danych z API
+        function getDataFromAPI() {
+            fetch('https://cors-anywhere.herokuapp.com/https://backend.frontendmentor.io/rest/v2/learners/6509b84f9bce289b050307a8/')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Nie udało się pobrać danych.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Tutaj możesz przypisać dane do zmiennej i wykorzystać je w kodzie
+                    var mentorScoreTotal = data.data.mentorScore.total;
+                    console.log('Total:', mentorScoreTotal);
+                    dynamicText.textContent = mentorScoreTotal;
+
+                    // Możesz również wykonywać inne operacje na danych
+                    var displayName = data.data.displayName;
+                    console.log('Display Name:', displayName);
+                })
+                .catch(error => {
+                    console.error('Wystąpił błąd:', error);
+                });
+        }
+
+
+    </script>
 </body>
-<script>
-    var dynamicText = document.getElementById("dynamicText");
-    var dynamicValue = 120;
-    dynamicText.textContent = dynamicValue.toString();
-</script>
 
 </html>
