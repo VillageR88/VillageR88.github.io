@@ -36,40 +36,31 @@
     </main>
 
     <script>
-
         var dynamicText = document.getElementById("dynamicText");
         var dynamicValue = NaN;
 
-        // Wywołanie funkcji do pobierania danych JSON po załadowaniu strony
-        // Wywołanie funkcji do pobierania danych JSON po załadowaniu strony
         getDataFromAPI();
 
-        // Funkcja do pobierania danych z API
-        // Funkcja do pobierania danych z API
         function getDataFromAPI() {
             fetch('https://cors-anywhere.herokuapp.com/https://backend.frontendmentor.io/rest/v2/learners/6509b84f9bce289b050307a8/')
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error('Nie udało się pobrać danych.');
+                        throw new Error('Failed to download data');
                     }
                     return response.json();
                 })
                 .then(data => {
-                    // Tutaj możesz przypisać dane do zmiennej i wykorzystać je w kodzie
                     var mentorScoreTotal = data.data.mentorScore.total;
                     console.log('Total:', mentorScoreTotal);
                     dynamicText.textContent = mentorScoreTotal;
 
-                    // Możesz również wykonywać inne operacje na danych
                     var displayName = data.data.displayName;
                     console.log('Display Name:', displayName);
                 })
                 .catch(error => {
-                    console.error('Wystąpił błąd:', error);
+                    console.error('Error:', error);
                 });
         }
-
-
     </script>
 </body>
 
