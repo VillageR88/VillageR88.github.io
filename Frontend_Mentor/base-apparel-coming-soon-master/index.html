@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+      <div class="column1">
+        <div class="inner_text">
+          <img src="./images/logo.svg" alt="logo image" class="logo">
+          <div class="text_together">
+            <span class="text1">WE'RE</span>
+            <span class="text2">COMING</span>
+            <span class="text2">SOON</span>
+            <span class="text3">
+              Hello fellow shoppers! We're currently building our new fashion store.
+              Add your email below to stay up-to-date with announcements and our launch deals.
+            </span>
+            <div class="downInput">
+              <div class="bar">
+                <div class="leftField">
+                  <input type="text" id="fname" name="fname" placeholder="Email Adress" onkeyup="checkEmail()">
+                  <img class="error" src="./images/icon-error.svg" alt="error icon">
+                </div>
+                <button class="arrow" onclick="submit()">
+                  <img src="./images/icon-arrow.svg" alt="arrow icon">
+                </button>
+              </div>
+              <span class="errorMessage">Please provide a valid email</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column2">
+        <div class="alternate-logo">
+          <img src="./images/logo.svg" alt="logo image" class="logo2">
+        </div>
+        <img class="person" src="./images/hero-desktop.jpg" alt="image of a woman">
+      </div>
+    </div>
+  </main>
+</body>
+<script>
+  const error = document.getElementsByClassName("error")[0];
+  const bar = document.getElementsByClassName("bar")[0];
+  const errorMessage = document.getElementsByClassName("errorMessage")[0];
+  const emailInput = document.getElementById('fname');
+
+  function isValidEmail(email) {
+    const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return pattern.test(email);
+  }
+
+  function checkEmail() {
+
+    if (emailInput.value === "") {
+      error.style.visibility = 'hidden';
+      errorMessage.style.visibility = 'hidden';
+      bar.style.border = "solid 2px transparent";
+    }
+
+    if (isValidEmail(emailInput.value) || emailInput.value === "") {
+      error.style.visibility = 'hidden';
+    } else {
+      error.style.visibility = 'visible';
+    }
+  }
+
+  function submit() {
+    if (isValidEmail(emailInput.value)) {
+      errorMessage.style.visibility = "visible";
+      errorMessage.textContent = "Thank you!";
+      errorMessage.style.color = "green";
+      bar.style.border = "solid 2px transparent";
+    }
+    else {
+      errorMessage.style.visibility = "visible";
+      errorMessage.textContent = "Please provide a valid email";
+      errorMessage.style.color = "var(--Soft_Red)";
+      bar.style.border = "solid 2px red";
+    }
+  }
+</script>
+
+</html>
