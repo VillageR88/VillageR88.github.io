@@ -17,6 +17,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     align-items: center;
+    justify-content: center;
 }
 
 .bck1 {
@@ -25,6 +26,7 @@ body {
     background-image: url(../images/bg-intro-desktop.png);
     width: 100%;
     height: 100%;
+
 }
 
 .wrapper {
@@ -34,21 +36,17 @@ body {
     max-height: 100%;
     align-items: center;
     justify-content: center;
-    gap: 1em;
-
 }
 
 .column1 {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 35%;
     max-height: 100%;
     display: flex;
     color: white;
-    justify-content: center;
+    align-items: center;
 }
-
-
 
 .col1-container-text1 {
     max-width: 100%;
@@ -65,15 +63,11 @@ body {
 .column2 {
     display: flex;
     flex-direction: column;
-
-    width: 40%;
+    width: 35%;
     max-height: 100%;
-  
     justify-content: center;
 
 }
-
-
 
 .col2-container-header {
     display: flex;
@@ -116,7 +110,8 @@ body {
         flex-direction: column;
     }
 
-    .column1, .column2 {
+    .column1,
+    .column2 {
         width: 90%;
         justify-content: center;
     }
