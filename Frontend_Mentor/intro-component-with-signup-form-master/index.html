@@ -14,6 +14,7 @@
 
 <body>
   <background class="bck1"></background>
+  <span class="popuptext" id="myPopup" onclick="document.getElementById('myPopup').style.display = 'none'">🎊Free trial claimed!🎊</span>
   <main>
     <div class="wrapper">
       <div class="column1">
@@ -33,23 +34,26 @@
         </div>
         <div class="col2-container-main">
           <div class="content content1">
-            <input class="box field field1" type="text" id="firstName" name="firstName" placeholder="First Name">
+            <input class="box field field1" type="text" id="firstName" name="firstName" placeholder="First Name" onkeyup="resetFirstName()">
             <img class="errorIcon errorIcon1" src="./images/icon-error.svg" alt="error icon">
           </div>
           <span class="errorMessage errorMessage1">First Name cannot be empty</span>
           <div class="content content2">
-            <input class="box field field2" type="text" id="lastName" name="lastName" placeholder="Last Name">
+            <input class="box field field2" type="text" id="lastName" name="lastName" placeholder="Last Name" onkeyup="resetLastName()">
             <img class="errorIcon errorIcon2" src="./images/icon-error.svg" alt="error icon">
           </div>
+          <span class="errorMessage errorMessage2">Last Name cannot be empty</span>
           <div class="content content3">
             <input class="box field field3" type="text" id="emailAddress" name="emailAddress"
               placeholder="Email Address" onkeyup="checkEmail()">
             <img class="errorIcon errorIcon3" src="./images/icon-error.svg" alt="error icon">
           </div>
+          <span class="errorMessage errorMessage3">Look like this is not an email</span>
           <div class="content content4">
-            <input class="box field field4" type="text" id="password" name="password" placeholder="Password">
+            <input class="box field field4" type="text" id="password" name="password" placeholder="Password" onkeyup="resetPassword()">
             <img class="errorIcon errorIcon4" src="./images/icon-error.svg" alt="error icon">
           </div>
+          <span class="errorMessage errorMessage4">Password cannot be empty</span>
           <button class="box claim" onclick="submit()">CLAIM YOUR FREE TRIAL</button>
           <div class="col2-container-bottom">
             <span class="col2-container-bottom-part1"> By clicking the button, you are agreeing to our

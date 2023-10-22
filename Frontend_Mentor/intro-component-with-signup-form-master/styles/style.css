@@ -28,6 +28,22 @@ body {
     height: 100%;
 }
 
+.popuptext {
+    display: none;
+    font-size: 4rem;
+    z-index: 2;
+    position: absolute;
+    padding: 0.3em;
+    border: solid;
+    border-color: #5d54a3;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.popuptext:hover {
+    cursor: pointer;
+}
+
 .wrapper {
     position: relative;
     display: flex;
@@ -36,6 +52,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1em;
+    padding: 2em 0 2em 0;
 }
 
 .column1 {
@@ -139,7 +156,7 @@ body {
 }
 
 .errorMessage {
-    color:var(--Red);
+    color: var(--Red);
     width: 85%;
     display: flex;
     justify-content: end;
@@ -148,6 +165,7 @@ body {
     font-weight: var(--w1);
     gap: 3em;
     padding-bottom: 1em;
+    display: none;
 }
 
 .claim {
@@ -189,11 +207,21 @@ body {
     font-weight: var(--w4);
 }
 
+input:focus {
+    border: 1px solid black !important;
+}
+
+
 @media only screen and (max-width: 600px) {
     .wrapper {
         flex-direction: column;
         padding: 4em 0;
         gap: 4em;
+    }
+
+    .popuptext {
+        font-size: 2rem;
+        top: 19.5em;
     }
 
     .column1,
