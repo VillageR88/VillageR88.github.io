@@ -115,13 +115,22 @@ body {
     width: 85%;
     padding: 1.5em 0em;
     border-radius: 0.6em;
-    border: solid 1px;
+    border: solid 1px var(--Grayish_Blue);
+    font-weight: var(--w4);
+    font-family: 'Poppins', sans-serif;
+}
+
+.field {
     text-indent: 2em;
+}
+
+.field:focus {
+    border: solid 1px var(--Dark_Blue);
+    outline: none;
 }
 
 button {
     display: flex;
-    text-indent: 0em !important;
     justify-content: center;
 }
 
