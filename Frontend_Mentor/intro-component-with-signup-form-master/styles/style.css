@@ -115,6 +115,14 @@ body {
     width: 85%;
     padding: 1.5em 0em;
     border-radius: 0.6em;
+    border: solid 1px;
+    text-indent: 2em;
+}
+
+button {
+    display: flex;
+    text-indent: 0em !important;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
