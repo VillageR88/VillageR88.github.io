@@ -1,0 +1,16 @@
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Dark_Blue: hsl(249, 10%, 26%);
+    --Grayish_Blue: hsl(246, 25%, 77%);
+    --w1: 400;
+    --w2: 500;
+    --w3: 600;
+    --w4: 700;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
