@@ -195,6 +195,7 @@ body {
     display: flex;
     max-width: 80%;
     font-size: 0.7rem;
+    line-height: 1.6em;
 }
 
 .col2-container-bottom-part1 {
