@@ -1,6 +1,3 @@
 {
-    "cSpell.language": "en,pl-PL",
-    "cSpell.words": [
-        "tailwindcss"
-    ]
+    "livePreview.defaultPreviewPath": "/src/index.html"
 }
