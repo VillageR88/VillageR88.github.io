@@ -1,0 +1,13 @@
+aa co do tailwind, bo to tez wazne zebys skumal dlaczego na FE jest miliard narzedzi ktore robia to samo tylko inaczej zamiast pisac pure js i css
+
+jak sobie poczytasz poogladasz to wroc do mnie z odpowiedziami na takie pytania (najlepiej wlasne wnioski wlasnymi slowami):
+
+1. jaki problem rozwiazuje tailwind + jego plusy, wiecej niz 1
+2. jaki problemy ma tailwind, jakie sa minusy, co mu ludzie zarzucają 
+
+wazne zebys to skumal szczegolnei ze masz juz podstawy css i html, (najlepiej jakbys tego nie googlowal bo to jest w sumie na ich stronie tez czesciowo opisane)
+
+Ad1:
+- łatwe stylowanie stron internetowych;
+- integracja ze środowiskiem VSC;
+
