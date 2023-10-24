@@ -1,0 +1,32 @@
+# Ogólne ustawienia
+title: Moja Strona
+description: Opis mojej strony
+baseurl: "" # Jeśli Twoja strona nie jest w podkatalogu, pozostaw to puste
+url: "https://nazwa_uzytkownika.github.io/nazwa_repozytorium" # Zmień na własną domenę, jeśli ją masz
+
+# Konfiguracja zmiennych
+author:
+  name: Twój Autor
+  bio: Informacje o autorze
+  email: twój@email.com
+  twitter: twój_twitter
+
+# Konfiguracja menu nawigacyjnego
+menu:
+  - title: Strona Główna
+    url: "/"
+  - title: Blog
+    url: "/blog/"
+  - title: Kontakt
+    url: "/kontakt/"
+
+# Konfiguracja Jekyll
+markdown: kramdown
+theme: jekyll-theme-minimal # Zmień na wybrany temat
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Inne ustawienia
+exclude: ["node_modules", "vendor", ".sass-cache", ".jekyll-cache", ".jekyll-metadata", "Gemfile.lock", "Gemfile", "package.json", "package-lock.json"]
