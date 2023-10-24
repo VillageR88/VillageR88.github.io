@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --Cyan: hsl(179, 62%, 43%);
+      --Bright_Yellow: hsl(71, 73%, 54%);
+      --Light_Gray: hsl(204, 43%, 93%);
+      --Grayish_Blue: hsl(218, 22%, 67%);
+      --Normal: 400;
+      --Heavy: 700;
+    }
+  </style>
+  <link href="/dist/output.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+</head>
+
+<body style="font-family: 'Karla', sans-serif;">
+  <main class="flex justify-center items-center h-screen w-screen bg-[--Light_Gray]">
+    <div id="wrapper" class="flex flex-col justify-center items-center w-1/2">
+
+      <div id="top" class="flex flex-col p-10 rounded-t-md bg-white w-full">
+        <span class="text-[1.4rem] text-[--Cyan] font-[600]">
+          Join our community
+        </span>
+        <span class="text-[1.05rem] text-[--Bright_Yellow] font-[600]">
+          30-day, hassle-free money back guarantee
+        </span>
+        <span class="text-[1rem] text-[--Grayish_Blue]">
+          Gain access to our full library of tutorials along with expert code reviews.
+          Perfect for any developers who are serious about honing their skills.
+        </span>
+      </div>
+
+      <div id="bottom" class="flex text-white w-full">
+        <div id="bottom-left" class="flex flex-col w-1/2 p-10 rounded-bl-md bg-[#2BB3B1]">
+          <span class="text-[1.1rem] font-[700]">
+            Monthly Subscription
+          </span>
+          <div>
+            <span class="text-[2rem] font-[700] flex items-center gap-3">
+              &dollar;29
+              <span class="text-[1rem] font-[400] text-[#7be0df]">
+                per month
+              </span>
+            </span>
+          </div>
+          <span>
+            Full access for less than &dollar;1 a day
+          </span>
+          <button class="border py-3 border-none bg-[--Bright_Yellow] rounded-md">
+            Sign Up
+          </button>
+        </div>
+        <div id="bottom-right" class="text-[1.1rem] flex flex-col p-10 rounded-br-md bg-[#4ABEBD] w-1/2">
+          <span>
+            Why Us
+          </span>
+          <div class="text-[0.9rem] font-[400] text-cyan-100 flex flex-col">
+            <span>Tutorials by industry experts</span>
+            <span>Peer &amp; expert code review</span>
+            <span>Coding exercises</span>
+            <span>Access to our GitHub repos</span>
+            <span>Community forum</span>
+            <span>Flashcard decks</span>
+            <span>New videos every week<span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>
