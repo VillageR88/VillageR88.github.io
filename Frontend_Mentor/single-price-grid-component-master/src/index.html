@@ -26,24 +26,24 @@
 </head>
 
 <body style="font-family: 'Karla', sans-serif;">
-  <main class="flex justify-center items-center h-screen w-screen bg-[--Light_Gray]">
-    <div id="wrapper" class="flex flex-col justify-center items-center w-1/2">
+  <main class="flex justify-center items-center h-screen w-screen bg-[--Light_Gray]"> <!-- main -->
+    <div class="flex flex-col justify-center items-center"> <!-- wrapper -->
 
-      <div id="top" class="flex flex-col p-10 rounded-t-md bg-white w-full">
+      <div class="flex flex-col rounded-t-md bg-white p-10 w-full"> <!-- top -->
         <span class="text-[1.4rem] text-[--Cyan] font-[600]">
           Join our community
         </span>
         <span class="text-[1.05rem] text-[--Bright_Yellow] font-[600]">
           30-day, hassle-free money back guarantee
         </span>
-        <span class="text-[1rem] text-[--Grayish_Blue]">
-          Gain access to our full library of tutorials along with expert code reviews.
-          Perfect for any developers who are serious about honing their skills.
-        </span>
+        <div class="flex flex-col text-[1rem] text-[--Grayish_Blue]">
+          <span>Gain access to our full library of tutorials along with expert code reviews.</span>
+          <span>Perfect for any developers who are serious about honing their skills.</span>
+        </div>
       </div>
 
-      <div id="bottom" class="flex text-white w-full">
-        <div id="bottom-left" class="flex flex-col w-1/2 p-10 rounded-bl-md bg-[#2BB3B1]">
+      <div class="flex text-white w-full"> <!-- bottom -->
+        <div class="flex flex-col rounded-bl-md bg-[#2BB3B1] p-10 w-1/2"> <!-- bottom-left" -->
           <span class="text-[1.1rem] font-[700]">
             Monthly Subscription
           </span>
@@ -58,15 +58,15 @@
           <span>
             Full access for less than &dollar;1 a day
           </span>
-          <button class="border py-3 border-none bg-[--Bright_Yellow] rounded-md">
+          <button class="border py-3 border-none bg-[--Bright_Yellow] rounded-md ">
             Sign Up
           </button>
         </div>
-        <div id="bottom-right" class="text-[1.1rem] flex flex-col p-10 rounded-br-md bg-[#4ABEBD] w-1/2">
+        <div class="flex-1 flex flex-col text-[1.1rem]  rounded-br-md bg-[#4ABEBD] p-10 w-1/2"> <!-- bottom-right" -->
           <span>
             Why Us
           </span>
-          <div class="text-[0.9rem] font-[400] text-cyan-100 flex flex-col">
+          <div class="flex flex-col text-[0.9rem] font-[400] text-cyan-100">
             <span>Tutorials by industry experts</span>
             <span>Peer &amp; expert code review</span>
             <span>Coding exercises</span>
