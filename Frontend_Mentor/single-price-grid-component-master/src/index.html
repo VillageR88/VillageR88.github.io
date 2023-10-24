@@ -24,24 +24,24 @@
 </head>
 
 <body style="font-family: 'Karla', sans-serif;">
-  <main class="flex justify-center items-center h-screen w-screen bg-[--Light_Gray]"> <!-- main -->
+  <main class="flex justify-center items-center md:h-screen w-screen bg-[--Light_Gray] md:p-0 p-2 "> <!-- main -->
     <div class="flex flex-col justify-center items-center"> <!-- wrapper -->
 
-      <div class="flex flex-col rounded-t-md bg-white p-10 w-full gap-3"> <!-- top -->
-        <span class="text-2xl text-[--Cyan] font-bold">
+      <div class="flex flex-col rounded-t-md bg-white p-10 w-full md:gap-3 gap-5"> <!-- top -->
+        <span class="text-2xl text-[--Cyan] font-bold h-10">
           Join our community
         </span>
         <span class="text-lg text-[--Bright_Yellow] font-bold">
           30-day, hassle-free money back guarantee
         </span>
-        <div class="flex flex-col text-[--Grayish_Blue]">
-          <span>Gain access to our full library of tutorials along with expert code reviews.</span>
+        <div class="flex flex-col text-[--Grayish_Blue] leading-8">
+          <span class="md:h-7">Gain access to our full library of tutorials along with expert code reviews.</span>
           <span>Perfect for any developers who are serious about honing their skills.</span>
         </div>
       </div>
 
-      <div class="flex text-white w-full"> <!-- bottom -->
-        <div class="flex flex-col rounded-bl-md bg-[#2BB3B1] p-10 w-1/2"> <!-- bottom-left" -->
+      <div class="flex flex-col md:flex-row text-white w-full"> <!-- bottom -->
+        <div class="flex flex-col md:rounded-bl-md bg-[#2BB3B1] p-10 md:w-1/2"> <!-- bottom-left" -->
           <span class="flex text-lg font-bold h-10">
             Monthly Subscription
           </span>
@@ -53,14 +53,14 @@
               </span>
             </span>
           </div>
-          <span class="text-sm h-12">
+          <span class="md:text-sm h-12">
             Full access for less than &dollar;1 a day
           </span>
           <button class="border py-3 border-none bg-[--Bright_Yellow] rounded-md ">
             Sign Up
           </button>
         </div>
-        <div class="flex flex-col text-lg gap-3 rounded-br-md bg-[#4ABEBD] p-10 w-1/2"> <!-- bottom-right" -->
+        <div class="flex flex-col text-lg gap-3 rounded-br-md md:rounded-bl-none rounded-bl-md bg-[#4ABEBD] p-10 md:w-1/2"> <!-- bottom-right" -->
           <span>
             Why Us
           </span>
