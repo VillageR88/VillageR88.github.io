@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    :root {
+      --Blue: hsl(223, 87%, 63%);
+      --Pale_Blue: hsl(223, 100%, 88%);
+      --Light_Red: hsl(354, 100%, 66%);
+      --Gray: hsl(0, 0%, 59%);
+      --Very_Dark_Blue: hsl(209, 33%, 12%);
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+
+<body style="font-family: 'Libre Franklin', sans-serif" class="md:p-10 py-2 px-12">
+  <main class="w-full max-h-screen">
+    <!-- wrapper -->
+    <div class="flex w-full h-full flex-col text-center">
+      <img class="flex h-auto md:w-22 w-18 self-center md:pt-12 pt-8 pb-12" src="../images/logo.svg" alt="ping image">
+      <span class="md:text-5xl text-2xl text-[--Gray] pb-6">
+        We are launching
+        <span class="text-[--Very_Dark_Blue]">
+          soon!
+        </span>
+      </span>
+      <span class="md:text-xl pb-9">Subscribe and get notified</span>
+      <div class="flex flex-col md:flex-row justify-center md:gap-4 gap-2 pb-20">
+        <div>
+          <input class="border border-solid w-full md:w-[430px] h-14 rounded-full indent-8" type="text"
+            id="email_adress" name="email_adress" placeholder="Your email adress..." onkeyup="checkEmail()">
+          <span id="error" style="display: none;"
+            class="italic md:justify-start md:pl-9 justify-center flex text-xs leading- text-[--Light_Red] pt-2 pb-6">
+            Please provide a valid email adress
+          </span>
+        </div>
+        <button
+          class="hover:bg-[#7095F5] hover:shadow-lg hover:shadow-[#DFE5FA] border border-solider md:w-48 h-14 rounded-full bg-[--Blue] text-white font-semibold"
+          onclick="submit()">
+          Notify Me
+        </button>
+      </div>
+      <img class="flex md:w-1/2 h-auto self-center" src="../images/illustration-dashboard.png" alt="dashboard image">
+      <div class="flex justify-center pt-10 pb-5 gap-2">
+
+        <svg class="hover:fill-white hover:bg-[--Blue] self-center fill-[--Blue] bg-[--White] border rounded-full w-6 h-6 p-1" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310"
+          xml:space="preserve">
+          <g id="XMLID_834_">
+            <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+         c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+         V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+         C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+         c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+          </g>
+        </svg>
+
+        <svg
+          class="hover:fill-white hover:bg-[--Blue] self-center fill-[--Blue] bg-[--White] border rounded-full h-auto w-6 p-1"
+          xmlns="http://www.w3.org/2000/svg" height="1em"
+          viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+        </svg>
+        <svg
+          class="hover:fill-white hover:bg-[--Blue] self-center fill-[--Blue] bg-[--White] border rounded-full h-6 w-6 p-1"
+          xmlns="http://www.w3.org/2000/svg" height="1em"
+          viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+        </svg>
+      </div>
+      <span class="text-[--Gray] font-light text-xs md:pb-10 pb-4">&copy; Copyright Ping. All rights reserved.</span>
+
+  </main>
+</body>
+
+<script>
+  const errorMessage = document.getElementById("error");
+  const emailInput = document.getElementById('email_adress');
+  const defualtStyle = emailInput.style.border;
+
+  function isValidEmail(email) {
+    const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return pattern.test(email);
+  }
+
+  function checkEmail() {
+
+    if (emailInput.value === "") {
+      errorMessage.style.display = 'none';
+      emailInput.style.border = defualtStyle;
+    }
+  }
+
+  function submit() {
+    if (isValidEmail(emailInput.value)) {
+      errorMessage.style.display = "flex";
+      errorMessage.textContent = "Thank you!";
+      errorMessage.style.color = "green";
+      emailInput.style.border = defualtStyle;
+      ;
+    }
+    else {
+      errorMessage.style.display = "flex";
+      errorMessage.textContent = "Please provide a valid email address";
+      errorMessage.style.color = "red";
+      emailInput.style.border = "solid 2px red";
+    }
+  }
+</script>
+
+</html>
