@@ -20,13 +20,13 @@
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 </head>
 
-<body class="flex bg-[--Violet] w-screen max-h-screen md:px-10">
+<body class="flex bg-[--Violet] w-full max-h-full md:px-10 absolute">
   <!-- background as image due to bg stretching limitations -->
   <img class="absolute max-w-full h-screen z-[-1] hidden md:flex" src="../images/bg-desktop.svg" alt="background image">
   <img class="absolute z-[-1] md:hidden flex w-screen" src="../images/bg-mobile.svg" alt="background image">
   <!-- because we need to separate it background image -->
-  <div class="flex w-screen h-full md:h-screen py-6 px-4">
-    <main class="flex w-full h-full justify-center align">
+  <div class="flex w-full h-full py-6 px-4 relative">
+    <main class="flex w-full max-h-full justify-center align">
       <!-- wrapper -->
       <div class="flex flex-col w-full-lg h-full justify-around">
         <img class="w-52 h-auto md:pb-2 pb-12" src="../images/logo.svg" alt="logo image">
