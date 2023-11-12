@@ -1,5 +1,5 @@
-1:HL["/Frontend_Mentor/interactive-card-details-form-main/_next/static/css/76e4cbb486b4b968.css","style",{"crossOrigin":""}]
-0:["YRRgPS8625s4CH11MoE8X",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Frontend_Mentor/interactive-card-details-form-main/_next/static/css/76e4cbb486b4b968.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/Frontend_Mentor/interactive-card-details-form-main/_next/static/css/1fba266e0ea9b82e.css","style",{"crossOrigin":""}]
+0:["--Ifta0ElLNteNMOiJtyC",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Frontend_Mentor/interactive-card-details-form-main/_next/static/css/1fba266e0ea9b82e.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/Frontend_Mentor/interactive-card-details-form-main/_next/static/css/dd44ed562a279f33.css","style",{"crossOrigin":""}]
 5:I[6954,[],""]
 6:I[7264,[],""]
